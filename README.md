@@ -1,4 +1,4 @@
-# Título do Projeto
+# APOIO MULHER
 
 `CURSO`
 
@@ -6,20 +6,20 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+Trata-se de uma aplicação cujo principal objetivo é proporcionar apoio às mulheres vítimas de violência doméstica. Para isso, a aplicação terá como funcionalidade, e de forma centralizada, o acesso a pesquisa de profissionais de apoio jurídico e terapêutico, aos conteúdos para leitura visando a sensibilização e conscientização, bem como aos canais de denúncia mais próximo. 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
+* Guilherme Augusto de Souza Silva
+* Mariana Rodrigues de Oliveira Amorim
+* Rafael Miury de Souza
 * Nome completo do aluno 4
 * Nome completo do aluno 5
 * Nome completo do aluno 6
 
 ## Orientador
 
-* Nome completo do professor
+* Hayala Curto
 
 # Documentação
 
