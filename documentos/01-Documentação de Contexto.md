@@ -6,8 +6,6 @@ A violência doméstica contra as mulheres é uma grave violação dos direitos 
 Atualmente os canais disponíveis para denunciar a violência doméstica são: registro da ocorrência na Delegacia da Mulher, caso haja na região, através da Central de Atendimento à Mulher pelo número 180, ou acionando a Polícia Militar – 190. Ademais, muitas vítimas desconhecem os canais disponíveis de apoio e/ou não conseguem identificar os sinais de violência. 
 	Desta forma, se faz necessário a construção de uma plataforma onde todas as informações de apoio ficarão disponíveis de forma centralizada. Das funcionalidades, destaca-se a oferta de apoio psicológico ou jurídico através de profissionais especializados, conteúdos de conscientização conta a violência doméstica, e os direcionamentos para os canais de denúncia.  
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
 
 ## Objetivos
 
@@ -19,8 +17,6 @@ Como objetivo específicos podemos destacar:
 •	Conectar as vítimas a profissionais de apoio jurídico para que tirem as suas dúvidas e possivelmente contratem seus serviços para ajudá-la no processo de separação.
 
  
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
 ## Justificativa
 
 A violência doméstica é um problema social grave e persistente que afeta milhões de pessoas em todo o mundo, especialmente mulheres. Este tipo de violência ocorre no âmbito do lar, onde a vítima, muitas vezes, se vê impossibilitada de buscar ajuda devido ao medo, à dependência emocional ou financeira, ou ainda pela vergonha e culpa que carregam. No Brasil, os números são alarmantes: segundo dados do Fórum Brasileiro de Segurança Pública, uma mulher é agredida a cada 4 minutos, e a cada dois minutos uma denúncia de violência doméstica é registrada. 
@@ -28,16 +24,8 @@ Além disso, muitas dessas vítimas têm dificuldades em denunciar os abusos, de
 “Ao exporem os motivos que as levavam a permanecer por tanto tempo com os agressores, as participantes da pesquisa referiram pensar serem incapazes de enfrentar a situação por medo das constantes ameaças que sofriam.” (LIMA, 2013) 
 Diante desse cenário, este projeto visa contribuir para o combate à violência doméstica, oferecendo contato direto com suporte psicológico e jurídico, e sensibilizando sobre a importância de agir para interromper esse ciclo de violência. Além disso, pretende-se criar um ambiente seguro para as vítimas, proporcionando ferramentas e recursos que possibilitem fortalecer sua segurança para uma possível denúncia. Além de obterem apoio, com a colaboração de profissionais capacitados, como psicólogos, advogados, assistentes e sociais. 
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
 O software é projetado para atender vítimas de violência doméstica, seus familiares e profissionais de apoio como psicólogos, advogados, assistentes sociais e agentes de segurança. Ele oferece um ambiente seguro para a busca de ajuda, acesso a informações e obtenção de suporte especializado. Além de orientar as vítimas sobre seus direitos e medidas de proteção, o software também auxilia os familiares na identificação de sinais de abuso e na localização de profissionais especializados para o fornecimento de atendimento adequado à vítima. O sistema assegura discrição, acessibilidade e confiabilidade em seu funcionamento. 
-
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
-
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 
