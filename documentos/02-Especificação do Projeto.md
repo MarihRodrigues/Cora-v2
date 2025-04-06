@@ -10,14 +10,12 @@
 <th colspan="2"> Usuário </th>
 </tr>
 <tr>
-<td width="150px"><b>• Pessoa que sofreu violência doméstica e precisa realizar a denúncia, também tendo acesso aos profissionais de apoio e aos materiais de conscientização. 
-• Pessoa que não sofreu violência doméstica, mas gostaria de ter acesso aos profissionais de apoio e aos conteúdos de conscientização.
-</b></td>
+<td width="150px"><b> •Pessoa que sofreu violência doméstica e precisa realizar a denúncia, também tendo acesso aos profissionais de apoio e aos materiais de conscientização. 
+•Pessoa que não sofreu violência doméstica, mas gostaria de ter acesso aos profissionais de apoio e aos conteúdos de conscientização</b></td>
 <td width="600px">...</td>
 </tr>
 <tr>
-<td><b>• Opção alternativa para realizar a denúncia contra violência doméstica. Fornecimento de conteúdos de conscientização e oferta de profissionais de apoio.
-</b></td>
+<td><b>Necessidades</b></td>
 <td>...</td>
 </tr>
 </tbody>
