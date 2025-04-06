@@ -13,9 +13,6 @@ Trata-se de uma aplicação cujo principal objetivo é proporcionar apoio às mu
 * Guilherme Augusto de Souza Silva
 * Mariana Rodrigues de Oliveira Amorim
 * Rafael Miury de Souza
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
 
 ## Orientador
 
