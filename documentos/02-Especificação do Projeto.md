@@ -130,10 +130,20 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
 
-|ID      | Descrição               |Prioridade |
-|--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+|ID      | Descrição                 |Prioridade |
+|--------|---------------------------|-----------|
+| RNF-01 |A aplicação deve ser 	     |	 Alta	 |
+|	 |construída de forma lúdica,| 		 |
+|	 |intuitiva e de fácil 	     |		 |
+|	 |compreensão. 		     |		 |
+|--------|---------------------------|-----------|
+| RNF-02 |A aplicação deve permanecer| 	 Alta	 | 
+|	 |conectada até que o 	     |		 |
+|        |usurário realize o logout. |		 |
+|--------|---------------------------|-----------|
+| RNF-03 |A aplicação deve funcionar |	 Alta	 |
+|	 |24h por dia.		     |	   	 |	 
+|--------|---------------------------|-----------|
 
 **Prioridade: Alta / Média / Baixa. 
 
