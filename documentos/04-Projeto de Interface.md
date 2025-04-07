@@ -22,9 +22,34 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 [Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
 
+Página Inicial
+
 ![image](https://github.com/user-attachments/assets/763dd2e0-d6e4-4873-a525-3800be8da93a)
 
- 
+Página de cadastro para vítimas 
+
+![image](https://github.com/user-attachments/assets/fcf27e3f-851b-4429-a5fa-9c0704877a97)
+
+Página de cadastro para Profissionais de apoio
+
+![image](https://github.com/user-attachments/assets/17141883-9bf9-44a8-8ac2-dc41fc82f405)
+
+Página de Login
+
+![image](https://github.com/user-attachments/assets/bfeda153-0bb5-433f-83c2-ff4bcee48ba2)
+
+Formulário de Denúncia
+
+![image](https://github.com/user-attachments/assets/623e6668-085f-4a66-8aea-d7f50d3a655a)
+
+Informativos
+
+![image](https://github.com/user-attachments/assets/998ab3b7-111e-4803-b94c-db8d17027f33)
+
+Lista de Profissionais de Apoio 
+
+![image](https://github.com/user-attachments/assets/0dac1a96-b11f-474e-af03-9031eebed866)
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 >- Ferramentas:
