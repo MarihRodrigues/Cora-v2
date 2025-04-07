@@ -23,6 +23,22 @@
 </tbody>
 </table>
 
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2"> Profissionais de Apoio </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px"> •Profissionais que prestarão apoio à vítima oferecendo apoio jurídico ou psicológico.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>•Canal alternativo para a prestação e divulgação dos serviços.</td>
+</tr>
+</tbody>
+</table>
+
 
 ## Histórias de Usuários
 
@@ -35,8 +51,21 @@
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+|  Usuário           |Uma plataforma onde todos  |agilizar na escolha da entidade   |
+|		                 |os canais de denúncia sejam|mais próxima e fazer a denúncia.  |               
+|                    |centralizados.             |                                  |
+|--------------------|---------------------------|----------------------------------|
+|  Usuário           |Uma plataforma com redes de|Manutenção da saúde mental e apoio| 
+|		                 |apoio à vitima.		         |jurídico em caso de violência.    |
+|--------------------|---------------------------|----------------------------------|
+|  Usuário           |Um sistema com conteúdos   |Adquirir conhecimentos sobre o    |
+|		                 |de conscientização contra  |assunto.			                    |
+|	 	                 |a violência doméstica.	   |				                          |
+|--------------------|---------------------------|----------------------------------|
+|Prof. de apoio      |Um sistema para prestação  |Prestar apoio à vítimas e         |
+|		                 |de serviços.		           |divulgação profissional.          |
+|--------------------|---------------------------|----------------------------------|
+
 
 ## Requisitos do Projeto
 
@@ -46,10 +75,54 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
 
-|ID    | Descrição                | Prioridade |
-|-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
-|  ...  |  ...                    | ...   |
+|ID     | Descrição                     | Prioridade |
+|-------|-------------------------------|------------|
+| RF-01 |A aplicação deve permitir 	|    Alta    |
+|	|que o usuário crie uma conta, 	|	     |
+|	|edite ou exclua sempre 	|  	     |
+|	|que necessário.		|	     |
+|-------|-------------------------------|------------|
+| RF-02 |A aplicação deve permitir que o|    Alta    |
+|	|usuário recupere sua senha 	|	     |
+|	|através das informações 	|	     |
+|	|fornecidas na criação da conta	|	     |
+|-------|-------------------------------|------------|	
+| RF-03	|A aplicação deve apresentar os |    Alta    |
+|	|canais de denúncia ao usuário 	|	     |
+|	|mediante preenchimento prévio 	|	     |	 
+|	|de formulário.  		|            |
+|-------|-------------------------------|------------|
+| RF-04	|A aplicação deve permitir que o|    Alta    |		
+|	|usuário realize um filtro 	|	     |
+|	|utilizando a geolocalização ou |	     |
+|	|informando a localidade para 	|	     |
+|	|ser direcionado para o canal de| 	     |
+|	|denúncia da região		|	     |
+|-------|-------------------------------|------------|				
+| RF-05	|A aplicação deve permitir que o|   Média    |	
+|	|profissional de apoio crie uma |	     |	
+|	|conta e cadastre o seu serviço |            |
+|	|juntamente com as formas de 	|	     |
+|	|contato.			|	     |
+|-------|-------------------------------|------------|
+| RF-06	|A aplicação deve permitir que o|   Média    |
+|	|profissional de apoio encerre a| 	     |
+|	|prestação de serviços através  |	     |
+|	|da suspensão ou exclusão da    |	     |
+|	|conta. 			|	     |
+|-------|-------------------------------|------------|
+| RF-07 |A aplicação deve permitir que o|   Média    |
+|	|usuário identifique o 		|	     |
+|	|profissional de apoio através 	|	     |
+|	|do filtro pela região e formas |	     |
+|	|de atendimento.	 	|	     |
+|-------|-------------------------------|------------|                           
+| RF-08 |A aplicação deve permitir que o|   Média    |
+|	|acesso às informações sobre 	|	     |
+| 	|conscientização seja livre, 	|	     |
+|	|ou seja, sem a necessidade de  |	     |
+|	|criar uma conta.		|	     |
+|-------|-------------------------------|------------|
 
 **Prioridade: Alta / Média / Baixa. 
 
