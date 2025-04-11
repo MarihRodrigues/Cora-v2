@@ -5,7 +5,7 @@
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
-![image](![image](https://github.com/user-attachments/assets/951b45cf-815c-4129-9174-cc475069df5f))
+![image](![image](![image](https://github.com/user-attachments/assets/6a2dab7a-458e-4605-a85c-5833e788f7a0))
 
 
 > **Links Úteis**:
