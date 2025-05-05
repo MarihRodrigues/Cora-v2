@@ -14,3 +14,4 @@ Font-size: 17px e 30px.
 > https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom/tree/main/codigo-fonte
 
 >As imagens e ícones utilizados no projeto estão disponíveis aqui.
+>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom/tree/main/codigo-fonte/imagens
