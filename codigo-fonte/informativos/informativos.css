@@ -41,13 +41,13 @@
   }
 
   nav p{
-    color: red;
+    color: black;
   }
   
   nav a{
     text-decoration: none;
     padding-right: 40px;
-    color: #8A2BE2;
+    color: black;
     font-weight: 500;
     font-size: 17px;
   }
@@ -174,3 +174,13 @@
     }
   
   }
+  .rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 60px;
+    align-items: center;
+    height: 50px;
+  }
+  
+  

@@ -5,16 +5,37 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 3px solid #9E43E7;
+    background-color: white;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 8%;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+.body {
     background-color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 30px;
+    justify-content: center;
+    padding-bottom: 8%;
 }
 
 .logo {
-    position: absolute;
     top: 20px;
     left: 20px;
 }
@@ -24,13 +45,15 @@ body {
 }
 
 .container {
-    max-width: 500px;
-    width: 100%;
+    max-width: 400px;
     text-align: center;
-    margin-top: 150px; /* espaço para não sobrepor o logo */
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    justify-content: center;
 }
 
-h1 {
+.h1 {
     color: #a855f7;
     margin-bottom: 40px;
     font-size: 30px;
@@ -73,3 +96,29 @@ input {
 .links a:hover {
     text-decoration: underline;
 }
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 60px;
+    align-items: center;
+    height: 50px;
+  }
+  
+  a {
+    color: #0f0f0f;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .botao-secundario {
+    align-items: center;
+    font-size: 17px;
+    color: whitesmoke;
+    background-color: #f3160e;
+    border-radius: 10px;
+    padding: 5px 20px;
+    height: 40px;
+  }

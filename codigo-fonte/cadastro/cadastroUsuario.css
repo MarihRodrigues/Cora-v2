@@ -9,19 +9,23 @@
 .main {
   height: 100vh;
   width: 100vw;
-  display : flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
+
 .cabecalho {
   display: flex;
- flex-direction: row;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 20px 60px;
   align-items: center;
+  border-bottom: 3px solid #9E43E7;
+  height: 20%;
 
 }
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -29,6 +33,7 @@
   align-items: center;
   width: 100%;
 }
+
 .logo {
   display: flex;
   align-self: flex-start;
@@ -38,25 +43,26 @@
   width: 250px;
 }
 
- a {
+a {
   color: #0f0f0f;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   text-decoration: none;
 }
 
 .botao {
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
   color: whitesmoke;
   background-color: #3E497A;
   border-radius: 10px;
   padding: 5px 20px;
   height: 40px;
 }
+
 .botao-secundario {
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
   color: whitesmoke;
   background-color: #f3160e;
   border-radius: 10px;
@@ -73,6 +79,7 @@
   margin-top: 50px;
   gap: 20px;
 }
+
 .cadastrar .title {
   color: #9E43E7;
 }
@@ -83,10 +90,11 @@
   padding: 20px 60px;
   gap: 40px;
 }
+
 .caixas {
   display: flex;
   flex-direction: row;
-  
+
 
 }
 
@@ -96,6 +104,7 @@
   height: 50%;
 
 }
+
 .cadastrar .botoes {
   display: flex;
   flex-direction: row;
@@ -105,6 +114,7 @@
   gap: 20px;
   padding: 20px 60px;
 }
+
 .cadastrar .cad-um {
   font-size: 30px;
   line-height: 2.5;
@@ -121,8 +131,8 @@
   margin: 10px 5px;
 }
 
-.cadastrar .caixa input, select
-#perfil {
+.cadastrar .caixa input,
+select #perfil {
   box-sizing: border-box;
   width: 100%;
   height: 30px;
@@ -133,8 +143,9 @@
   border: 1px solid #0f0f0f;
   color: #3E497A;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 17px;
 }
+
 select {
   box-sizing: border-box;
   width: 100%;
