@@ -17,10 +17,10 @@
             </div>
             <nav class="menu">
 
-                <a href="../ProfissionaisDeApoio/ProfissionaisDeApoio.html">Profissionais de Apoio</a>
-                <a href="../Informativos/Informativos.html">Informativos</a>
-                <a class="botao-secundario" href="../Denunciar/Denunciar.html">Denunciar</a>
-                <a href="../Entrar/Entrar.html">
+                <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+                <a href="../informativos/informativos.html">Informativos</a>
+                <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
+                <a href="../login/paginaLogin.html">
                     <img src="../imagens/entrar.png" alt="entrar">
 
                 </a>
@@ -31,7 +31,7 @@
         <div class="cadastrar">
 
             <h1 class="title">Cadastro de Usuários</h1>
-            <form >
+            <form id="form-usuario" method="POST" >
                 <div class="campos">
 
                     <div class="grupo">
@@ -64,7 +64,7 @@
                                 placeholder="Digite seu endereço"><br />
                         </div>
                         <div class="caixa">
-                            <label>Bairro</label><br />
+                            <label>Bairro *</label><br />
                             <input type="Bairro" name="Bairro" id="Bairro" required placeholder="Bairro"><br />
                         </div>
                         <div class="caixa">
@@ -80,11 +80,11 @@
 
                     <div class="grupo">
                         <div class="caixa">
-                            <label>Estado</label><br />
+                            <label>Estado *</label><br />
                             <input type="Estado" name="Estado" id="Estado" required placeholder="Estado"><br />
                         </div>
                         <div class="caixa">
-                            <label>Cidade</label><br />
+                            <label>Cidade *</label><br />
                             <input type="Cidade" name="Cidade" id="Cidade" required placeholder="Cidade"><br />
                         </div>
                         <div class="caixa">
@@ -92,7 +92,7 @@
                             <input type="email" name="email" id="email" required placeholder="Digite seu email"><br />
                         </div>
                         <div class="caixa">
-                            <label>Perfil</label><br />
+                            <label>Perfil *</label><br />
                             <select name="Perfil" id="perfil" required>
                                 <option value="usuario">Usuário</option>
                                 <option value="profissional">Profissional</option>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="botoes">
-                    <button class="botao-secundario" id="botao">Cancelar</button>
+                    <button type="submit" class="botao-secundario" id="botao">Cancelar</button>
                     <button class="botao" id="botao">Cadastrar</button>
                 </div>
             </form>
@@ -125,6 +125,8 @@
             <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
         </footer>
     </div>
+
+    <script src="cadastro.js"></script>
 </body>
 
 </html>
