@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Profissionais</title>
-    <link rel="stylesheet" href="cadastroUsuario.css">
+    <link rel="stylesheet" href="../cadastro/cadastroUsuario.css">
 </head>
 
 <body>
@@ -25,13 +25,13 @@
 
                 </a>
 
-            </nav>
+            </nav>s
         </div>
 
         <div class="cadastrar">
 
             <h1 class="title">Registro de Profissionais</h1>
-            <form >
+            <form id="form-profissionais" method="POST">
                 <div class="campos">
 
                     <div class="grupo">
@@ -42,18 +42,19 @@
                         </div>
                         <div class="caixa">
                             <label>Especialidade *</label><br />
-                            <input type="Cpf" minlength="11" maxlength="11" name="cpf" id="cpf" required
+                            <input type="text" name="especialidade" id="especialidade" required
                                 placeholder="Digite sua especialidade"><br />
                         </div>
-                        
+
                         <div class="caixa">
                             <label>Telefone *</label><br />
                             <input type="tel" minlength="11" name="telefone" id="telefone" required
                                 placeholder="(99)99999-9999"><br />
-                                <div class="caixa">
-                                    <label>Email *</label><br />
-                                    <input type="email" name="email" id="email" required placeholder="Digite seu email"><br />
-                                </div>
+                            <div class="caixa">
+                                <label>Email *</label><br />
+                                <input type="email" name="email" id="email" required
+                                    placeholder="Digite seu email"><br />
+                            </div>
                         </div>
                     </div>
 
@@ -63,10 +64,10 @@
                             <input type="text" name="endereco" id="endereco" required
                                 placeholder="Digite seu endereço"><br />
                         </div>
-                        
+
                         <div class="caixa">
                             <label>Bairro</label><br />
-                            <input type="Bairro" name="Bairro" id="Bairro" required placeholder="Bairro"><br />
+                            <input type="Bairro" name="bairro" id="bairro" required placeholder="bairro"><br />
                         </div>
                         <div class="caixa">
                             <label>Numero *</label><br />
@@ -82,13 +83,13 @@
                     <div class="grupo">
                         <div class="caixa">
                             <label>Estado</label><br />
-                            <input type="Estado" name="Estado" id="Estado" required placeholder="Estado"><br />
+                            <input type="Estado" name="estado" id="estado" required placeholder="estado"><br />
                         </div>
                         <div class="caixa">
                             <label>Cidade</label><br />
-                            <input type="Cidade" name="Cidade" id="Cidade" required placeholder="Cidade"><br />
+                            <input type="Cidade" name="cidade" id="cidade" required placeholder="cidade"><br />
                         </div>
-                        
+
                         <div class="caixa">
                             <label>Realiza atendimento online?</label><br />
                             <select name="Realiza atendimento online?" id="Realiza atendimento online?" required>
@@ -97,32 +98,18 @@
                             </select><br />
                         </div>
                     </div>
-
-                    <div class="grupo">
-                        <div class="caixa">
-                            <label>Senha *</label><br />
-                            <input type="password" name="senha" id="senha" minlength="6"
-                                placeholder="Digite sua senha"><br />
-                        </div>
-                        <div class="caixa">
-                            <label>Confirmar Senha *</label><br />
-                            <input type="password" name="confirmar-senha" id="confirmar-senha" minlength="6" required
-                                placeholder="Confirme sua senha"><br />
-                        </div>
-
-
-                    </div>
                 </div>
+
                 <div class="botoes">
-                    <button class="botao-secundario" id="botao">Cancelar</button>
                     <button class="botao" id="botao">Cadastrar</button>
                 </div>
+
             </form>
+            <footer class="rodape">
+                <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
+            </footer>
         </div>
-        <footer class="rodape">
-            <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
-        </footer>
-    </div>
+        <script src="registroDeProfissionais.js"></script>
 </body>
 
 </html>

@@ -31,7 +31,7 @@
         <div class="cadastrar">
 
             <h1 class="title">Cadastro de Usuários</h1>
-            <form id="form-usuario" method="POST" >
+            <form id="form-usuario" method="POST">
                 <div class="campos">
 
                     <div class="grupo">
@@ -65,14 +65,14 @@
                         </div>
                         <div class="caixa">
                             <label>Bairro *</label><br />
-                            <input type="Bairro" name="Bairro" id="Bairro" required placeholder="Bairro"><br />
+                            <input type="text" name="bairro" id="bairro" required placeholder="Bairro"><br />
                         </div>
                         <div class="caixa">
                             <label>Numero *</label><br />
                             <input type="numero" name="numero" id="numero" required placeholder="Número da casa"><br />
                         </div>
                         <div class="caixa">
-                            <label>CEP *</label><br />
+                            <label>cep *</label><br />
                             <input type="cep" minlength="8" maxlength="8" name="cep" id="cep" required
                                 placeholder="Digite seu CEP"><br />
                         </div>
@@ -81,11 +81,11 @@
                     <div class="grupo">
                         <div class="caixa">
                             <label>Estado *</label><br />
-                            <input type="Estado" name="Estado" id="Estado" required placeholder="Estado"><br />
+                            <input type="text" name="estado" id="estado" required placeholder="Estado"><br />
                         </div>
                         <div class="caixa">
                             <label>Cidade *</label><br />
-                            <input type="Cidade" name="Cidade" id="Cidade" required placeholder="Cidade"><br />
+                            <input type="text" name="Cidade" id="cidade" required placeholder="Cidade"><br />
                         </div>
                         <div class="caixa">
                             <label>Email *</label><br />
@@ -111,16 +111,15 @@
                             <input type="password" name="confirmar-senha" id="confirmar-senha" minlength="6" required
                                 placeholder="Confirme sua senha"><br />
                         </div>
-
-
                     </div>
                 </div>
+
                 <div class="botoes">
-                    <button type="submit" class="botao-secundario" id="botao">Cancelar</button>
                     <button class="botao" id="botao">Cadastrar</button>
                 </div>
             </form>
         </div>
+
         <footer class="rodape">
             <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
         </footer>

@@ -1,15 +1,12 @@
-document.getElementById("form-usuario").addEventListener("submit", function (event) {
+document.getElementById("form-profissionais").addEventListener("submit", function (event) {
     // Previne o envio do formulário
     event.preventDefault();
 
     let formValido = true;
 
     const nomeCompleto = document.getElementById("nome");
-    const cpf = document.getElementById("cpf");
-    const dataNascimento = document.getElementById("data-nascimento");
+    const especialidade = document.getElementById("especialidade");
     const email = document.getElementById("email");
-    const senha = document.getElementById("senha");
-    const confirmarSenha = document.getElementById("confirmar-senha");
     const endereco = document.getElementById("endereco");
     const telefone = document.getElementById("telefone");
     const bairro = document.getElementById("bairro");
@@ -25,29 +22,8 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
         formValido = false;
     }
 
-    if (cpf.value.length < 11 || cpf.value.length > 11) {
-        alert("CPF deve ter 11 caracteres");
-        formValido = false;
-    }
-
-    if (dataNascimento.value == "") {
-        alert("Data de nascimento deve ser preenchida");
-        formValido = false;
-    }
-
     if (!/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(email.value)) {
         alert("Email inválido");
-        formValido = false;
-    }
-
-    const regexSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$&@#]).{6,}$/;
-    if (!regexSenha.test(senha.value)) {
-        alert("A senha deve ter pelo menos 6 caracteres, uma letra maiúscula, uma minúscula, um número e um símbolo.");
-        formValido = false;
-    }
-
-    if (senha.value !== confirmarSenha.value) {
-        alert("As senhas não coincidem");
         formValido = false;
     }
 
@@ -86,13 +62,18 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
         formValido = false;
     }
 
-    alert("Formulário enviado");
+    if (especialidade.value == "") {
+        alert("Especialidade deve ser preenchida");
+        formValido = false;
+    }
 
     if (formValido) {
+        alert("Formulário enviado");
         // this.submit();  // Envia o formulário
 
         setTimeout(() => {
             window.location.href = "../login/paginaLogin.html";
         }, 2000); // 2000 milissegundos = 2 segundos
     }
+
 });
