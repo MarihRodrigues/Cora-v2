@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apoio Mulher</title>
+  <title>Apoio Mulher - Cabeçalho</title>
   <link rel="stylesheet" href="home.css" />
 </head>
-
 <body>
   <header>
-    <div class="logo">
-      <a href="home.html" class="btn-link">
-        <img src="../imagens/logo.png" alt="Apoio Mulher Logo" />
-      </a>
-    </div>
-    <nav class="menu">
+        <div class="logo">
+            <a href="home.html">
+                <img src="imagens/logo.png" alt="Apoio Mulher Logo">
+            </a>
+        </div>
 
-      <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
-      <a href="../informativos/informativos.html">Informativos</a>
-      <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
-      <a href="../login/paginaLogin.html">
-          <img src="../imagens/entrar.png" alt="entrar">
+        <!-- Botão Sanduíche -->
+        <div class="menu-toggle" onclick="toggleSidebar()">
+            &#9776;
+        </div>
 
-      </a>
+        <nav class="navbar">
+            <a href="profissionais.html" class="btn-link">Profissionais de Apoio</a>
+            <a href="informativos.html" class="btn-link">Informativos</a>
+            <button class="denunciar">Denunciar</button>
 
-  </nav>
+            <!-- Botão de Login -->
+            <div class="login-btn" onclick="toggleMenu()">
+                <img src="imagens/entrar.png" alt="Login">
+            </div>
+
+            <!-- Menu Dropdown -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#" class="dropdown-item">🔐 Login</a>
+                <a href="#" class="dropdown-item sair">⏻ Sair</a>
+            </div>
+        </nav>
+
+        <!-- Menu lateral -->
+        <div class="sidebar" id="sidebar">
+            <a href="profissionais.html">Profissionais de Apoio</a>
+            <a href="informativos.html">Informativos</a>
+            <a href="denuncia.html">Denunciar</a>
+            <a href="login.html">Login</a>
+        </div>
   </header>
 
   <main class="container">
@@ -46,14 +63,16 @@
       </p>
     </section>
 
-    <section class="imagem-section">
-      <img src="../imagens/flyerviolenciadom.jpeg" alt="Diga não à violência contra a mulher!" class="imagem-mensagem">
-    </section>
-  </main>
+  <section class="imagem-section">
+      <img src="imagens/flyerviolenciadom.jpeg" alt="Diga não à violência contra a mulher!" class="imagem-mensagem">
+  </section>
+</main>
 
-  <footer class="rodape">
+<footer class="rodape">
     <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
-  </footer>
+</footer>
+
+<script src="script/script2.js"></script>
 
 </body>
 

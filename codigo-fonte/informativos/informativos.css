@@ -3,99 +3,161 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body{
+body{
     font-family: Arial, sans-serif;
     background-color: #fff;
     line-height: 1.5;
-    overflow: hidden;
-  }
+}
 
-  header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid #9E43E7;
-    gap: 20px;
-  }
-  
-  .logo a {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #9933cc;
+  position: relative;
+}
+
+.logo img {
+  height: 240px;
+  cursor: pointer;
+}
+
+.logo a {
     display: inline-block;
-  }
-  
-  .logo img {
-    max-width: 130px;
-    height: auto;
-    cursor: pointer;
-  }
-  
-  nav{
-    display: flex;
-    padding: 10px 30px;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: right;
-    gap: 65px;
-  }
+}
+   
+/* Navegação */
 
-  nav p{
-    color: black;
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 82px;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #9933cc;
+  font-weight: bold;
+}
+
+.denunciar {
+  background-color: red;
+  color: white;
+  padding: 8px 19px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.login-btn img {
+  height: 50px;
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 25px;
+  margin-top: 145px;
+  background-color: #9933cc56;
+  border-radius: 9px;
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sair {
+  color: red;
+}
+
+.sair:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* Botão Sanduíche */
+
+.menu-toggle {
+  display: none;
+  right: -300px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #9933cc;
+}
+
+/* Sidebar */
+
+.sidebar {
+  height: 800px;
+  width: 250px;
+  position: fixed;
+  z-index: 1000;
+  top: 200px;
+  right: -900px;
+  background-color: #9933cc;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown quando aparece */
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
   
-  nav a{
-    text-decoration: none;
-    padding-right: 40px;
-    color: black;
-    font-weight: 500;
-    font-size: 17px;
-  }
+.card{
+  background-color: #dcdcdc;
+  border-radius: 20px;
+  padding: 16px 50px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  text-align: justify;
+  transition: transform 0.2s ease;
+  flex: 1;
+}
   
-  .denunciar{
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
-  
-  .login-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: transparent;
-    transition: transform 0.2s ease;
-  }
-  
-  .login-btn img {
-    width: 45px;
-    height: 45px;
-  }
-  
-  .login-btn:hover {
-    transform: scale(1.1);
-  }
-  
-  .card{
-    background-color: #dcdcdc;
-    border-radius: 20px;
-    padding: 16px 50px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-    text-align: justify;
-    transition: transform 0.2s ease;
-    flex: 1;
-  }
-  
-  .cards-section {
+.cards-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,75 +167,95 @@
     padding: 0 5px;
     align-items: stretch;
     gap: 50px;
-  }
+}
   
-  .coluna{
+.coluna{
     flex: 1 1 30%;
     display: flex;
     flex-direction: column;
     gap: 2px;
-  }
+}
 
-  .coluna a{
+.coluna a{
     text-decoration: none;
-  }
+}
   
-  .coluna h2 {
+.coluna h2 {
     text-align: center;
     color: #8A2BE2;
     margin-bottom: 20px;
-  }
+}
 
-  .coluna h4{
+.coluna h4{
     text-align: center;
     color: red;
-  }
+}
   
-  .card:hover {
+.card:hover {
     transform: scale(1.02);
+}
+  
+/* Responsividade */
+
+@media (max-width: 768px){
+
+  .logo img{
+    width: 190px;
+    height: 180px;
+    margin-bottom: -55px;
+  }
+
+  header{
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+    
+  nav{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 14px;
+    align-self: flex-end;
+  }
+    
+  .denunciar{
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards-section {
+    flex-direction: column;
   }
   
-  /* Responsividade */
-
-  @media (max-width: 768px){
-
-    header{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav{
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-  
-    .denunciar{
-      width: 100%;
-      text-align: center;
-    }
-
-    .cards-section {
-      flex-direction: column;
-    }
-  
-    .coluna {
-      flex: 1 1 100%;
-    }
-  
-    header {
-      flex-direction: column;
-      gap: 15px;
-      align-items: flex-start;
-    }
-  
-    nav {
-      gap: 15px;
-      font-size: 14px;
-      align-self: flex-end;
-    }
-  
+  .coluna {
+    flex: 1 1 100%;
   }
+  
+  .navbar {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    content: icon;
+    padding: 10px 420px;
+  }
+
+  .sidebar{
+    height: 600px;
+    top: 210px;
+  }
+
+  .sidebar a {
+    font-size: 16px;
+  }
+
+   .rodape{
+    overflow-y: hidden;
+  }
+  
+}
   .rodape {
     display: flex;
     flex-direction: row;
