@@ -21,7 +21,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #9E43E7;
   height: 20%;
 
 }
@@ -29,15 +28,20 @@
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
   width: 100%;
+  gap: 50px;
+  margin-top: 30px;
 
 }
 
 .logo {
   display: flex;
   align-self: flex-start;
+  top: 20px;
+  left: 20px;
+  margin-top: 10px;
 }
 
 .logo img {
@@ -63,11 +67,11 @@ a {
 
 .botao-secundario {
   align-items: center;
-  font-size: 17px;
+  font-size: 18px;
   color: whitesmoke;
   background-color: #f3160e;
-  border-radius: 10px;
-  padding: 5px 20px;
+  border-radius: 50px;
+  padding: 10px 20px;
   height: 40px;
 }
 
@@ -83,6 +87,8 @@ a {
 
 .cadastrar .title {
   color: #9E43E7;
+  font-size: 30px;
+  text-align: center;
 }
 
 .campos {
@@ -169,4 +175,5 @@ select {
   padding: 20px 60px;
   align-items: center;
   height: 50px;
+  font-size: 15px;
 }
