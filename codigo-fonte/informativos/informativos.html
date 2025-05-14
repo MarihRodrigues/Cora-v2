@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apoio Mulher</title>
+  <link rel="stylesheet" href="informativos.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="home.html">
+        <img src="imagens/logo.png" alt="Apoio Mulher Logo">
+      </a>
+    </div>
+
+    <!-- Botão Sanduíche -->
+    <div class="menu-toggle" onclick="toggleSidebar()">
+      &#9776;
+    </div>
+
+    <nav class="navbar">
+      <a href="profissionais.html" class="btn-link">Profissionais de Apoio</a>
+      <a href="informativos.html" class="btn-link">Informativos</a>
+      <button class="denunciar">Denunciar</button>
+
+      <!-- Botão de Login -->
+        <div class="login-btn" onclick="toggleMenu()">
+          <img src="imagens/entrar.png" alt="Login">
+        </div>
+
+      <!-- Menu Dropdown -->
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="#" class="dropdown-item">🔐 Login</a>
+          <a href="#" class="dropdown-item sair">⏻ Sair</a>
+        </div>
+    </nav>
+
+    <!-- Menu lateral -->
+      <div class="sidebar" id="sidebar">
+        <a href="profissionais.html">Profissionais de Apoio</a>
+        <a href="informativos.html">Informativos</a>
+        <a href="denuncia.html">Denunciar</a>
+        <a href="login.html">Login</a>
+      </div>
+</header>
+
+  <main>
+    <section class="cards-section">
+      <div class="coluna">
+        <h2>Informações</h2>
+        <a
+          href="https://www12.senado.leg.br/noticias/materias/2023/11/21/datasenado-aponta-que-3-a-cada-10-brasileiras-ja-sofreram-violencia-domestica">
+          <div class="card">DataSenado aponta que 3 a cada 10 brasileiras já sofreram violência doméstica. <br> -
+            Agência Senado</div>
+        </a>
+        <a href="https://www.institutomariadapenha.org.br/violencia-domestica/o-que-e-violencia-domestica.html">
+          <div class="card">O que é violência doméstica? <br> - Instituto Maria da Penha</div>
+        </a>
+        <a
+          href="https://www.tjmg.jus.br/portal-tjmg/perguntas-frequentes/quais-sao-os-tipos-de-violencia-domestica.htm#">
+          <div class="card">Quais são os tipos de violência doméstica? <br> - Tribunal de Justiça do Estado de Minas
+            Gerais</div>
+        </a>
+        <a href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">
+          <div class="card">Denunciar e buscar ajuda a vítimas de violência contra mulheres <br> - Ministério das
+            Mulheres, Governo Federal</div>
+        </a>
+        <a href="https://www.jusbrasil.com.br/artigos/por-que-falar-sobre-a-violencia-domestica/1870062658">
+          <div class="card">Por que falar sobre a violência doméstica? <br> - Portal Jus Brasil</div>
+        </a>
+      </div>
+
+      <div class="coluna">
+        <h2>Orientações</h2>
+        <a>
+          <div class="card">
+            <h4>1- Procure um lugar seguro:</h4>Em caso de emergência, tente sair imediatamente do local da agressão, se
+            for possível sem risco.
+          </div>
+        </a>
+        <a>
+          <div class="card">
+            <h4>2- Ligue para a polícia (190):</h4>Denuncie qualquer agressão. A ligação é gratuita e funciona 24h por
+            dia.
+          </div>
+        </a>
+        <a>
+          <div class="card">
+            <h4>3- Guarde provas da agressão:</h4>Fotos de ferimentos, roupas rasgadas, mensagens ameaçadoras, laudos
+            médicos e boletins de ocorrência são importantes para a denúncia.
+          </div>
+        </a>
+        <a>
+          <div class="card">
+            <h4>4- Procure atendimento médico e psicológico:</h4>Além de cuidar da saúde física, o apoio psicológico é
+            essencial para sua recuperação.
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script/script3.js"></script>
+
+</body>
+
+</html>

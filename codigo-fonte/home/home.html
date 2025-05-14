@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apoio Mulher - Cabeçalho</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="imagens/logo.png" alt="Apoio Mulher Logo">
+            </a>
+        </div>
+
+        <!-- Botão Sanduíche -->
+        <div class="menu-toggle" onclick="toggleSidebar()">
+            &#9776;
+        </div>
+
+        <nav class="navbar">
+            <a href="profissionais.html" class="btn-link">Profissionais de Apoio</a>
+            <a href="informativos.html" class="btn-link">Informativos</a>
+            <button class="denunciar">Denunciar</button>
+
+            <!-- Botão de Login -->
+            <div class="login-btn" onclick="toggleMenu()">
+                <img src="imagens/entrar.png" alt="Login">
+            </div>
+
+            <!-- Menu Dropdown -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#" class="dropdown-item">🔐 Login</a>
+                <a href="#" class="dropdown-item sair">⏻ Sair</a>
+            </div>
+        </nav>
+
+        <!-- Menu lateral -->
+        <div class="sidebar" id="sidebar">
+            <a href="profissionais.html">Profissionais de Apoio</a>
+            <a href="informativos.html">Informativos</a>
+            <a href="denuncia.html">Denunciar</a>
+            <a href="login.html">Login</a>
+        </div>
+  </header>
+
+  <main class="container">
+    <section class="text-section">
+      <h1 class="titulo">Apoio Mulher</h1>
+      <p class="descricao">
+        A Apoio Mulher tem como objetivo ajudar as mulheres vítimas de violência doméstica. Nesta plataforma você poderá
+        ter acesso de forma centralizada aos principais canais de denúncia da sua região, aos profissionais de apoio
+        para consulta terapêutica e jurídica, bem como aos informativos para ficar por dentro sobre os principais
+        assuntos relacionados à violência.
+      </p>
+
+      <h2 class="titulo-missao">Nossa missão</h2>
+      <p class="descricao">
+        Além de conscientizar e sensibilizar a população contra a violência doméstica, nossa missão é que mais mulheres
+        possam identificar os sinais iniciais de violência, e incentivá-las a realizar a denúncia, contribuindo com a
+        redução de casos de violência no Brasil.
+      </p>
+    </section>
+
+  <section class="imagem-section">
+      <img src="imagens/flyerviolenciadom.jpeg" alt="Diga não à violência contra a mulher!" class="imagem-mensagem">
+  </section>
+</main>
+
+<footer class="rodape">
+    <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
+</footer>
+
+<script src="script/script2.js"></script>
+
+</body>
+
+</html>
