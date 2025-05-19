@@ -96,3 +96,33 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
         }, 2000); // 2000 milissegundos = 2 segundos
     }
 });
+
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("active");
+}
+
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdownMenu");
+    dropdown.classList.toggle("show");
+}
+
+// Fecha o menu dropdown ao clicar fora dele
+window.onclick = function(event) {
+    if (!event.target.matches('.login-btn img')) {
+        const dropdowns = document.getElementsByClassName("dropdown-menu");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+// Função para logout
+function logout() {
+    alert("Você saiu com sucesso!");
+    // Redireciona para a página inicial após logout
+    window.location.href = "../index.html";
+}

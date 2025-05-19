@@ -15,18 +15,43 @@
             <div class="logo" href="../paginaHome/index.html">
                 <img src="../imagens/logo.png" alt="Logo" class="logo-img">
             </div>
+
             <nav class="menu">
 
                 <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
                 <a href="../informativos/informativos.html">Informativos</a>
                 <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
-                <a href="../login/paginaLogin.html">
-                    <img src="../imagens/entrar.png" alt="entrar">
 
-                </a>
+                <!-- Botão de Login/Logout -->
+                <div class="login-container">
+                    <div class="login-btn" onclick="toggleDropdown()">
+                        <img src="../imagens/entrar.png" alt="Login">
+                    </div>
 
+                    <!-- Menu Dropdown -->
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="../login/paginaLogin.html" class="dropdown-item login">🔐 Login</a>
+                        <a href="#" class="dropdown-item sair" onclick="logout()">⏻ Sair</a>
+                    </div>
+                </div>
             </nav>
+
+
         </div>
+
+        <div class="menu-toggle" onclick="toggleSidebar()">
+            &#9776;
+        </div>
+
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="../profissionais/profissionais.html">Profissionais de Apoio</a></li>
+                <li><a href="../informativos/informativos.html">Informativos</a></li>
+                <li><a href="../denuncia/paginaDenuncia.html">Denunciar</a></li>
+                <li><a href="../login/paginaLogin.html">Login</a></li>
+            </ul>
+        </nav>
+
 
         <div class="cadastrar">
 
