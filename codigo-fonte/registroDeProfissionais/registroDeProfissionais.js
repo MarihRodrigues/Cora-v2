@@ -1,8 +1,5 @@
 document.getElementById("form-profissionais").addEventListener("submit", function (event) {
-    // Previne o envio do formulário
     event.preventDefault();
-
-    let formValido = true;
 
     const nomeCompleto = document.getElementById("nome");
     const especialidade = document.getElementById("especialidade");
@@ -15,7 +12,7 @@ document.getElementById("form-profissionais").addEventListener("submit", functio
     const estado = document.getElementById("estado");
     const cidade = document.getElementById("cidade");
 
-
+    let formValido = true;
 
     if (nomeCompleto.value.length < 5) {
         alert("Nome completo deve ter mais de 5 caracteres");
@@ -47,12 +44,12 @@ document.getElementById("form-profissionais").addEventListener("submit", functio
         formValido = false;
     }
 
-    if (cep.value.length < 8 || cep.value.length > 8) {
+    if (cep.value.length !== 8) {
         alert("CEP deve ter 8 caracteres");
         formValido = false;
     }
 
-    if (estado.value == "") {
+    if (estado.value === "") {
         alert("Estado deve ser preenchido");
         formValido = false;
     }
@@ -62,23 +59,37 @@ document.getElementById("form-profissionais").addEventListener("submit", functio
         formValido = false;
     }
 
-    if (especialidade.value == "") {
+    if (especialidade.value === "") {
         alert("Especialidade deve ser preenchida");
         formValido = false;
     }
 
     if (formValido) {
-        alert("Formulário enviado");
-        // this.submit();  // Envia o formulário
+        const novoProfissional = {
+            nome: nomeCompleto.value,
+            especialidade: especialidade.value,
+            email: email.value,
+            endereco: endereco.value,
+            telefone: telefone.value,
+            bairro: bairro.value,
+            numero: numero.value,
+            cep: cep.value,
+            estado: estado.value,
+            cidade: cidade.value,
+        };
+
+        salvarProfissional(novoProfissional);
+
+        alert("Cadastro realizado com sucesso!");
 
         setTimeout(() => {
             window.location.href = "../login/paginaLogin.html";
-        }, 2000); // 2000 milissegundos = 2 segundos
+        }, 1500);
     }
-
 });
 
-function toggleMenu() {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("active");
+function salvarProfissional(profissional) {
+    let lista = JSON.parse(localStorage.getItem("profissionais")) || [];
+    lista.push(profissional);
+    localStorage.setItem("profissionais", JSON.stringify(lista));
 }

@@ -1,7 +1,5 @@
 document.getElementById("form-usuario").addEventListener("submit", function (event) {
-    // Previne o envio do formulário
     event.preventDefault();
-
     let formValido = true;
 
     const nomeCompleto = document.getElementById("nome");
@@ -17,20 +15,19 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
     const cep = document.getElementById("cep");
     const estado = document.getElementById("estado");
     const cidade = document.getElementById("cidade");
-
-
+    const perfil = document.getElementById("perfil");
 
     if (nomeCompleto.value.length < 5) {
         alert("Nome completo deve ter mais de 5 caracteres");
         formValido = false;
     }
 
-    if (cpf.value.length < 11 || cpf.value.length > 11) {
+    if (cpf.value.length !== 11) {
         alert("CPF deve ter 11 caracteres");
         formValido = false;
     }
 
-    if (dataNascimento.value == "") {
+    if (dataNascimento.value === "") {
         alert("Data de nascimento deve ser preenchida");
         formValido = false;
     }
@@ -71,12 +68,12 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
         formValido = false;
     }
 
-    if (cep.value.length < 8 || cep.value.length > 8) {
+    if (cep.value.length !== 8) {
         alert("CEP deve ter 8 caracteres");
         formValido = false;
     }
 
-    if (estado.value == "") {
+    if (estado.value === "") {
         alert("Estado deve ser preenchido");
         formValido = false;
     }
@@ -86,17 +83,42 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
         formValido = false;
     }
 
-    alert("Formulário enviado");
-
     if (formValido) {
-        // this.submit();  // Envia o formulário
+        // Criar objeto com os dados do usuário
+        const usuario = {
+            nome: nomeCompleto.value,
+            cpf: cpf.value,
+            dataNascimento: dataNascimento.value,
+            email: email.value,
+            senha: senha.value, // ⚠️ Não seguro em app real, apenas para fins de estudo
+            endereco: endereco.value,
+            telefone: telefone.value,
+            bairro: bairro.value,
+            numero: numero.value,
+            cep: cep.value,
+            estado: estado.value,
+            cidade: cidade.value,
+            perfil: perfil.value
+        };
+
+        salvarUsuario(usuario);
+
+        alert("Cadastro realizado com sucesso!");
 
         setTimeout(() => {
             window.location.href = "../login/paginaLogin.html";
-        }, 2000); // 2000 milissegundos = 2 segundos
+        }, 1500);
     }
 });
 
+// Salva um novo usuário no localStorage
+function salvarUsuario(usuario) {
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    usuarios.push(usuario);
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+}
+
+// Sidebar e dropdown
 function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("active");
@@ -107,8 +129,7 @@ function toggleDropdown() {
     dropdown.classList.toggle("show");
 }
 
-// Fecha o menu dropdown ao clicar fora dele
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.login-btn img')) {
         const dropdowns = document.getElementsByClassName("dropdown-menu");
         for (let i = 0; i < dropdowns.length; i++) {
@@ -120,9 +141,8 @@ window.onclick = function(event) {
     }
 }
 
-// Função para logout
+// Logout
 function logout() {
     alert("Você saiu com sucesso!");
-    // Redireciona para a página inicial após logout
     window.location.href = "../index.html";
 }
