@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denúncia</title>
     <link rel="stylesheet" href="paginaDenuncia.css">
 </head>
+
 <body>
-    <div class="logo">
-        <img src="../imagens/logo.png" alt="Laço roxo">
+
+    <div class="cabecalho">
+        <img src="../imagens/logoCora.png" alt="Logo">
+        <div class="indice">
+            <a href="#l">Início</a>
+            <a href="#">Profissionais de Apoio</a>
+            <a href="#">Informativos</a>
+            <a href="#">Denuncie</a>
+            <button class="entrar-1">Entrar</button>
+        </div>
     </div>
 
-    <div class="container">
-        <h1>FORMULÁRIO DE<br>DENÚNCIA</h1>
 
-        <form>
-            <input type="text" placeholder="Selecione um perfil">
-            <input type="text" placeholder="Estado">
-            <input type="text" placeholder="Cidade">
-            <input type="text" placeholder="Idade">
+        <form class="formulario">
+            <div class="formulario-2">
+                <h1>Canais de Denúncia</h1>
+                <input class="campo" type="text" placeholder="  Estado"><br/>
+                <input class="campo" type="text" placeholder="  Cidade"><br/>
+                <input class="campo" type="text" placeholder="  Selecione um perfil"><br/>
+                <input class="campo" type="number" placeholder="  Idade"><br/>
+                <button class = "localizar">Localizar</button>
+            </div>
         </form>
 
-        <p class="resultado">(Resultado)</p>
 </body>
+
 </html>

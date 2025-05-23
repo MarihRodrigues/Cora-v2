@@ -1,62 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de profissionais</title>
     <link rel="stylesheet" href="profissionais.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="../imagens/logo.png" alt="Logo Apoio Mulher">
-        </div>
-        <nav>
-            <a href="#" class="link-vermelho">Profissionais de Apoio</a>
+
+    <div class="cabecalho">
+        <img src="../imagens/logoCora.png" alt="Logo">
+        <div class="indice">
+            <a href="#l">Início</a>
+            <a href="#">Profissionais de Apoio</a>
             <a href="#">Informativos</a>
-            <a href="#" class="botao-denunciar">Denunciar</a>
-            <a href="#" class="entrar">
-                <img src="../imagens/entrar.png" alt="Ícone usuário">
-                Entrar
-            </a>
-        </nav>
-    </header>
-
-    <main class="container">
-        <div class="filtros">
-            <label><input type="radio" name="area" checked> Jurídico</label>
-            <label><input type="radio" name="area"> Psicológico</label>
+            <a href="#">Denuncie</a>
+            <button class="entrar-1">Entrar</button>
         </div>
+    </div>
 
-        <div class="profissional">
-            <div class="icon"><img src="Prof.jpg" alt="Usuário"></div>
-            <div class="info">
-                <h3 class="nome vermelho">Henrique Pedrosa</h3>
-                <p>Advogado especializado em Violência Doméstica</p>
-                <p>OAB/Estado 00.000</p>
-            </div>
-            <a href="#" class="saiba-mais">Saiba mais</a>
-        </div>
+    <form class="campoFormulario">
 
-        <div class="profissional destaque">
-            <div class="icon"><img src="Prof.jpg" alt="Usuário"></div>
-            <div class="info">
-                <h3 class="nome vermelho">Fernando Neiva</h3>
-                <p>Advogado especializado em Violência Doméstica</p>
-                <p>OAB/Estado 00.000</p>
-            </div>
-            <a href="#" class="saiba-mais">Saiba mais</a>
-        </div>
+        <div class="formulario-2">
+            <h1>Profissionais de Apoio</h1><br />
+            <div class="filtros">
+                <label><input type="radio" name="area"> Jurídico</label>
+                <label><input type="radio" name="area"> Psicológico</label>
+            </div><br />
 
-        <div class="profissional">
-            <div class="icon"><img src="Prof.jpg" alt="Usuário"></div>
-            <div class="info">
-                <h3 class="nome vermelho">Gustavo Assay</h3>
-                <p>Advogado especializado em Violência Doméstica</p>
-                <p>OAB/Estado 00.000</p>
-            </div>
-            <a href="#" class="saiba-mais">Saiba mais</a>
+            <input class="campo" type="text" placeholder="  Estado"><br />
+            <input class="campo" type="text" placeholder="  Cidade"><br />
+            <input class="campo" type="text" placeholder="  Forma de atendimento"><br />
+            
         </div>
-    </main>
+    </form>
+
 </body>
+
 </html>

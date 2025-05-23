@@ -34,47 +34,38 @@ a {
     border-style: none;
 }
 
-.formulario {
-    height: 600px;
+.campoFormulario {
+   margin-top: 100px;
+    height: 300px;
+    width: 700px;
     justify-content: center;
     align-items: center;
     display: flex;
+   
+    margin-left: 330px;
 }
 
 .formulario-2 {
-    background-color: #BA91BA;
-    height: 450px;
+  
+    height: 400px;
     justify-content: center;
-    width: 500px;
     align-items: center;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
 }
 
 .campo {
-    justify-content: center;
-    align-items: center;
-    border-color: #BA91BA;
-    display: flex;
+  
+    border-color: #c0c0c0;
     width: 400px;
     height: 30px;
     border-radius: 10px;
-    border-style: none;
 }
+
 
 h1 {
-    color: #ffffff;
-    width: 500px;
-    text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-size: 30px;
-}
-
-.localizar {
-    height: 40px;
-    width: 200px;
-    border-radius: 50px;
-    border: #BA91BA;
-    margin-top: 30px;
+    color: #8304A5
 }

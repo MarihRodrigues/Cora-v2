@@ -4,6 +4,205 @@
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< Updated upstream
+=======
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Cabeçalho */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #9933cc;
+  position: relative;
+}
+
+.botao-secundario {
+    align-items: center;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: #f3160e;
+    border-radius: 50px;
+    padding: 10px 20px;
+    height: 40px;
+}
+
+
+.logo img {
+  height: 240px;
+  cursor: pointer;
+}
+
+/* Navegação */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 82px;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #9933cc;
+  font-weight: bold;
+}
+
+.denunciar {
+  background-color: red;
+  color: white;
+  padding: 8px 19px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.login-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.login-btn img {
+  height: 50px;
+}
+
+/* Dropdown Menu */
+
+
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sair {
+  color: red;
+}
+
+.sair:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* Botão Sanduíche */
+
+.menu-toggle {
+  display: none;
+  right: -300px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #9933cc;
+}
+
+
+.container{
+  display: flex;    
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: auto;
+  width: 1200px;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 8px;
+}
+
+.titulo {
+  font-size: 28px;
+  color: #9933cc;
+  margin-bottom: 20px;
+}
+
+.titulo-missao {
+  font-size: 28px;
+  color: #9933cc;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+.imagem-section {
+  flex: 10px;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-mensagem {
+  max-width: 100%;
+  height: 540px;
+  padding-right: 59px;
+  padding-bottom: 70px;
+  padding-top: 45px;
+  border-radius: 10px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  height: 800px;
+  width: 250px;
+  position: fixed;
+  z-index: 1000;
+  top: 200px;
+  right: -900px;
+  background-color: #9933cc;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown quando aparece */
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+>>>>>>> Stashed changes
   
 body{
     font-family: Arial, sans-serif;
