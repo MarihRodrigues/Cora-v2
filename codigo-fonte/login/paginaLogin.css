@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     box-sizing: border-box;
     font-family: Arial ;
 }
@@ -38,12 +39,42 @@
 .logo {
     top: 20px;
     left: 20px;
+=======
 }
 
-.logo img {
-    width: 250px;
+.cabecalho {
+    height: 80px;
+    display: flex;
+    background-color: #8304A5;
+    align-self: flex-end;
 }
 
+.indice {
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    width:20500px;
+    justify-content: space-around;
+    padding-left: 500px;
+    padding-right: 50px;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+>>>>>>> branch_rafael
+}
+
+.entrar-1 {
+    width: 70px;
+    height: 40px;
+    color: #8304A5;
+    background-color: #ffffff;
+    border-style: none;
+}
+
+<<<<<<< HEAD
 .container {
     max-width: 400px;
     text-align: center;
@@ -56,38 +87,96 @@
 .h1 {
     color: #a855f7;
     margin-bottom: 40px;
+=======
+.entrar {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 500%;
+    flex-direction: row-reverse;
+    padding-right: 50px;
+
+}
+
+.icone {
+    height: 40px;
+}
+
+
+h1 {
+>>>>>>> branch_rafael
     font-size: 30px;
-    font-weight: bold;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-bottom: 30px;
+
 }
 
 form {
+    justify-items: center;
+    align-content: center;
+    background-color: #BA91BA;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+
+
+}
+
+.fomulario {
+    padding-top: 30px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.email {
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    border: #BA91BA;
+
+}
+
+.senha {
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    border: #BA91BA;
+}
+
+.login {
+    width: 350px;
+    height: 100px;
+    align-items: start;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+
+
 }
 
-label {
-    text-align: left;
-    font-size: 14px;
-    color: #444;
-    margin-left: 10px;
+.botao {
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    border: #BA91BA;
+
 }
 
-input {
-    padding: 15px;
-    border: none;
-    border-radius: 20px;
-    background-color: #dcdcdc;
+p1 {
+    text-align: center;
     font-size: 16px;
-    width: 100%;
-}
+    color: aliceblue;
+    padding-left: 35px;
 
-.links {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #444;
-}
 
+<<<<<<< HEAD
 .links a {
     text-decoration: none;
     color: #444;
@@ -122,3 +211,6 @@ input {
     padding: 5px 20px;
     height: 40px;
   }
+=======
+}
+>>>>>>> branch_rafael

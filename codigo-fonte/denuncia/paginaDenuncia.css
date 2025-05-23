@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
   list-style: none;
   margin: 0;
   padding: 0;
@@ -19,9 +20,65 @@
 
 body {
     background-color: white;
+=======
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    height: 80px;
+    display: flex;
+    background-color: #8304A5;
+    align-self: flex-end;
+}
+
+.indice {
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    width: 20500px;
+    justify-content: space-around;
+    padding-left: 500px;
+    padding-right: 50px;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.entrar-1 {
+    width: 70px;
+    height: 40px;
+    color: #8304A5;
+    background-color: #ffffff;
+    border-style: none;
+}
+
+.formulario {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.formulario-2 {
+    background-color: #BA91BA;
+    height: 450px;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+>>>>>>> branch_rafael
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+}
+
+.campo {
+    justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
@@ -61,12 +118,23 @@ body {
     display: flex;
     flex-direction: column;
 
+=======
+    border-color: #BA91BA;
+    display: flex;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+>>>>>>> branch_rafael
 }
 
 h1 {
-    color: #a855f7;
-    margin-bottom: 40px;
+    color: #ffffff;
+    width: 500px;
+    text-align: center;
+    padding-bottom: 50px;
     font-size: 30px;
+<<<<<<< HEAD
     font-weight: bold;
     line-height: 1.4;
     display: flex;
@@ -112,3 +180,14 @@ input {
     height: 50px;
   }
   
+=======
+}
+
+.localizar {
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    border: #BA91BA;
+    margin-top: 30px;
+}
+>>>>>>> branch_rafael

@@ -1,18 +1,24 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif
+=======
+>>>>>>> branch_rafael
 }
 
-body {
-    background-color: white;
-}
-
-header {
+.cabecalho {
+    height: 80px;
     display: flex;
-    justify-content: space-between;
+    background-color: #8304A5;
+    align-self: flex-end;
+}
+
+.indice {
+    justify-content: end;
     align-items: center;
+<<<<<<< HEAD
     padding: 20px 40px;
     border-bottom: 3px solid #9E43E7;
 }
@@ -22,53 +28,82 @@ header {
 }
 
 nav {
+=======
+>>>>>>> branch_rafael
     display: flex;
-    align-items: center;
-    gap: 25px;
+    width: 20500px;
+    justify-content: space-around;
+    padding-left: 500px;
+    padding-right: 50px;
+    font-size: 17px;
 }
 
-nav a {
+a {
     text-decoration: none;
+<<<<<<< HEAD
     color: black;
     font-size: 16px;
 }
 
 .link-vermelho {
     color: black;
+=======
+    color: #ffffff;
 }
 
-.botao-denunciar {
-    background-color: #dc2626;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
+.entrar-1 {
+    width: 70px;
+    height: 40px;
+    color: #8304A5;
+    background-color: #ffffff;
+    border-style: none;
+>>>>>>> branch_rafael
 }
 
-.entrar {
-    display: flex;
+.campoFormulario {
+   padding-top: 50px;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    color: black;
+    display: flex;
 }
 
-.entrar img {
-    width: 50px;
-    margin-right: 5px;
+.formulario-2 {
+   
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+<<<<<<< HEAD
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding-bottom: 40px;
+=======
+.campo {
+  
+    border-color: #c0c0c0;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+>>>>>>> branch_rafael
 }
 
 .filtros {
-    display: flex;
-    gap: 20px;
-    margin: 20px 0;
-    font-size: 14px;
+
+width: 200px;
+justify-content: center;
+display: flex;
+justify-content: space-between;
+font-size: 17px;
 }
 
+<<<<<<< HEAD
 .profissional {
     display: flex;
     align-items: flex-start;
@@ -115,3 +150,10 @@ nav a {
     align-items: center;
     height: 50px;
   }
+=======
+h1 {
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: #8304A5
+}
+>>>>>>> branch_rafael
