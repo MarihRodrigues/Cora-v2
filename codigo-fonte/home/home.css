@@ -1,18 +1,10 @@
+/****************** Estilos gerais ******************/
 
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-<<<<<<< Updated upstream
-=======
 
 body {
   font-family: Arial, sans-serif;
@@ -20,487 +12,288 @@ body {
   color: #333;
 }
 
-/* Cabeçalho */
+/****************** Cabeçalho ******************/
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  color: #9933cc;
-  position: relative;
+  background-color: #8304A5;
+  padding: 20px 40px;
+  min-height: 100px;
+  color: #ffffff;
 }
 
-.botao-secundario {
-    align-items: center;
-    font-size: 18px;
-    color: whitesmoke;
-    background-color: #f3160e;
-    border-radius: 50px;
-    padding: 10px 20px;
-    height: 40px;
+.navbar { 
+  display: flex;
 }
 
-
-.logo img {
-  height: 240px;
-  cursor: pointer;
-}
-
-/* Navegação */
-
-.navbar {
+.cabecalho {
   display: flex;
   align-items: center;
-  gap: 82px;
+  gap: 60px;
 }
 
-.btn-link {
-  text-decoration: none;
-  color: #9933cc;
-  font-weight: bold;
+.cabecalho img {
+  width: 110px;
+  height: auto;
 }
 
-.denunciar {
-  background-color: red;
-  color: white;
-  padding: 8px 19px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  
-}
-
-.login-btn {
-  position: relative;
-  cursor: pointer;
-}
-
-.login-btn img {
-  height: 50px;
-}
-
-/* Dropdown Menu */
-
-
-
-.dropdown-item {
-  display: flex;
+.indice {
+  display: flex; 
   align-items: center;
-  gap: 12px;
-  padding: 12px 20px;
-  color: black;
+  gap: 70px;
+  padding-left: 80px;
+}
+
+.indice a {
   text-decoration: none;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 16px;
 }
 
-.dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.indice a:hover {
+    opacity: 0.8;
 }
 
-.sair {
-  color: red;
-}
-
-.sair:hover {
-  background-color: rgba(255, 0, 0, 0.3);
-}
-
-/* Botão Sanduíche */
-
-.menu-toggle {
-  display: none;
-  right: -300px;
-  font-size: 30px;
+.menu-sanduiche { 
+  position: relative;
+  font-size: 33px; 
+  color: #ffffff;
   cursor: pointer;
-  color: #9933cc;
-}
-
-
-.container{
-  display: flex;    
-  justify-content: space-between;
-  padding: 40px;
-  gap: 40px;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  margin: auto;
-  width: 1200px;
-}
-
-.text-section {
-  flex: 1;
-  min-width: 300px;
-  padding: 8px;
-}
-
-.titulo {
-  font-size: 28px;
-  color: #9933cc;
-  margin-bottom: 20px;
-}
-
-.titulo-missao {
-  font-size: 28px;
-  color: #9933cc;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
-.descricao {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 50px;
-  line-height: 1.8;
-}
-
-.imagem-section {
-  flex: 10px;
-  min-width: 280px;
+  user-select: none;
+  width: 40px; 
+  height: 40px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.imagem-mensagem {
-  max-width: 100%;
-  height: 540px;
-  padding-right: 59px;
-  padding-bottom: 70px;
-  padding-top: 45px;
-  border-radius: 10px;
+.menu-sanduiche span { 
+    transition: transform 0.3s ease;
+    line-height: 0.9; 
 }
 
-/* Sidebar */
-
-.sidebar {
-  height: 800px;
-  width: 250px;
-  position: fixed;
-  z-index: 1000;
-  top: 200px;
-  right: -900px;
-  background-color: #9933cc;
-  overflow-x: hidden;
-  transition: 0.3s;
+.menu-sanduiche.ativo span {
+    transform: rotate(90deg);
 }
 
-.sidebar a {
-  padding: 15px 25px;
-  text-decoration: none;
-  color: white;
-  display: block;
-  transition: 0.2s;
-}
-
-.sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Dropdown quando aparece */
-
-.dropdown-menu.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Responsividade */
-
-@media (max-width: 768px) {
->>>>>>> Stashed changes
-  
-body{
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    line-height: 1.5;
-    overflow: hidden;
->>>>>>> branch_rafael
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
-}
-
-/* Cabeçalho */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  color: #9933cc;
-  position: relative;
-}
-
-.logo img {
-  height: 240px;
-  cursor: pointer;
-}
-
-/* Navegação */
-
-.navbar {
-  display: flex;
-  align-items: center;
-  gap: 82px;
-}
-
-.btn-link {
-  text-decoration: none;
-  color: #9933cc;
-  font-weight: bold;
-}
-
-.denunciar {
-  background-color: red;
-  color: white;
-  padding: 8px 19px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.login-btn {
-  position: relative;
-  cursor: pointer;
-}
-
-.login-btn img {
-  height: 50px;
-}
-
-/* Dropdown Menu */
-
-.dropdown-menu {
+.menu-opcoes { 
   display: none;
   position: absolute;
-  right: 25px;
-  margin-top: 145px;
-  background-color: #9933cc56;
-  border-radius: 9px;
-  overflow: hidden;
+  top: 110%;
+  right: 0; 
+  background-color: #BA91BA;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex-direction: column;
+  min-width: 170px;
   z-index: 1000;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
 }
 
-.dropdown-item {
+.menu-opcoes.ativo {
   display: flex;
-  align-items: center;
-  gap: 12px;
+}
+
+.menu-opcoes a {
+  color: white;
   padding: 12px 20px;
-  color: black;
   text-decoration: none;
-  font-size: 14px;
+  display: block;
+  font-size: 15px;
 }
 
-.dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.menu-opcoes a:hover {
+  background-color: #8304A5;
 }
 
-.sair {
-  color: red;
-}
+/****************** Conteúdo ******************/
 
-.sair:hover {
-  background-color: rgba(255, 0, 0, 0.3);
-}
-
-/* Botão Sanduíche */
-
-.menu-toggle {
-  display: none;
-  right: -300px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #9933cc;
-}
-
-
-.container{
-  display: flex;    
+.container {
+  display: flex;
   justify-content: space-between;
-  padding: 40px;
-  gap: 40px;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  margin: auto;
-  width: 1200px;
+  padding: 60px 40px;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 40px auto;
+  align-items: flex-start;
 }
 
 .text-section {
   flex: 1;
   min-width: 300px;
-  padding: 8px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .titulo {
-  font-size: 28px;
-  color: #9933cc;
-  margin-bottom: 20px;
+  font-size: 36px;
+  color: #8304A5;
+  margin-bottom: 25px;
 }
 
 .titulo-missao {
-  font-size: 28px;
-  color: #9933cc;
+  font-size: 32px;
+  color: #8304A5;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .descricao {
   font-size: 18px;
-  color: #333;
-  margin-bottom: 50px;
-  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.7;
 }
 
 .imagem-section {
-  flex: 10px;
-  min-width: 280px;
-  display: flex;
-  align-items: center;
+  flex: 0.9;
+  min-width: 350px;
+  min-height: 350px;
+  display: flex; 
+  align-items: flex-start;
   justify-content: center;
 }
 
 .imagem-mensagem {
+  padding-top: 50px;
   max-width: 100%;
-  height: 540px;
-  padding-right: 59px;
-  padding-bottom: 70px;
-  padding-top: 45px;
+  width: 490px; 
+  height: 550px; 
+  display: block;
   border-radius: 10px;
+  object-fit: unset; 
 }
 
-/* Sidebar */
-
-.sidebar {
-  height: 800px;
-  width: 250px;
-  position: fixed;
-  z-index: 1000;
-  top: 200px;
-  right: -900px;
-  background-color: #9933cc;
-  overflow-x: hidden;
-  transition: 0.3s;
-}
-
-.sidebar a {
-  padding: 15px 25px;
-  text-decoration: none;
-  color: white;
-  display: block;
-  transition: 0.2s;
-}
-
-.sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Dropdown quando aparece */
-
-.dropdown-menu.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Responsividade */
-
-@media (max-width: 768px) {
-  
-  .logo img{
-    width: 190px;
-    height: 180px;
-  }
-
-  header{
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
-  }
-    
-  nav{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    font-size: 14px;
-    align-self: flex-end;
-  }
-    
-  .denunciar{
-    width: 100%;
-    text-align: center;
-  }
-    
-  .container {
-    flex-direction: column;
-    padding: 1px;
-    max-width: 1200px;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
-  .titulo {
-    font-size: 24px;
-  }
-    
-  .titulo-missao {
-    font-size: 24px;
-  }
-    
-  .descricao {
-    font-size: 15px;
-    margin-bottom: 3px;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    content: icon;
-    padding: 10px 480px;
-  }
-
-  .sidebar{
-    height: 600px;
-    top: 280px;
-  }
-
-  .sidebar a {
-    font-size: 16px;
-  }
-
-  .imagem-mensagem{
-    display: none;
-  }
-
-  .imagem-section{
-    display: none;
-    overflow-y: hidden;
-  }
-
-  .rodape{
-    overflow-y: hidden;
-  }
-
-}
+/****************** Rodapé ******************/
 
 .rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 60px;
-    align-items: center;
-    height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  background-color: #f2f2f2;
+  margin-top: 60px;
 }
-  
+
+/****************** Responsividade ******************/
+
+@media (max-width: 1024px) {
+
+  .cabecalho {
+    gap: 70px; 
+  }
+  .cabecalho img {
+    width: 110px; 
+  }
+
+  .indice {
+    gap: 70px; 
+    padding-left: 90px; 
+  }
+
+  header {
+      padding: 15px 30px;
+  }
+
+  /*********************************/
+
+ .container {
+    padding: 40px 30px;
+    gap: 40px;
+  }
+  .titulo {
+    font-size: 32px;
+  }
+  .titulo-missao {
+      font-size: 28px;
+  }
+  .descricao {
+      font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+      padding: 15px 20px;
+      min-height: 80px;
+  }
+
+  .cabecalho img {
+      width: 80px;
+  }
+
+  .indice {
+      display: none;
+  }
+
+  .cabecalho {
+      gap: 0;
+  }
+
+  /*********************************/
+
+  .container {
+    flex-direction: column;
+    padding: 30px 20px;
+    margin-top: 20px;
+    gap: 30px;
+  }
+
+  .imagem-section {
+      display: none;
+  }
+
+  .text-section {
+      padding-right: 0;
+  }
+
+  .titulo,
+  .titulo-missao {
+      font-size: 28px;
+  }
+
+  .descricao {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  header {
+      padding: 10px 15px;
+      min-height: 70px;
+  }
+  .cabecalho img {
+      width: 70px; /* Logo ainda menor */
+  }
+  .menu-opcoes {
+      min-width: 150px;
+  }
+
+  /*********************************/
+
+  .container {
+      padding: 20px 15px;
+  }
+  .titulo {
+      font-size: 24px;
+  }
+  .titulo-missao {
+      font-size: 22px;
+  }
+  .descricao {
+      font-size: 15px;
+  }
+
+  /*********************************/
+
+  .rodape p {
+    font-size: 12px;
+  }
+}
