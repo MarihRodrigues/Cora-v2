@@ -1,147 +1,111 @@
+/****************** Estilos gerais ******************/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
-body{
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    line-height: 1.5;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
 }
+
+/****************** Cabeçalho ******************/
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  color: #9933cc;
-  position: relative;
+  background-color: #8304A5;
+  padding: 20px 40px;
+  min-height: 100px;
+  color: #ffffff;
 }
 
-.logo img {
-  height: 240px;
-  cursor: pointer;
+.navbar { 
+  display: flex;
 }
 
-.logo a {
-    display: inline-block;
-}
-   
-/* Navegação */
-
-.navbar {
+.cabecalho {
   display: flex;
   align-items: center;
-  gap: 82px;
+  gap: 60px;
 }
 
-.btn-link {
+.cabecalho img {
+  width: 110px;
+  height: auto;
+}
+
+.indice {
+  display: flex; 
+  align-items: center;
+  gap: 70px;
+  padding-left: 80px;
+}
+
+.indice a {
   text-decoration: none;
-  color: #9933cc;
-  font-weight: bold;
+  color: #ffffff;
+  font-size: 16px;
 }
 
-.denunciar {
-  background-color: red;
-  color: white;
-  padding: 8px 19px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
+.indice a:hover {
+    opacity: 0.8;
 }
 
-.login-btn {
+.menu-sanduiche { 
   position: relative;
+  font-size: 33px; 
+  color: #ffffff;
   cursor: pointer;
+  user-select: none;
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.login-btn img {
-  height: 50px;
+.menu-sanduiche span { 
+    transition: transform 0.3s ease;
+    line-height: 0.9; 
 }
 
-/* Dropdown Menu */
+.menu-sanduiche.ativo span {
+    transform: rotate(90deg);
+}
 
-.dropdown-menu {
+.menu-opcoes { 
   display: none;
   position: absolute;
-  right: 25px;
-  margin-top: 145px;
-  background-color: #9933cc56;
-  border-radius: 9px;
+  top: 110%;
+  right: 0; 
+  background-color: #BA91BA;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex-direction: column;
+  min-width: 170px;
+  z-index: 1000;
   overflow: hidden;
-  z-index: 1000;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.dropdown-item {
+.menu-opcoes.ativo {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 20px;
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
 }
 
-.dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.sair {
-  color: red;
-}
-
-.sair:hover {
-  background-color: rgba(255, 0, 0, 0.3);
-}
-
-/* Botão Sanduíche */
-
-.menu-toggle {
-  display: none;
-  right: -300px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #9933cc;
-}
-
-/* Sidebar */
-
-.sidebar {
-  height: 800px;
-  width: 250px;
-  position: fixed;
-  z-index: 1000;
-  top: 200px;
-  right: -900px;
-  background-color: #9933cc;
-  overflow-x: hidden;
-  transition: 0.3s;
-}
-
-.sidebar a {
-  padding: 15px 25px;
-  text-decoration: none;
+.menu-opcoes a {
   color: white;
+  padding: 12px 20px;
+  text-decoration: none;
   display: block;
-  transition: 0.2s;
+  font-size: 15px;
 }
 
-.sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Dropdown quando aparece */
-
-.dropdown-menu.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
+.menu-opcoes a:hover {
+  background-color: #8304A5;
 }
   
 .card{
@@ -162,7 +126,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px auto;
-    margin-top: 20px;
+    margin-top: 60px;
     max-width: 1000px;
     padding: 0 5px;
     align-items: stretch;
@@ -197,31 +161,42 @@ header {
   
 /* Responsividade */
 
+@media (max-width: 1024px) {
+
+  .cabecalho {
+    gap: 70px; 
+  }
+  .cabecalho img {
+    width: 110px; 
+  }
+
+  .indice {
+    gap: 70px; 
+    padding-left: 90px; 
+  }
+
+  header {
+      padding: 15px 30px;
+  }
+}
+
 @media (max-width: 768px){
 
-  .logo img{
-    width: 190px;
-    height: 180px;
-    margin-bottom: -55px;
+   header {
+      padding: 15px 20px;
+      min-height: 80px;
   }
 
-  header{
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
+  .cabecalho img {
+      width: 80px;
   }
-    
-  nav{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    font-size: 14px;
-    align-self: flex-end;
+
+  .indice {
+      display: none;
   }
-    
-  .denunciar{
-    width: 100%;
-    text-align: center;
+
+  .cabecalho {
+      gap: 0;
   }
 
   .cards-section {
@@ -231,38 +206,34 @@ header {
   .coluna {
     flex: 1 1 100%;
   }
-  
-  .navbar {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    content: icon;
-    padding: 10px 420px;
-  }
-
-  .sidebar{
-    height: 600px;
-    top: 210px;
-  }
-
-  .sidebar a {
-    font-size: 16px;
-  }
-
    .rodape{
     overflow-y: hidden;
   }
   
 }
-  .rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 60px;
-    align-items: center;
-    height: 50px;
+
+@media (max-width: 480px) {
+
+  header {
+      padding: 10px 15px;
+      min-height: 70px;
   }
-  
+  .cabecalho img {
+      width: 70px; /* Logo ainda menor */
+  }
+  .menu-opcoes {
+      min-width: 150px;
+  }
+}
+
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  background-color: #f2f2f2;
+  margin-top: 60px;
+}
   

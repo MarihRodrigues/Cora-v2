@@ -4,47 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apoio Mulher</title>
+  <title>Informativos</title>
   <link rel="stylesheet" href="informativos.css" />
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <a href="home.html">
-        <img src="imagens/logo.png" alt="Apoio Mulher Logo">
-      </a>
-    </div>
+  <header class="meu-header"> 
+  <div class="cabecalho">
+    <img src="imagens/logoCora.png" alt="Logo">
+      <nav class="indice"> 
+        <a href="#">Início</a>
+        <a href="#">Profissionais de Apoio</a>
+        <a href="#">Informativos</a>
+        <a href="#">Denuncie</a>
+      </nav>
+  </div>
 
-    <!-- Botão Sanduíche -->
-    <div class="menu-toggle" onclick="toggleSidebar()">
-      &#9776;
-    </div>
-
-    <nav class="navbar">
-      <a href="profissionais.html" class="btn-link">Profissionais de Apoio</a>
-      <a href="informativos.html" class="btn-link">Informativos</a>
-      <button class="denunciar">Denunciar</button>
-
-      <!-- Botão de Login -->
-        <div class="login-btn" onclick="toggleMenu()">
-          <img src="imagens/entrar.png" alt="Login">
-        </div>
-
-      <!-- Menu Dropdown -->
-        <div class="dropdown-menu" id="dropdownMenu">
-          <a href="#" class="dropdown-item">🔐 Login</a>
-          <a href="#" class="dropdown-item sair">⏻ Sair</a>
-        </div>
-    </nav>
-
-    <!-- Menu lateral -->
-      <div class="sidebar" id="sidebar">
-        <a href="profissionais.html">Profissionais de Apoio</a>
-        <a href="informativos.html">Informativos</a>
-        <a href="denuncia.html">Denunciar</a>
-        <a href="login.html">Login</a>
+  <div class="container-menu"> 
+    <div class="menu-sanduiche">
+      <span>&#9776;</span>
+      <div class="menu-opcoes">
+        <a href="#">Editar cadastro</a>
+        <a href="#">Excluir conta</a>
+        <a href="#">Entrar</a>
+        <a href="#">Sair</a>
       </div>
+    </div>
 </header>
 
   <main>
