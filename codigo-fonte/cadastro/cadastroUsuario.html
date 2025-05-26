@@ -22,28 +22,23 @@
                 <a href="../informativos/informativos.html">Informativos</a>
                 <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
 
-                <!-- Botão de Login/Logout -->
-                <div class="entrar-1">
-                    <a href="../login/paginaLogin.html" class="login-btn">Entrar</a>
-                </div>
+
 
             </nav>
 
+            <div class="menu-toggle" onclick="toggleSidebar()">
+                <span>&#9776;</span>
+            </div>
 
-        </div>
-
-        <div class="menu-toggle" onclick="toggleSidebar()">
-            &#9776;
         </div>
 
         <nav class="sidebar" id="sidebar">
-            <ul>
-                <li><a href="../profissionais/profissionais.html">Profissionais de Apoio</a></li>
-                <li><a href="../informativos/informativos.html">Informativos</a></li>
-                <li><a href="../denuncia/paginaDenuncia.html">Denunciar</a></li>
-                <li><a href="../login/paginaLogin.html">Login</a></li>
-            </ul>
+            <a href="#">Editar cadastro</a>
+            <a href="#" onclick="excluirConta()">Excluir conta</a>
+            <a href="../login/paginaLogin.html">Entrar</a>
+            <a href="#">Sair</a>
         </nav>
+
 
 
         <div class="cadastrar">
@@ -60,7 +55,7 @@
                         </div>
                         <div class="caixa">
                             <label>CPF *</label><br />
-                            <input type="Cpf" minlength="11" maxlength="11" name="cpf" id="cpf" required
+                            <input type="text" minlength="11" maxlength="11" name="cpf" id="cpf" required
                                 placeholder="Digite seu CPF"><br />
                         </div>
                         <div class="caixa">
@@ -70,7 +65,7 @@
                         </div>
                         <div class="caixa">
                             <label>Telefone *</label><br />
-                            <input type="tel" minlength="11" name="telefone" id="telefone" required
+                            <input type="number" minlength="11" name="telefone" id="telefone" required
                                 placeholder="(99)99999-9999"><br />
                         </div>
                     </div>
@@ -91,7 +86,7 @@
                         </div>
                         <div class="caixa">
                             <label>cep *</label><br />
-                            <input type="cep" minlength="8" maxlength="8" name="cep" id="cep" required
+                            <input type="text" minlength="8" maxlength="8" name="cep" id="cep" required
                                 placeholder="Digite seu CEP"><br />
                         </div>
                     </div>
@@ -103,7 +98,7 @@
                         </div>
                         <div class="caixa">
                             <label>Cidade *</label><br />
-                            <input type="text" name="Cidade" id="cidade" required placeholder="Cidade"><br />
+                            <input type="text" name="cidade" id="cidade" required placeholder="Cidade"><br />
                         </div>
                         <div class="caixa">
                             <label>Email *</label><br />
@@ -111,7 +106,7 @@
                         </div>
                         <div class="caixa">
                             <label>Perfil *</label><br />
-                            <select name="Perfil" id="perfil" required>
+                            <select name="perfil" id="perfil" required>
                                 <option value="usuario">Usuário</option>
                                 <option value="profissional">Profissional</option>
                             </select><br />
@@ -144,6 +139,8 @@
     </div>
 
     <script src="cadastro.js"></script>
+
+
 </body>
 
 </html>

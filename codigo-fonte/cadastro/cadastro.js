@@ -119,15 +119,15 @@ function salvarUsuario(usuario) {
 }
 
 // Sidebar e dropdown
-function toggleSidebar() {
+function toggleSidebar() { 
     const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("active");
+    sidebar.classList.toggle("ativo");
 }
 
-function toggleDropdown() {
-    const dropdown = document.getElementById("dropdownMenu");
-    dropdown.classList.toggle("show");
-}
+// function toggleDropdown() {   nao se sabe se e usado
+    // const dropdown = document.getElementById("dropdownMenu"); no se sabe se e usado
+    // dropdown.classList.toggle("show"); nao se sabe se e usado
+// } nao se sabe se e usado
 
 window.onclick = function (event) {
     if (!event.target.matches('.login-btn img')) {
@@ -145,4 +145,80 @@ window.onclick = function (event) {
 function logout() {
     alert("Você saiu com sucesso!");
     window.location.href = "../index.html";
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  const menuToggleDiv = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  const iconeSpan = document.querySelector('.menu-toggle span');
+
+  if (menuToggleDiv && sidebar && iconeSpan) {
+
+    menuToggleDiv.addEventListener('click', function(event) {
+      event.stopPropagation();
+      sidebar.classList.toggle('ativo');
+      menuToggleDiv.classList.toggle('ativo');
+
+      if (sidebar.classList.contains('ativo')) {
+        iconeSpan.innerHTML = '&times;';
+        iconeSpan.style.fontSize = '40px'; // <<< MUDANÇA: Aumentei o 'X'
+        iconeSpan.style.lineHeight = '0.8'; // Ajusta alinhamento do X
+      } else {
+        iconeSpan.innerHTML = '&#9776;';
+        iconeSpan.style.fontSize = '30px';
+        iconeSpan.style.lineHeight = '1';
+      }
+    });
+
+      sidebar.addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+
+
+    document.addEventListener('click', function() {
+        if (sidebar.classList.contains('ativo')) {
+            sidebar.classList.remove('ativo');
+            menuToggleDiv.classList.remove('ativo');
+            iconeSpan.innerHTML = '&#9776;';
+            iconeSpan.style.fontSize = '30px'; 
+            iconeSpan.style.lineHeight = '1';
+        }
+    });
+
+  } else {
+      console.error("Erro: Elementos .menu-toggle, .sidebar ou span não encontrados.");
+  }
+});
+
+
+
+function excluirConta() {
+  const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
+
+  if (!emailUsuarioLogado) {
+    alert("Nenhum usuário logado.");
+    return;
+  }
+
+  // Confirmação
+  const confirmacao = confirm("Tem certeza que deseja excluir sua conta? Essa ação não poderá ser desfeita.");
+  if (!confirmacao) return;
+
+  let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+  // Remove o usuário da lista
+  usuarios = usuarios.filter(usuario => usuario.email !== emailUsuarioLogado);
+
+  // Atualiza o localStorage
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+  // Remove a sessão do usuário
+  localStorage.removeItem("usuarioLogado");
+
+  alert("Conta excluída com sucesso!");
+
+  // Redireciona para a página inicial
+  window.location.href = "../index.html";
 }
