@@ -25,6 +25,7 @@
   width: 100%;
   position: relative;
   z-index: 10;
+  justify-content: space-between;
 
 }
 
@@ -206,8 +207,8 @@ select {
 /* Sidebar */
 .sidebar {
   display: none;
-  position: absolute;
-  top: 110%;
+  position: fixed;
+  top: 80px;
   right: 0; 
   background-color: #BA91BA;
   border-radius: 8px;
@@ -256,7 +257,7 @@ select {
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
    .cabecalho {
       padding: 15px 20px;
@@ -274,7 +275,7 @@ select {
   .cabecalho {
       gap: 0;
   }
-
+}
 @media (max-width: 480px) {
 
   .cabecalho {

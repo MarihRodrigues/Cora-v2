@@ -111,23 +111,14 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
     }
 });
 
+
+
 // Salva um novo usuário no localStorage
 function salvarUsuario(usuario) {
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     usuarios.push(usuario);
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 }
-
-// Sidebar e dropdown
-function toggleSidebar() { 
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("ativo");
-}
-
-// function toggleDropdown() {   nao se sabe se e usado
-    // const dropdown = document.getElementById("dropdownMenu"); no se sabe se e usado
-    // dropdown.classList.toggle("show"); nao se sabe se e usado
-// } nao se sabe se e usado
 
 window.onclick = function (event) {
     if (!event.target.matches('.login-btn img')) {
@@ -222,3 +213,21 @@ function excluirConta() {
   // Redireciona para a página inicial
   window.location.href = "../index.html";
 }
+
+
+// perfil de usuario
+document.getElementById("form-usuario").addEventListener("submit", function (event) {
+    event.preventDefault(); // Impede envio do formulário
+
+    const perfil = document.getElementById("perfil").value;
+
+    // Aqui você pode validar o restante dos campos, se desejar
+
+    if (perfil === "profissional") {
+        window.location.href = "../registroDeProfissionais/registroDeProfissionais.html"; // caminho da nova página
+    } else {
+        window.location.href = "../login/paginaLogin.html"; // ou va para a página de login
+    }
+});
+
+
