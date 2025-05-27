@@ -207,15 +207,15 @@ select {
 .sidebar {
   display: none;
   position: absolute;
-  top: 80px;
-  right: auto; 
+  top: 110%;
+  right: 0; 
   background-color: #BA91BA;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   flex-direction: column;
   min-width: 170px;
+  z-index: 1000;
   overflow: hidden;
-  left: 0;
 }
 
 .sidebar.ativo {
@@ -235,12 +235,56 @@ select {
 }
 
 
+@media (max-width: 1024px) {
+
+    .cabecalho {
+    gap: 70px; 
+  }
+
+  .cabecalho img {
+      width: 110px; /* Logo ainda menor */
+  }
+  .menu-toggler {
+      min-width: 150px;
+  }
+
+    .menu {
+    gap: 70px; 
+    padding-left: 90px; 
+  }
+
+}
+
+
+@media (max-width: 768px){
+
+   .cabecalho {
+      padding: 15px 20px;
+      min-height: 80px;
+  }
+
+  .cabecalho img {
+      width: 80px;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .cabecalho {
+      gap: 0;
+  }
+
 @media (max-width: 480px) {
 
+  .cabecalho {
+      padding: 10px 15px;
+      min-height: 70px;
+  }
   .cabecalho img {
       width: 70px; /* Logo ainda menor */
   }
-  .menu-toggler {
+  .sidebar {
       min-width: 150px;
   }
 }
