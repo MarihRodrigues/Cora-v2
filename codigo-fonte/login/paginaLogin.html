@@ -1,98 +1,77 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-=======
 <html lang="pt-br">
->>>>>>> branch_rafael
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-<<<<<<< HEAD
-
-=======
     <link rel="stylesheet" href="paginaLogin.css">
->>>>>>> branch_rafael
 </head>
-
+ 
 <body>
-
-<<<<<<< HEAD
-
-    <div class="cabecalho">
-        <div class="logo" href="../paginaHome/index.html">
-            <img src="../imagens/logo.png" alt="Logo" class="logo-img">
-        </div>
-        <nav class="menu">
-
-            <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
-            <a href="../informativos/informativos.html">Informativos</a>
-            <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
-            <a href="../login/paginaLogin.html">
-                <img src="../imagens/entrar.png" alt="entrar">
-
-            </a>
-
-        </nav>
-    </div>
-
-    <div class="body">
-
-        <div class="container">
-
-            <h1>ACESSE SUA CONTA</h1>
-
-            <form>
-                <label for="login">Login</label>
-                <input type="text" id="login" placeholder="Digite seu login">
-
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Digite sua senha">
-
-                <div class="links">
-                    <a href="#">Esqueci minha senha</a><br>
-                    <a href="#">Criar conta</a>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <footer class="rodape">
-        <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
-    </footer>
-=======
+ 
     <div class="cabecalho">
         <img src="../imagens/logoCora.png" alt="Logo">
         <div class="indice">
-            <a href="#l">Início</a>
-            <a href="#">Profissionais de Apoio</a>
-            <a href="#">Informativos</a>
-            <a href="#">Denuncie</a>
-            <button class="entrar-1">Entrar</button>
+            <a href="../home/home.html">Início</a>
+            <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+            <a href="../informativos/informativos.html">Informativos</a>
+            <a href="../denuncia/paginaDenuncia.html">Denuncie</a>
+ 
+            <div class="menu-sanduiche">
+                &#9776;
+                <div class="menu-opcoes">
+                    <a href="#">Editar cadastro</a>
+                    <a href="#">Excluir conta</a>
+                    <a href="../login/paginaLogin.html">Entrar</a>
+                    <a href="#">Sair</a>
+                </div>
+ 
+            </div>
         </div>
+ 
     </div>
-
+ 
     <div class="fomulario">
-        <form>
+        <form id="login">
             <div class="titulo">
                 <h1>Acesse sua conta</h1>
                 <br />
             </div>
-
-            <div class="login">
-                <input placeholder="  Digite seu e-mail" type="email" class="email"><br />
-                <input placeholder="  Digite sua senha" type="password" class="senha">
+ 
+            <div id="logar">
+                <input placeholder="  Digite seu e-mail" type="email" id="email"><br />
+                <input placeholder="  Digite sua senha" type="password" id="senha">
             </div>
-
+ 
             <p1> Esqueci minha senha </p1><br /><br /><br />
-            <button class="botao">Entrar</button>
-
-
-
+            <button type="submit" class="botao">Entrar</button>
+ 
         </form>
->>>>>>> branch_rafael
-
+ 
+        <script src="paginaLogin.js"></script>
+ 
+        <script>
+            const menu = document.querySelector('.menu-sanduiche');
+            const opcoes = document.querySelector('.menu-opcoes');
+ 
+            // Abre e fecha ao clicar no ícone
+            menu.addEventListener('click', function (event) {
+                event.stopPropagation(); // impede que o clique propague e feche imediatamente
+                opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
+            });
+ 
+            // Fecha se clicar fora do menu
+            document.addEventListener('click', function (event) {
+                const clicouFora = !menu.contains(event.target);
+                if (clicouFora) {
+                    opcoes.style.display = 'none';
+                }
+            });
+        </script>
+ 
+        <script src="paginaLogin.js"></script>
+ 
 </body>
-
+ 
 </html>

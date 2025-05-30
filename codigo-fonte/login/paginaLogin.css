@@ -1,71 +1,40 @@
 * {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    box-sizing: border-box;
-    font-family: Arial ;
 }
-
+ 
 .cabecalho {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border-bottom: 3px solid #9E43E7;
-    background-color: white;
     flex-direction: row;
-    width: 100%;
-    margin-bottom: 40px;
-    height: 8%;
-    
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-.body {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 8%;
-}
-
-.logo {
-    top: 20px;
-    left: 20px;
-=======
-}
-
-.cabecalho {
-    height: 80px;
-    display: flex;
-    background-color: #8304A5;
     align-self: flex-end;
+    height: 80px;
+    background-color: #8304a5;
+    width: 100%;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+ 
 .indice {
+    display: flex;
+    flex-direction: row;
     justify-content: end;
     align-items: center;
-    display: flex;
-    width:20500px;
-    justify-content: space-around;
-    padding-left: 500px;
-    padding-right: 50px;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
     font-size: 17px;
+    padding-right: 50px;
+    padding-left: 20px;
+    flex: 1;
 }
-
+ 
 a {
-    text-decoration: none;
     color: #ffffff;
->>>>>>> branch_rafael
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
 }
-
+ 
 .entrar-1 {
     width: 70px;
     height: 40px;
@@ -73,21 +42,7 @@ a {
     background-color: #ffffff;
     border-style: none;
 }
-
-<<<<<<< HEAD
-.container {
-    max-width: 400px;
-    text-align: center;
-    border-radius: 15px;
-    padding: 40px 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    justify-content: center;
-}
-
-.h1 {
-    color: #a855f7;
-    margin-bottom: 40px;
-=======
+ 
 .entrar {
     display: flex;
     align-items: center;
@@ -95,27 +50,24 @@ a {
     width: 500%;
     flex-direction: row-reverse;
     padding-right: 50px;
-
 }
-
+ 
 .icone {
     height: 40px;
 }
-
-
+ 
+ 
 h1 {
->>>>>>> branch_rafael
     font-size: 30px;
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
-
+ 
     width: 100%;
     text-align: center;
     display: block;
     padding-bottom: 30px;
-
 }
-
+ 
 form {
     justify-items: center;
     align-content: center;
@@ -123,10 +75,8 @@ form {
     height: 400px;
     width: 400px;
     border-radius: 20px;
-
-
 }
-
+ 
 .fomulario {
     padding-top: 30px;
     height: 500px;
@@ -134,83 +84,82 @@ form {
     align-items: center;
     display: flex;
 }
-
-.email {
+ 
+#email {
     width: 350px;
     height: 30px;
     border-radius: 10px;
     border: #BA91BA;
-
+ 
 }
-
-.senha {
+ 
+#senha {
     width: 350px;
     height: 30px;
     border-radius: 10px;
     border: #BA91BA;
 }
-
-.login {
+ 
+#logar {
     width: 350px;
     height: 100px;
     align-items: start;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
+ 
+ 
 }
-
+ 
 .botao {
     height: 40px;
     width: 200px;
     border-radius: 50px;
     border: #BA91BA;
-
+ 
 }
-
+ 
 p1 {
     text-align: center;
     font-size: 16px;
     color: aliceblue;
     padding-left: 35px;
-
-
-<<<<<<< HEAD
-.links a {
-    text-decoration: none;
-    color: #444;
 }
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-.rodape {
+ 
+.menu-sanduiche {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+ 
+    align-items: center;
+    user-select: none;
+ 
+    height: 80px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 60px;
-    align-items: center;
-    height: 50px;
-  }
-  
-  a {
-    color: #0f0f0f;
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .botao-secundario {
-    align-items: center;
-    font-size: 17px;
-    color: whitesmoke;
-    background-color: #f3160e;
-    border-radius: 10px;
-    padding: 5px 20px;
-    height: 40px;
-  }
-=======
 }
->>>>>>> branch_rafael
+ 
+.menu-opcoes {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #BA91BA;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 100;
+}
+ 
+.menu-opcoes a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+ 
+.menu-opcoes a:hover {
+    background-color: #8304A5;
+}
