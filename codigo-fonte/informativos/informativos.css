@@ -1,10 +1,13 @@
-/****************** Estilos gerais ******************/
+/****** Estilos gerais ******/
 
 
 
 * {
+
   margin: 0;
+
   padding: 0;
+
   box-sizing: border-box;
 
 }
@@ -12,25 +15,35 @@
 
 
 body {
+
   font-family: Arial, sans-serif;
+
   background-color: #fff;
+
   color: #333;
 
 }
 
 
 
-/****************** Cabeçalho ******************/
+/****** Cabeçalho ******/
 
 
 
 header {
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   background-color: #8304A5;
+
   padding: 20px 40px;
+
   min-height: 100px;
+
   color: #ffffff;
 
 }
@@ -38,6 +51,7 @@ header {
 
 
 .navbar {
+
   display: flex;
 
 }
@@ -45,8 +59,11 @@ header {
 
 
 .cabecalho {
+
   display: flex;
+
   align-items: center;
+
   gap: 60px;
 
 }
@@ -54,7 +71,9 @@ header {
 
 
 .cabecalho img {
+
   width: 110px;
+
   height: auto;
 
 }
@@ -62,9 +81,13 @@ header {
 
 
 .indice {
+
   display: flex;
+
   align-items: center;
+
   gap: 70px;
+
   padding-left: 80px;
 
 }
@@ -72,8 +95,11 @@ header {
 
 
 .indice a {
+
   text-decoration: none;
+
   color: #ffffff;
+
   font-size: 16px;
 
 }
@@ -81,6 +107,7 @@ header {
 
 
 .indice a:hover {
+
   opacity: 0.8;
 
 }
@@ -88,15 +115,25 @@ header {
 
 
 .menu-sanduiche {
+
   position: relative;
+
   font-size: 33px;
+
   color: #ffffff;
+
   cursor: pointer;
+
   user-select: none;
+
   width: 40px;
+
   height: 40px;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
 }
@@ -104,7 +141,9 @@ header {
 
 
 .menu-sanduiche span {
+
   transition: transform 0.3s ease;
+
   line-height: 0.9;
 
 }
@@ -112,6 +151,7 @@ header {
 
 
 .menu-sanduiche.ativo span {
+
   transform: rotate(90deg);
 
 }
@@ -119,16 +159,27 @@ header {
 
 
 .menu-opcoes {
+
   display: none;
+
   position: absolute;
+
   top: 110%;
+
   right: 0;
+
   background-color: #BA91BA;
+
   border-radius: 8px;
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
   flex-direction: column;
+
   min-width: 170px;
+
   z-index: 1000;
+
   overflow: hidden;
 
 }
@@ -136,6 +187,7 @@ header {
 
 
 .menu-opcoes.ativo {
+
   display: flex;
 
 }
@@ -143,10 +195,15 @@ header {
 
 
 .menu-opcoes a {
+
   color: white;
+
   padding: 12px 20px;
+
   text-decoration: none;
+
   display: block;
+
   font-size: 15px;
 
 }
@@ -154,21 +211,33 @@ header {
 
 
 .menu-opcoes a:hover {
+
   background-color: #8304A5;
 
 }
 
 
+
 .card {
+
   background-color: #dcdcdc;
+
   border-radius: 20px;
+
   padding: 16px 50px;
+
   margin-bottom: 15px;
+
   font-size: 16px;
+
   font-weight: bold;
+
   color: #000;
+
   text-align: justify;
+
   transition: transform 0.2s ease;
+
   flex: 1;
 
 }
@@ -176,23 +245,37 @@ header {
 
 
 .cards-section {
+
   display: flex;
+
   flex-wrap: wrap;
+
   justify-content: center;
+
   margin: 50px auto;
+
   margin-top: 60px;
+
   max-width: 1000px;
+
   padding: 0 5px;
+
   align-items: stretch;
+
   gap: 50px;
 
 }
 
 
+
 .coluna {
+
   flex: 1 1 30%;
+
   display: flex;
+
   flex-direction: column;
+
   gap: 2px;
 
 }
@@ -200,14 +283,19 @@ header {
 
 
 .coluna a {
+
   text-decoration: none;
 
 }
 
 
+
 .coluna h2 {
+
   text-align: center;
+
   color: #8A2BE2;
+
   margin-bottom: 20px;
 
 }
@@ -215,7 +303,9 @@ header {
 
 
 .coluna h4 {
+
   text-align: center;
+
   color: red;
 
 }
@@ -223,9 +313,11 @@ header {
 
 
 .card:hover {
+
   transform: scale(1.02);
 
 }
+
 
 
 /* Responsividade */
@@ -235,12 +327,15 @@ header {
 @media (max-width: 1024px) {
 
 
+
   .cabecalho {
+
     gap: 70px;
 
   }
 
   .cabecalho img {
+
     width: 110px;
 
   }
@@ -248,14 +343,19 @@ header {
 
 
   .indice {
+
     gap: 70px;
+
     padding-left: 90px;
 
   }
 
 
+
   header {
+
     padding: 15px 30px;
+
   }
 
 }
@@ -264,38 +364,52 @@ header {
 
 @media (max-width: 768px) {
 
+
+
   header {
+
     padding: 15px 20px;
+
     min-height: 80px;
 
   }
 
 
+
   .cabecalho img {
+
     width: 80px;
 
   }
 
 
+
   .indice {
+
     display: none;
 
   }
 
 
+
   .cabecalho {
+
     gap: 0;
 
   }
 
 
+
   .cards-section {
+
     flex-direction: column;
 
   }
 
 
+
   .coluna {
+
     flex: 1 1 100%;
 
   }
@@ -307,6 +421,7 @@ header {
   }
 
 
+
 }
 
 
@@ -316,21 +431,26 @@ header {
 
 
   header {
+
     padding: 10px 15px;
+
     min-height: 70px;
 
   }
 
   .cabecalho img {
+
     width: 70px;
     /* Logo ainda menor */
 
   }
 
   .menu-opcoes {
+
     min-width: 150px;
 
   }
+
 }
 
 
@@ -338,11 +458,17 @@ header {
 .rodape {
 
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   padding: 20px;
+
   height: 50px;
+
   background-color: #f2f2f2;
+
   margin-top: 60px;
 
 }
