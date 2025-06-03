@@ -25,7 +25,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de Teste    | CT-01 - Verificar o cadastro de usuario |
 |:---|:---|
-| Requisitos Associados | RF-05	A aplicação deve permitir que o	profissional de apoio crie umaconta e cadastre o seu serviço	juntamente com as formas de contato.
+| Requisitos Associados | RF-05	A aplicação deve permitir que o	profissional de apoio crie uma conta e cadastre o seu serviço	juntamente com as formas de contato.
 | Objetivo do Teste | Verificar se o cadastro de profissional de apoio esta sendo feito corretamente. |
 | Passos | 1. Acessar o navegador. 2. Vizualizar a pagina Home. 3. Clicar em entrar no menu. 4. Clicar em cadastre-se na pagina de login. 5. Preencher o formulario escolhendo a opcao perfil "Profissional"e clicar em "Cadastrar", 6. Vizualizar a pagina de cadastro de profissionais de apoio. 7.Inserir informacoes profissionais. 8. Clicar em "Cadastrar".|
 | Critérios de êxito | Deve ocorrer uma validacao das informacoes fornecidas pelo usuario e ao clicar em cadastrar deve aparecer a mensagem "Formulario enviado com sucesso".  |
