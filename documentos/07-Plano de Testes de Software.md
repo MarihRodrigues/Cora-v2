@@ -23,6 +23,15 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaborar do caso de Teste | Mariana |
 
 
+|Caso de Teste    | CT-01 - Verificar o cadastro de usuario |
+|:---|:---|
+| Requisitos Associados | RF-06	A aplicação deve permitir que o	profissional de apoio encerre a	prestação de serviços através	da suspensão ou exclusão da	conta.
+| Objetivo do Teste | Verificar se o cadastro esta sendo feito corretamente. |
+| Passos | 1. Acessar o navegador. 2. Vizualizar a pagina Home. 3. Clicar em entrar no menu. 4. Clicar em cadastre-se na pagina de login. 5. Preencher o formulario e clicar em "Cadastrar".|
+| Critérios de êxito | Deve ocorrer uma validacao das informacoes fornecidas pelo usuario e ao clicar em cadastrar deve aparecer a mensagem "Formulario enviado com sucesso".  |
+| Responsável pela elaborar do caso de Teste | Mariana |
+
+
 
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
