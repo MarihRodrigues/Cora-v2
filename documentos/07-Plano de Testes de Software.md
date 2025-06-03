@@ -4,13 +4,13 @@
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-01 - Verificar o funcionamento dos links |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Requisitos Associados | RF-001 | 	A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre	que necessário.
+| Objetivo do Teste | Verificar se os links do cabecalho estao redirecionando para a pagina correspondente. |
+| Passos | 1. Acessar o navegador. 2. Vizualizar a pagina Home. 3. Clicar nos links do cabecalho. |
+| Critérios de êxito | Todos os links devem encaminhar os usuarios para as paginas descritas.  |
+| Responsável pela elaborar do caso de Teste | Mariana |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
