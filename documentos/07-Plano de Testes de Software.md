@@ -6,7 +6,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de Teste    | CT-01 - Verificar o funcionamento dos links |
 |:---|:---|
-| Requisitos Associados | RF-001 | A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre	que necessário. RF-006 A aplicação deve permitir que o	profissional de apoio encerre a	prestação de serviços através	da suspensão ou exclusão da	conta.
+| Requisitos Associados | RF-001 A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre	que necessário. RF-006 A aplicação deve permitir que o	profissional de apoio encerre a	prestação de serviços através	da suspensão ou exclusão da	conta.
 | Objetivo do Teste | Verificar se os links do cabecalho estao redirecionando para a pagina correspondente. |
 | Passos | 1. Acessar o navegador. 2. Vizualizar a pagina Home. 3. Clicar nos links do cabecalho. |
 | Critérios de êxito | Todos os links devem encaminhar os usuarios para as paginas descritas.  |
