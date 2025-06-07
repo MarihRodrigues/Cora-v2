@@ -32,6 +32,15 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaborar do caso de Teste | Mariana |
 
 
+|Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
+|:---|:---|
+| Requisitos Associados | RF-008 A aplicação deve permitir que o acesso às informações sobre conscientização seja livre,ou seja, sem a necessidade de criar uma conta.
+| Objetivo do Teste | Verificar se os links nos cards de Orientações e Informações estão funcionando. |
+| Passos | 1. Acessar o navegador. 2. Visualizar a pagina Home. 3. Clicar em Informativos. 4. Clicar nos cards.|
+| Critérios de êxito | Ao clicar em cada card, o usuário será direcionado ao site pré-definido no link |
+| Responsável pela elaborar do caso de Teste | Guilherme |
+
+
 
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
