@@ -2,36 +2,168 @@
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
-
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
 
 
-#### Requisito atendido
-
-[RF-X: adicione a descrição do requisito atendido]
 
 
-#### Artefatos da funcionalidade
+Responsavel - Mariana
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Cadastre-se”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
+Exemplo da tela de cadastro
 
-#### Estrutura de Dados
+### Tela de cadastro (RF - 01 )
 
-[Caso exista estrutura de dados, adicione aqui]
-
-
-#### Instruções de acesso
-
-[Adicione as orientações de acesso à funcionalidade]
+![image](https://github.com/user-attachments/assets/586477dc-7217-4f54-80cb-f0ac310f5aff)
 
 
-#### Responsável
+Requisito atendido
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+RF-01	A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre que necessário.
+
+Artefatos da funcionalidade
+
+●cadastre-se.html
+
+●cadastro.css
+
+●cadastro.js
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
+
+Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
+
+
+
+
+
+
+
+
+### Tela de Recuperacao de senha (RF - 02 )
+
+Responsavel - Rafael
+
+O acesso a tela de Recuperacao de senha poderá ser feito através da opção da tela de login "Recupere sua senha". As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de Recuperacao de senha.
+
+![image](https://github.com/user-attachments/assets/84e5b639-ff66-4c07-8443-b6f31dd2c9c5)
+
+
+Requisito atendido
+
+RF-02	A aplicação deve permitir que o usuário recupere sua senha através das informações fornecidas na criação da conta.
+
+Artefatos da funcionalidade
+
+●recuperarSenha.html
+
+●recuperarSenha.css
+
+
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
+
+Ao clicar em “Entrar” no menu sanduiche no superior direito da tela e depois em recuperar senha, terá acesso a página de recuperacao de senha.
+
+
+
+
+
+
+
+
+### Tela de Registro de Profissionais (RF - 05 )
+
+Responsavel - Mariana
+
+O acesso a tela de Registro de Profissionais poderá ser feito através da opção de menu “Cadastre-se”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de Registro de Profissionais
+
+![image](https://github.com/user-attachments/assets/05e7aba9-4a0a-4d22-b295-c65a184d8e17)
+
+Requisito atendido 
+RF-05	A aplicação deve permitir que o	profissional de apoio crie uma	conta e cadastre o seu serviço	juntamente com as formas de	contato.
+
+Artefatos da funcionalidade
+
+●registroDeProfissionais.html
+
+●registroDeProfissionais.css
+
+●cadastro.js
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
+
+Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro, apos preencher os dados e selecionar o perfil profissional sera redirecionado para a tela de registro de profissionais.
+
+
+
+
+
+### Tela de Editar Cadastro (RF - 05 )
+
+Responsavel - Mariana
+
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Cadastre-se”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de cadastro
+
+![image](https://github.com/user-attachments/assets/933cd782-c49b-4ee1-9958-4e4bebc5a8a7)
+
+Requisito atendido
+
+RF-06	A aplicação deve permitir que o profissional de apoio encerre a	prestação de serviços através	da suspensão ou exclusão da	conta.
+
+Artefatos da funcionalidade
+
+●editarCadastro.html
+
+●editarCadastro.css
+
+●cadastro.js
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
+
+Ao clicar em “Editar Cadastro” no canto superior direito da tela, terá acesso a página de editar cadastro, tendo no menu sanduiche as opcoes de excluir conta.
+
+
+
+
+
+### Tela de Informativos (RF - 08 )
+
+Responsavel - Guilherme
+
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Informativos”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de Informativos
+
+![image](https://github.com/user-attachments/assets/87473b97-b5d2-4f3b-b389-3d30904c933d)
+
+
+Requisito atendido
+
+RF-08	A aplicação deve permitir que o	acesso às informações sobre	conscientização seja livre,	ou seja, sem a necessidade de	criar uma conta.
+
+Artefatos da funcionalidade
+
+●informativos.html
+
+●informativos.css
+
+●informativos.js
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
+
+Ao clicar em “Informativos” no canto superior direito da tela, terá acesso a página de informacoes.
 
 
 
