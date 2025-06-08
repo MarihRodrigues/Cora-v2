@@ -1,34 +1,18 @@
-/****** Estilos gerais ******/
-
-
+/****************** Estilos gerais ******************/
 
 * {
-
   margin: 0;
-
   padding: 0;
-
   box-sizing: border-box;
-
 }
-
-
 
 body {
-
   font-family: Arial, sans-serif;
-
   background-color: #fff;
-
   color: #333;
-
 }
 
-
-
-/****** Cabeçalho ******/
-
-
+/****************** Cabeçalho ******************/
 
 header {
 
@@ -37,69 +21,101 @@ header {
   justify-content: space-between;
 
   align-items: center;
-
   background-color: #8304A5;
-
   padding: 20px 40px;
-
   min-height: 100px;
-
   color: #ffffff;
-
 }
 
-
-
-.navbar {
-
+.navbar { 
   display: flex;
-
 }
-
-
 
 .cabecalho {
-
   display: flex;
-
   align-items: center;
-
   gap: 60px;
-
 }
-
-
 
 .cabecalho img {
-
   width: 110px;
-
   height: auto;
-
 }
-
-
 
 .indice {
-
-  display: flex;
-
+  display: flex; 
   align-items: center;
-
   gap: 70px;
-
   padding-left: 80px;
-
 }
 
-
-
 .indice a {
-
   text-decoration: none;
-
   color: #ffffff;
+  font-size: 16px;
+}
 
+.indice a:hover {
+    opacity: 0.8;
+}
+
+.menu-sanduiche { 
+  position: relative;
+  font-size: 33px; 
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-sanduiche span { 
+    transition: transform 0.3s ease;
+    line-height: 0.9; 
+}
+
+.menu-sanduiche.ativo span {
+    transform: rotate(90deg);
+}
+
+.menu-opcoes { 
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0; 
+  background-color: #BA91BA;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex-direction: column;
+  min-width: 170px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.menu-opcoes.ativo {
+  display: flex;
+}
+
+.menu-opcoes a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.menu-opcoes a:hover {
+  background-color: #8304A5;
+}
+  
+.card{
+  background-color: #dcdcdc;
+  border-radius: 20px;
+  padding: 16px 50px;
+  margin-bottom: 15px;
   font-size: 16px;
 
 }
@@ -245,25 +261,22 @@ header {
 
 
 .cards-section {
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  justify-content: center;
-
-  margin: 50px auto;
-
-  margin-top: 60px;
-
-  max-width: 1000px;
-
-  padding: 0 5px;
-
-  align-items: stretch;
-
-  gap: 50px;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+    margin-top: 60px;
+    max-width: 1000px;
+    padding: 0 5px;
+    align-items: stretch;
+    gap: 50px;
+}
+  
+.coluna{
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 
@@ -322,40 +335,42 @@ header {
 
 /* Responsividade */
 
-
-
 @media (max-width: 1024px) {
 
-
-
   .cabecalho {
+    gap: 70px; 
+  }
+  .cabecalho img {
+    width: 110px; 
+  }
 
-    gap: 70px;
+  .indice {
+    gap: 70px; 
+    padding-left: 90px; 
+  }
 
+  header {
+      padding: 15px 30px;
+  }
+}
+
+@media (max-width: 768px){
+
+   header {
+      padding: 15px 20px;
+      min-height: 80px;
   }
 
   .cabecalho img {
-
-    width: 110px;
-
+      width: 80px;
   }
-
-
 
   .indice {
-
-    gap: 70px;
-
-    padding-left: 90px;
-
+      display: none;
   }
 
-
-
-  header {
-
-    padding: 15px 30px;
-
+  .cabecalho {
+      gap: 0;
   }
 
 }
@@ -411,64 +426,35 @@ header {
   .coluna {
 
     flex: 1 1 100%;
-
   }
-
-  .rodape {
-
+   .rodape{
     overflow-y: hidden;
-
   }
-
-
-
+  
 }
-
-
 
 @media (max-width: 480px) {
 
-
-
   header {
-
-    padding: 10px 15px;
-
-    min-height: 70px;
-
+      padding: 10px 15px;
+      min-height: 70px;
   }
-
   .cabecalho img {
-
-    width: 70px;
-    /* Logo ainda menor */
-
+      width: 70px; /* Logo ainda menor */
   }
-
   .menu-opcoes {
-
-    min-width: 150px;
-
+      min-width: 150px;
   }
-
 }
-
 
 
 .rodape {
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   padding: 20px;
-
   height: 50px;
-
   background-color: #f2f2f2;
-
   margin-top: 60px;
-
 }
+  

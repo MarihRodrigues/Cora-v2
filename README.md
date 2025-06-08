@@ -1,16 +1,16 @@
-# APOIO MULHER
+# Cora
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`1º Semestre`
 
 Trata-se de uma aplicação cujo principal objetivo é proporcionar apoio às mulheres vítimas de violência doméstica. Para isso, a aplicação terá como funcionalidade, e de forma centralizada, o acesso a pesquisa de profissionais de apoio jurídico e terapêutico, aos conteúdos para leitura visando a sensibilização e conscientização, bem como aos canais de denúncia mais próximo. 
 
 ## Integrantes
 
-* Guilherme Augusto de Souza Silva
+* Guilherme Augusto de Sousa Silva
 * Mariana Rodrigues de Oliveira Amorim
 * Rafael Miury de Souza
 

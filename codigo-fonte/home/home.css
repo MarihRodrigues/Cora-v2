@@ -1,7 +1,5 @@
 /****************** Estilos gerais ******************/
 
-
-
 * {
 
   margin: 0;
@@ -9,10 +7,7 @@
   padding: 0;
 
   box-sizing: border-box;
-
 }
-
-
 
 body {
 
@@ -24,11 +19,7 @@ body {
 
 }
 
-
-
 /****************** Cabeçalho ******************/
-
-
 
 header {
 
@@ -37,21 +28,52 @@ header {
   justify-content: space-between;
 
   align-items: center;
-
   background-color: #8304A5;
-
   padding: 20px 40px;
-
   min-height: 100px;
-
   color: #ffffff;
-
 }
 
+.navbar { 
+  display: flex;
+}
 
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
 
-.navbar {
+.cabecalho img {
+  width: 110px;
+  height: auto;
+}
 
+.indice {
+  display: flex; 
+  align-items: center;
+  gap: 70px;
+  padding-left: 80px;
+}
+
+.indice a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.indice a:hover {
+    opacity: 0.8;
+}
+
+.menu-sanduiche { 
+  position: relative;
+  font-size: 33px; 
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  width: 40px; 
+  height: 40px; 
   display: flex;
 
 }
@@ -104,136 +126,56 @@ header {
 
 }
 
-
-
-.indice a:hover {
-
-  opacity: 0.8;
-
+.menu-sanduiche span { 
+    transition: transform 0.3s ease;
+    line-height: 0.9; 
 }
-
-
-
-.menu-sanduiche {
-
-  position: relative;
-
-  font-size: 33px;
-
-  color: #ffffff;
-
-  cursor: pointer;
-
-  user-select: none;
-
-  width: 40px;
-
-  height: 40px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-
-.menu-sanduiche span {
-
-  transition: transform 0.3s ease;
-
-  line-height: 0.9;
-
-}
-
-
 
 .menu-sanduiche.ativo span {
-
-  transform: rotate(90deg);
-
+    transform: rotate(90deg);
 }
 
-
-
-.menu-opcoes {
-
+.menu-opcoes { 
   display: none;
 
   position: absolute;
-
   top: 110%;
-
-  right: 0;
-
+  right: 0; 
   background-color: #BA91BA;
-
   border-radius: 8px;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   flex-direction: column;
-
   min-width: 170px;
-
+  z-index: 1000;
   overflow: hidden;
-
 }
-
-
 
 .menu-opcoes.ativo {
-
   display: flex;
-
 }
-
-
 
 .menu-opcoes a {
-
   color: white;
-
   padding: 12px 20px;
-
   text-decoration: none;
-
   display: block;
-
   font-size: 15px;
-
 }
-
-
 
 .menu-opcoes a:hover {
-
   background-color: #8304A5;
-
 }
-
-
 
 /****************** Conteúdo ******************/
 
-
-
 .container {
-
   display: flex;
-
   justify-content: space-between;
-
   padding: 60px 40px;
-
   gap: 60px;
-
   max-width: 1200px;
   margin: 40px auto;
-
   align-items: flex-start;
-
 }
 
 
@@ -243,40 +185,27 @@ header {
   flex: 1;
 
   min-width: 300px;
-
   padding-right: 20px;
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: center;
-
 }
 
 
 
 .titulo {
-
   font-size: 36px;
-
   color: #8304A5;
-
   margin-bottom: 25px;
-
 }
 
 
 
 .titulo-missao {
-
   font-size: 32px;
   color: #8304A5;
-
   margin-top: 60px;
-
   margin-bottom: 25px;
-
 }
 
 
@@ -284,29 +213,19 @@ header {
 .descricao {
 
   font-size: 18px;
-
   color: #555;
-
   margin-bottom: 30px;
-
   line-height: 1.7;
-
 }
 
 
 
 .imagem-section {
-
   flex: 0.9;
-
   min-width: 350px;
-
   min-height: 350px;
-
-  display: flex;
-
+  display: flex; 
   align-items: flex-start;
-
   justify-content: center;
 
 }
@@ -314,271 +233,141 @@ header {
 
 
 .imagem-mensagem {
-
   padding-top: 50px;
-
   max-width: 100%;
-
-  width: 490px;
-
-  height: 550px;
+  width: 490px; 
+  height: 550px; 
   display: block;
-
   border-radius: 10px;
-
-  object-fit: unset;
-
+  object-fit: unset; 
 }
-
-
 
 /****************** Rodapé ******************/
 
-
-
 .rodape {
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   padding: 20px;
-
   height: 50px;
-
   background-color: #f2f2f2;
-
   margin-top: 60px;
-
 }
-
-
 
 /****************** Responsividade ******************/
 
-
-
 @media (max-width: 1024px) {
 
-
-
   .cabecalho {
-
-    gap: 70px;
-
+    gap: 70px; 
   }
-
   .cabecalho img {
-
-    width: 110px;
-
+    width: 110px; 
   }
-
-
 
   .indice {
-
-    gap: 70px;
-
-    padding-left: 90px;
-
+    gap: 70px; 
+    padding-left: 90px; 
   }
-
-
 
   header {
-
-    padding: 15px 30px;
+      padding: 15px 30px;
   }
-
-
 
   /*********************************/
 
-
-
-  .container {
+ .container {
     padding: 40px 30px;
-
     gap: 40px;
-
   }
-
   .titulo {
-
     font-size: 32px;
-
   }
-
   .titulo-missao {
-
-    font-size: 28px;
-
+      font-size: 28px;
   }
-
   .descricao {
-
-    font-size: 17px;
-
+      font-size: 17px;
   }
-
 }
-
-
 
 @media (max-width: 768px) {
 
-
-
   header {
-
-    padding: 15px 20px;
-
-    min-height: 80px;
-
+      padding: 15px 20px;
+      min-height: 80px;
   }
-
-
 
   .cabecalho img {
-
-    width: 80px;
-
+      width: 80px;
   }
-
-
 
   .indice {
-
-    display: none;
-
+      display: none;
   }
-
-
 
   .cabecalho {
-
-    gap: 0;
-
+      gap: 0;
   }
-
-
 
   /*********************************/
 
-
   .container {
-
     flex-direction: column;
-
     padding: 30px 20px;
-
     margin-top: 20px;
-
     gap: 30px;
-
   }
-
-
 
   .imagem-section {
-
-    display: none;
-
+      display: none;
   }
-
 
   .text-section {
-    padding-right: 0;
-
+      padding-right: 0;
   }
-
-
 
   .titulo,
   .titulo-missao {
-
-    font-size: 28px;
-
+      font-size: 28px;
   }
-
-
 
   .descricao {
-
-    font-size: 16px;
-
+      font-size: 16px;
   }
-
 }
-
-
 
 @media (max-width: 480px) {
 
-
-
   header {
-
-    padding: 10px 15px;
-
-    min-height: 70px;
-
+      padding: 10px 15px;
+      min-height: 70px;
   }
-
   .cabecalho img {
-
-    width: 70px;
-    /* Logo ainda menor */
-
+      width: 70px; /* Logo ainda menor */
   }
-
   .menu-opcoes {
-
-    min-width: 150px;
+      min-width: 150px;
   }
-
-
 
   /*********************************/
-
-
 
   .container {
-
-    padding: 20px 15px;
-
+      padding: 20px 15px;
   }
-
   .titulo {
-
-    font-size: 24px;
-
+      font-size: 24px;
   }
-
   .titulo-missao {
-
-    font-size: 22px;
-
+      font-size: 22px;
   }
-
   .descricao {
-
-    font-size: 15px;
-
+      font-size: 15px;
   }
-
-
 
   /*********************************/
-
-
 
   .rodape p {
     font-size: 12px;
-
   }
-
 }
