@@ -137,6 +137,36 @@ Ao clicar em “Editar Cadastro” no canto superior direito da tela, terá aces
 
 
 
+### Tela de Informativos (RF - 08 )
+
+Responsavel - Guilherme
+
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Informativos”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de Informativos
+
+![image](https://github.com/user-attachments/assets/87473b97-b5d2-4f3b-b389-3d30904c933d)
+
+
+Requisito atendido
+
+RF-06	A aplicação deve permitir que o profissional de apoio encerre a	prestação de serviços através	da suspensão ou exclusão da	conta.
+
+Artefatos da funcionalidade
+
+●editarCadastro.html
+
+●editarCadastro.css
+
+●cadastro.js
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
+
+Ao clicar em “Editar Cadastro” no canto superior direito da tela, terá acesso a página de editar cadastro, tendo no menu sanduiche as opcoes de excluir conta.
+
+
+
 
 > **Links Úteis**:
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
