@@ -28,7 +28,7 @@ Artefatos da funcionalidade
 ●cadastro.js
 
 Instruções de acesso
-Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
 
 Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
 
