@@ -45,19 +45,19 @@ Exemplo da tela de Recuperacao de senha.
 
 
 Requisito atendido
-RF-01	A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre que necessário.
+RF-02	A aplicação deve permitir que o usuário recupere sua senha através das informações fornecidas na criação da conta.
 
 Artefatos da funcionalidade
-●cadastre-se.html
+●recuperarSenha.html
 
-●cadastro.css
+●recuperarSenha.css
 
-●cadastro.js
+
 
 Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
 
-Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
+Ao clicar em “Entrar” no menu sanduiche no superior direito da tela e depois em recuperar senha, terá acesso a página de recuperacao de senha.
 
 
 
