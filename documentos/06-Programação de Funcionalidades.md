@@ -25,9 +25,7 @@ Artefatos da funcionalidade
 
 ●cadastro.css
 
-●script.js
-
-●mobile-navbar.js
+●cadastro.js
 
 Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html
