@@ -61,6 +61,29 @@ Ao clicar em “Entrar” no menu sanduiche no superior direito da tela e depois
 
 
 
+Responsavel - Mariana
+
+O acesso a tela de Registro de Profissionais poderá ser feito através da opção de menu “Cadastre-se”. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+Exemplo da tela de Registro de Profissionais
+
+### Tela de cadastro (RF - 01 )
+![image](https://github.com/user-attachments/assets/05e7aba9-4a0a-4d22-b295-c65a184d8e17)
+
+Requisito atendido
+RF-01	A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre que necessário.
+
+Artefatos da funcionalidade
+●registroDeProfissionais.html
+
+●registroDeProfissionais.css
+
+●registroDeProfissionais.js
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
+
+Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro, apos preencher os dados e selecionar o perfil profissional sera redirecionado para a tela de registro de profissionais.
 
 
 
