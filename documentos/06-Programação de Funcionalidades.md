@@ -4,6 +4,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 
 Responsavel - Mariana
+
 O acesso a tela de cadastro poderá ser feito através da opção de menu “Cadastre-se”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da tela de cadastro
