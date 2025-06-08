@@ -6,7 +6,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 |Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
 
-📹 [Clique aqui para assistir ao vídeo do teste funcional CT-04](documentos/testes/Cora — Mozilla Firefox 2025-06-08 09-38-00 - Atalho.lnk)
+📹 [Clique aqui para assistir ao vídeo do teste funcional CT-04](documentos/testes/Cora ct 04.download)
 
 |:---|:---|
 | Resultados obtidos | Funcionando corretamente |
