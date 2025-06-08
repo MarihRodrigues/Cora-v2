@@ -18,9 +18,11 @@ Exemplo da tela de cadastro
 
 
 Requisito atendido
+
 RF-01	A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre que necessário.
 
 Artefatos da funcionalidade
+
 ●cadastre-se.html
 
 ●cadastro.css
@@ -34,20 +36,28 @@ Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a
 
 
 
+
+
+
+
+
+### Tela de Recuperacao de senha (RF - 02 )
+
 Responsavel - Rafael
 
 O acesso a tela de Recuperacao de senha poderá ser feito através da opção da tela de login "Recupere sua senha". As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da tela de Recuperacao de senha.
 
-### Tela de Recuperacao de senha (RF - 02 )
 ![image](https://github.com/user-attachments/assets/84e5b639-ff66-4c07-8443-b6f31dd2c9c5)
 
 
 Requisito atendido
+
 RF-02	A aplicação deve permitir que o usuário recupere sua senha através das informações fornecidas na criação da conta.
 
 Artefatos da funcionalidade
+
 ●recuperarSenha.html
 
 ●recuperarSenha.css
@@ -61,19 +71,28 @@ Ao clicar em “Entrar” no menu sanduiche no superior direito da tela e depois
 
 
 
+
+
+
+
+
+### Tela de Registro de Profissionais (RF - 05 )
+
 Responsavel - Mariana
 
 O acesso a tela de Registro de Profissionais poderá ser feito através da opção de menu “Cadastre-se”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da tela de Registro de Profissionais
 
-### Tela de Registro de Profissionais (RF - 05 )
+
+
 ![image](https://github.com/user-attachments/assets/05e7aba9-4a0a-4d22-b295-c65a184d8e17)
 
 Requisito atendido 
 RF-05	A aplicação deve permitir que o	profissional de apoio crie uma	conta e cadastre o seu serviço	juntamente com as formas de	contato.
 
 Artefatos da funcionalidade
+
 ●registroDeProfissionais.html
 
 ●registroDeProfissionais.css
