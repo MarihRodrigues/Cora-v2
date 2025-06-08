@@ -17,6 +17,26 @@ Exemplo da tela de cadastro
 ![image](https://github.com/user-attachments/assets/586477dc-7217-4f54-80cb-f0ac310f5aff)
 
 
+Requisito atendido
+RF-001: O site deve permitir ao usuário cadastrar uma conta.
+
+Artefatos da funcionalidade
+●cadastre-se.html
+
+●cadastro.css
+
+●script.js
+
+●mobile-navbar.js
+
+Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html
+
+Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
+
+
+
+
 
 
 
