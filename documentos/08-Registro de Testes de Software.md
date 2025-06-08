@@ -5,6 +5,9 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 Os resultados dos testes funcionais realizados na aplicação são descritos a seguir.
 
 |Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
+
+📹 [Clique aqui para assistir ao vídeo do teste funcional CT-04](videos/teste_funcional_ct04.mp4)
+
 |:---|:---|
 | Resultados obtidos | Funcionando corretamente |
 | Responsável pela execução do caso de Teste | Mariana |
