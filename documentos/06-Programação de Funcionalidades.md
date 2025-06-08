@@ -40,7 +40,7 @@ O acesso a tela de Recuperacao de senha poderá ser feito através da opção da
 
 Exemplo da tela de Recuperacao de senha.
 
-### Tela de cadastro (RF - 02 )
+### Tela de Recuperacao de senha (RF - 02 )
 ![image](https://github.com/user-attachments/assets/84e5b639-ff66-4c07-8443-b6f31dd2c9c5)
 
 
