@@ -67,11 +67,11 @@ O acesso a tela de Registro de Profissionais poderá ser feito através da opç�
 
 Exemplo da tela de Registro de Profissionais
 
-### Tela de cadastro (RF - 01 )
+### Tela de Registro de Profissionais (RF - 05 )
 ![image](https://github.com/user-attachments/assets/05e7aba9-4a0a-4d22-b295-c65a184d8e17)
 
-Requisito atendido
-RF-01	A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre que necessário.
+Requisito atendido 
+RF-05	A aplicação deve permitir que o	profissional de apoio crie uma	conta e cadastre o seu serviço	juntamente com as formas de	contato.
 
 Artefatos da funcionalidade
 ●registroDeProfissionais.html
