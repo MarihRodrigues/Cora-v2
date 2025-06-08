@@ -18,7 +18,7 @@ Exemplo da tela de cadastro
 
 
 Requisito atendido
-RF-001: O site deve permitir ao usuário cadastrar uma conta.
+RF-01	A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre que necessário.
 
 Artefatos da funcionalidade
 ●cadastre-se.html
