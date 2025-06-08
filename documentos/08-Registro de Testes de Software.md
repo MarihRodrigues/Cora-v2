@@ -6,10 +6,11 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 |Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
 
-📹 [Clique aqui para assistir ao vídeo do teste funcional CT-04](documentos/testes/Cora ct 04.download)
+📹 [Clique aqui para assistir ao vídeo do teste funcional CT-04](documentos/testes/teste_informativos_04.mp4)
 
 |:---|:---|
 | Resultados obtidos | Funcionando corretamente |
+
 | Responsável pela execução do caso de Teste | Mariana |
 
 
