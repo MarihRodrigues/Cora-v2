@@ -14,7 +14,8 @@ Exemplo da tela de cadastro
 
 ### Tela de cadastro (RF - )
 
-![image](https://github.com/user-attachments/assets/f778ff3a-8191-4cdd-90bf-35a0aa693944)
+![image](https://github.com/user-attachments/assets/586477dc-7217-4f54-80cb-f0ac310f5aff)
+
 
 
 
