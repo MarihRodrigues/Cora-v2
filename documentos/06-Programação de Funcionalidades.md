@@ -150,20 +150,20 @@ Exemplo da tela de Informativos
 
 Requisito atendido
 
-RF-06	A aplicação deve permitir que o profissional de apoio encerre a	prestação de serviços através	da suspensão ou exclusão da	conta.
+RF-08	A aplicação deve permitir que o	acesso às informações sobre	conscientização seja livre,	ou seja, sem a necessidade de	criar uma conta.
 
 Artefatos da funcionalidade
 
-●editarCadastro.html
+●informativos.html
 
-●editarCadastro.css
+●informativos.css
 
-●cadastro.js
+●informativos.js
 
 Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
 
-Ao clicar em “Editar Cadastro” no canto superior direito da tela, terá acesso a página de editar cadastro, tendo no menu sanduiche as opcoes de excluir conta.
+Ao clicar em “Informativos” no canto superior direito da tela, terá acesso a página de informacoes.
 
 
 
