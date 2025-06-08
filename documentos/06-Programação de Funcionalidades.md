@@ -95,7 +95,7 @@ Artefatos da funcionalidade
 
 ●registroDeProfissionais.css
 
-●registroDeProfissionais.js
+●cadastro.js
 
 Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
@@ -116,21 +116,22 @@ Exemplo da tela de cadastro
 
 ![image](https://github.com/user-attachments/assets/933cd782-c49b-4ee1-9958-4e4bebc5a8a7)
 
-Requisito atendido 
-RF-05	A aplicação deve permitir que o	profissional de apoio crie uma	conta e cadastre o seu serviço	juntamente com as formas de	contato.
+Requisito atendido
+
+RF-06	A aplicação deve permitir que o profissional de apoio encerre a	prestação de serviços através	da suspensão ou exclusão da	conta.
 
 Artefatos da funcionalidade
 
-●registroDeProfissionais.html
+●editarCadastro.html
 
-●registroDeProfissionais.css
+●editarCadastro.css
 
-●registroDeProfissionais.js
+●cadastro.js
 
 Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: [https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t7-pmv-ads-2025-1-e1-projviolenciadom)
 
-Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro, apos preencher os dados e selecionar o perfil profissional sera redirecionado para a tela de registro de profissionais.
+Ao clicar em “Editar Cadastro” no canto superior direito da tela, terá acesso a página de editar cadastro, tendo no menu sanduiche as opcoes de excluir conta.
 
 
 
