@@ -224,7 +224,7 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
     // Aqui você pode validar o restante dos campos, se desejar
 
     if (perfil === "profissional") {
-        window.location.href = "../registroDeProfissionais/registroDeProfissionais.html"; // caminho da nova página
+        window.location.href = "..registroDeProfissionais/registroDeProfissionais.html"; // caminho da nova página
     } else {
         window.location.href = "../login/paginaLogin.html"; // ou va para a página de login
     }
@@ -232,6 +232,9 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
 
 
 // editar cadastro
+
+const modoEdicao = localStorage.getItem("usuarioLogado") ? true : false;
+
 // Função para editar o cadastro do usuário
 
 // Ao carregar a página, preenche os campos com os dados do usuário
@@ -307,3 +310,4 @@ function sairConta() {
   // Redireciona para a página de login
   window.location.href = "../login/paginaLogin.html";
 }
+
