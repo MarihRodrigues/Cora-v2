@@ -36,7 +36,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Requisitos Associados | RF-02: A aplicação deve permitir que o usuário recupere sua senha através das informações fornecidas na criação da conta
 | Objetivo do Teste | Assegurar que o usuário utilize os recursos da aplicação para recuperar a senha |
 | Passos | 1. Acesse a opção "Entrar" no menu sanduiche. 2. Na página de login clique em "Esqueci minha senha". 3. Preencha o campo necessário|
-| Critérios de êxito | Receber o direcionamento para acessar o e-email informado para dar continuidade a recuperação de senha  |
+| Critérios de êxito | Para usuário cadastrado, a aplicação deverá informar o usuário para o e-mail e seguir com a recuperação de senha. Para usuário sem cadastro, a aplicação deverá apresentar a resposta "E-mail não cadastrado" |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
 |Caso de Teste    | CT-03 - Verificar a sistemática do processo de denúncia |
