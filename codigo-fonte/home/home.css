@@ -1,32 +1,22 @@
 /****************** Estilos gerais ******************/
 
 * {
-
   margin: 0;
-
   padding: 0;
-
   box-sizing: border-box;
 }
 
 body {
-
   font-family: Arial, sans-serif;
-
   background-color: #fff;
-
   color: #333;
-
 }
 
 /****************** Cabeçalho ******************/
 
 header {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
   background-color: #8304A5;
   padding: 20px 40px;
@@ -63,7 +53,7 @@ header {
 }
 
 .indice a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .menu-sanduiche { 
@@ -75,55 +65,8 @@ header {
   width: 40px; 
   height: 40px; 
   display: flex;
-
-}
-
-
-
-.cabecalho {
-
-  display: flex;
-
   align-items: center;
-
-  gap: 60px;
-
-}
-
-
-
-.cabecalho img {
-
-  width: 110px;
-
-  height: auto;
-
-}
-
-
-
-.indice {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 70px;
-
-  padding-left: 80px;
-
-}
-
-
-
-.indice a {
-
-  text-decoration: none;
-
-  color: #ffffff;
-
-  font-size: 16px;
-
+  justify-content: center;
 }
 
 .menu-sanduiche span { 
@@ -137,7 +80,6 @@ header {
 
 .menu-opcoes { 
   display: none;
-
   position: absolute;
   top: 110%;
   right: 0; 
@@ -166,6 +108,30 @@ header {
   background-color: #8304A5;
 }
 
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.cabecalho img {
+  width: 110px;
+  height: auto;
+}
+
+.indice {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding-left: 80px;
+}
+
+.indice a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
 /****************** Conteúdo ******************/
 
 .container {
@@ -178,12 +144,8 @@ header {
   align-items: flex-start;
 }
 
-
-
 .text-section {
-
   flex: 1;
-
   min-width: 300px;
   padding-right: 20px;
   display: flex;
@@ -191,15 +153,11 @@ header {
   justify-content: center;
 }
 
-
-
 .titulo {
   font-size: 36px;
   color: #8304A5;
   margin-bottom: 25px;
 }
-
-
 
 .titulo-missao {
   font-size: 32px;
@@ -208,17 +166,12 @@ header {
   margin-bottom: 25px;
 }
 
-
-
 .descricao {
-
   font-size: 18px;
   color: #555;
   margin-bottom: 30px;
   line-height: 1.7;
 }
-
-
 
 .imagem-section {
   flex: 0.9;
@@ -227,10 +180,7 @@ header {
   display: flex; 
   align-items: flex-start;
   justify-content: center;
-
 }
-
-
 
 .imagem-mensagem {
   padding-top: 50px;
@@ -256,11 +206,28 @@ header {
 
 /****************** Responsividade ******************/
 
+@media (max-width: 1360px){
+
+  .cabecalho img {
+    width: 110px; 
+  }
+
+  .indice {
+    gap: 1px; 
+  }
+
+  .indice a{
+    margin-left: 130px;
+  }
+
+}
+
 @media (max-width: 1024px) {
 
   .cabecalho {
     gap: 70px; 
   }
+
   .cabecalho img {
     width: 110px; 
   }
@@ -270,8 +237,12 @@ header {
     padding-left: 90px; 
   }
 
+  .indice a{
+    padding-left: 10px;
+  }
+
   header {
-      padding: 15px 30px;
+    padding: 15px 30px;
   }
 
   /*********************************/

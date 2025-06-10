@@ -15,11 +15,8 @@ body {
 /****************** Cabeçalho ******************/
 
 header {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
   background-color: #8304A5;
   padding: 20px 40px;
@@ -56,7 +53,7 @@ header {
 }
 
 .indice a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .menu-sanduiche { 
@@ -73,12 +70,12 @@ header {
 }
 
 .menu-sanduiche span { 
-    transition: transform 0.3s ease;
-    line-height: 0.9; 
+  transition: transform 0.3s ease;
+   line-height: 0.9; 
 }
 
 .menu-sanduiche.ativo span {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .menu-opcoes { 
@@ -120,220 +117,137 @@ header {
 
 }
 
-
-
 .indice a:hover {
-
   opacity: 0.8;
-
 }
-
-
 
 .menu-sanduiche {
-
   position: relative;
-
   font-size: 33px;
-
   color: #ffffff;
-
   cursor: pointer;
-
   user-select: none;
-
   width: 40px;
-
   height: 40px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
 }
-
-
 
 .menu-sanduiche span {
-
   transition: transform 0.3s ease;
-
   line-height: 0.9;
-
 }
-
-
 
 .menu-sanduiche.ativo span {
-
   transform: rotate(90deg);
-
 }
-
-
 
 .menu-opcoes {
-
   display: none;
-
   position: absolute;
-
   top: 110%;
-
   right: 0;
-
   background-color: #BA91BA;
-
   border-radius: 8px;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
   flex-direction: column;
-
   min-width: 170px;
-
   z-index: 1000;
-
   overflow: hidden;
-
 }
-
-
 
 .menu-opcoes.ativo {
-
   display: flex;
-
 }
-
-
 
 .menu-opcoes a {
-
   color: white;
-
   padding: 12px 20px;
-
   text-decoration: none;
-
   display: block;
-
   font-size: 15px;
-
 }
-
-
 
 .menu-opcoes a:hover {
-
   background-color: #8304A5;
-
 }
-
-
 
 .card {
-
   background-color: #dcdcdc;
-
   border-radius: 20px;
-
   padding: 16px 50px;
-
   margin-bottom: 15px;
-
   font-size: 16px;
-
   font-weight: bold;
-
   color: #000;
-
   text-align: justify;
-
   transition: transform 0.2s ease;
-
   flex: 1;
-
 }
 
-
-
 .cards-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px auto;
-    margin-top: 60px;
-    max-width: 1000px;
-    padding: 0 5px;
-    align-items: stretch;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  margin-top: 60px;
+  max-width: 1000px;
+  padding: 0 5px;
+  align-items: stretch;
+  gap: 50px;
 }
   
 .coluna{
-    flex: 1 1 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
-
-
 
 .coluna {
-
   flex: 1 1 30%;
-
   display: flex;
-
   flex-direction: column;
-
   gap: 2px;
-
 }
-
-
 
 .coluna a {
-
   text-decoration: none;
-
 }
-
-
 
 .coluna h2 {
-
   text-align: center;
-
   color: #8A2BE2;
-
   margin-bottom: 20px;
-
 }
-
-
 
 .coluna h4 {
-
   text-align: center;
-
   color: red;
-
 }
-
-
 
 .card:hover {
-
   transform: scale(1.02);
-
 }
 
-
-
 /* Responsividade */
+
+@media (max-width: 1360px){
+
+  .cabecalho img {
+    width: 110px; 
+  }
+
+  .indice {
+    gap: 1px; 
+  }
+
+  .indice a{
+    margin-left: 130px;
+  }
+
+}
 
 @media (max-width: 1024px) {
 
