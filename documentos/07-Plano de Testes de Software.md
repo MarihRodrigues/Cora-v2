@@ -14,7 +14,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 
 
-|Caso de Teste    | CT-01 - Verificar o cadastro de usuario |
+|Caso de Teste    | CT-02 - Verificar o cadastro de usuario |
 |:---|:---|
 | Requisitos Associados | RF-001 A aplicação deve permitir que o usuário crie uma conta,	edite ou exclua sempre	que necessário.
 | Objetivo do Teste | Verificar se o cadastro esta sendo feito corretamente. |
@@ -23,7 +23,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaborar do caso de Teste | Mariana |
 
 
-|Caso de Teste    | CT-01 - Verificar o cadastro de usuario |
+|Caso de Teste    | CT-03 - Verificar o cadastro de usuario |
 |:---|:---|
 | Requisitos Associados | RF-05	A aplicação deve permitir que o	profissional de apoio crie uma conta e cadastre o seu serviço	juntamente com as formas de contato.
 | Objetivo do Teste | Verificar se o cadastro de profissional de apoio esta sendo feito corretamente. |
@@ -31,7 +31,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Deve ocorrer uma validacao das informacoes fornecidas pelo usuario e ao clicar em cadastrar deve aparecer a mensagem "Formulario enviado com sucesso".  |
 | Responsável pela elaborar do caso de Teste | Mariana |
 
-|Caso de Teste    | CT-02 - Verificar a sistemática de recuperação de senha |
+|Caso de Teste    | CT-04 - Verificar a sistemática de recuperação de senha |
 |:---|:---|
 | Requisitos Associados | RF-02: A aplicação deve permitir que o usuário recupere sua senha através das informações fornecidas na criação da conta
 | Objetivo do Teste | Assegurar que o usuário utilize os recursos da aplicação para recuperar a senha |
@@ -39,7 +39,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Para usuário cadastrado, a aplicação deverá informar o usuário para o e-mail e seguir com a recuperação de senha. Para usuário sem cadastro, a aplicação deverá apresentar a resposta "E-mail não cadastrado" |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
-|Caso de Teste    | CT-03 - Verificar a sistemática do processo de denúncia |
+|Caso de Teste    | CT-05 - Verificar a sistemática do processo de denúncia |
 |:---|:---|
 | Requisitos Associados | RF-03: A aplicação deve apresentar os canais de denúncia ao usuário mediante preenchimento prévio de formulário. RF-04: A aplicação deve permitir que o usuário realize um filtro utilizando a geolocalização ou informando a localidade para ser direcionado para o canal de denúncia da região |
 | Objetivo do Teste | Verificar se a aplicação retorna com o principal canal de denúncia de acordo com as informações preenchidas |
@@ -47,7 +47,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | 1. Preenchimento das informações em todos os campos. 2. Êxito ao clicar no botão "Localizar". 3. Receber a informação do primcipal canal de denúncia  |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
-|Caso de Teste    | CT-04 - Verificar as interações dos profissionais de apoio na plataforma |
+|Caso de Teste    | CT-06 - Verificar as interações dos profissionais de apoio na plataforma |
 |:---|:---|
 | Requisitos Associados | RF-05: A aplicação deve permitir que o profissional de apoio crie uma conta e cadastre o seu serviço juntamente com as formas de contato. RF-06: A aplicação deve permitir que o profissional de apoio encerre a prestação de serviços através da suspensão ou exclusão da conta |
 | Objetivo do Teste | Verificar se o profissional de apoio consegue criar, excluir, suspender e cadastrar a prestação de serviço |
@@ -55,7 +55,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | 1. Êxito ao se cadastrar em "Cadastre-se" no menu sanduiche. 2. Ter acesso aos campos para cadastrar os serviços ao selecionar "Profisional" na opção Perfil da página de cadastro. 3. Apresentar o serviço cadastrado na página "Profissionais de Apoio" |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
-|Caso de Teste    | CT-05 - Verificar o acesso ás informações contidas em links |
+|Caso de Teste    | CT-07 - Verificar o acesso ás informações contidas em links |
 |:---|:---|
 | Requisitos Associados | RF-008 A aplicação deve permitir que o acesso às informações sobre conscientização seja livre,ou seja, sem a necessidade de criar uma conta.
 | Objetivo do Teste | Verificar se os links nos cards de Orientações e Informações estão funcionando. |
