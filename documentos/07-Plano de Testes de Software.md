@@ -31,6 +31,23 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Deve ocorrer uma validacao das informacoes fornecidas pelo usuario e ao clicar em cadastrar deve aparecer a mensagem "Formulario enviado com sucesso".  |
 | Responsável pela elaborar do caso de Teste | Mariana |
 
+|Caso de Teste    | CT-02 - Verificar a sistemática de recuperação de senha |
+|:---|:---|
+| Requisitos Associados | RF-02: A aplicação deve permitir que o usuário recupere sua senha através das informações fornecidas na criação da conta
+| Objetivo do Teste | Assegurar que o usuário utilieze os recursos da aplicação para recuperar a senha |
+| Passos | 1. Acesse a opção "Entrar" no menu sanduiche. 2. Na página de login clique em "Esqueci minha senha". 3. Preencha o campo necessário|
+| Critérios de êxito | Receber o direcionamento para acessar o e-email informado para dar continuidade a recuperação de senha  |
+| Responsável pela elaborar do caso de Teste | Rafael |
+
+|Caso de Teste    | CT-03 - Verificar a sistemática do processo de denúncia |
+|:---|:---|
+| Requisitos Associados | RF-03: A aplicação deve apresentar os canais de denúncia ao usuário mediante preenchimento prévio de formulário.
+RF-04: A aplicação deve permitir que o usuário realize um filtro utilizando a geolocalização ou informando a localidade para ser direcionado para o canal de denúncia da região
+| Objetivo do Teste | Verificar se o usuáriotem acesso ao principal canal de denúncia de acordo com as informações preenchidas |
+| Passos  | 1. Acesse o link "Denuncie" de qualquer página. 2. Preencha os campos solicitados. 3. Clique em "Localizar"
+| Critérios de êxito | |1. Preenchimentoo das informações em todos os campos. 2. Êxito ao clicar no botão "Localizar". 3. Receber a informação do primcipal canal de denúncia  |
+| Responsável pela elaborar do caso de Teste | Rafael |
+
 
 |Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
 |:---|:---|
