@@ -44,7 +44,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Requisitos Associados | RF-03: A aplicação deve apresentar os canais de denúncia ao usuário mediante preenchimento prévio de formulário. RF-04: A aplicação deve permitir que o usuário realize um filtro utilizando a geolocalização ou informando a localidade para ser direcionado para o canal de denúncia da região |
 | Objetivo do Teste | Verificar se a aplicação retorna com o principal canal de denúncia de acordo com as informações preenchidas |
 | Passos  | 1. Acesse o link "Denuncie" em qualquer página. 2. Preencha os campos solicitados. 3. Clique em "Localizar"
-| Critérios de êxito | |1. Preenchimento das informações em todos os campos. 2. Êxito ao clicar no botão "Localizar". 3. Receber a informação do primcipal canal de denúncia  |
+| Critérios de êxito | 1. Preenchimento das informações em todos os campos. 2. Êxito ao clicar no botão "Localizar". 3. Receber a informação do primcipal canal de denúncia  |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
 |Caso de Teste    | CT-04 - Verificar as interações dos profissionais de apoio na plataforma |
