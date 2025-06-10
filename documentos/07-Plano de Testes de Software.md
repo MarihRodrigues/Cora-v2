@@ -34,22 +34,28 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 |Caso de Teste    | CT-02 - Verificar a sistemática de recuperação de senha |
 |:---|:---|
 | Requisitos Associados | RF-02: A aplicação deve permitir que o usuário recupere sua senha através das informações fornecidas na criação da conta
-| Objetivo do Teste | Assegurar que o usuário utilieze os recursos da aplicação para recuperar a senha |
+| Objetivo do Teste | Assegurar que o usuário utilize os recursos da aplicação para recuperar a senha |
 | Passos | 1. Acesse a opção "Entrar" no menu sanduiche. 2. Na página de login clique em "Esqueci minha senha". 3. Preencha o campo necessário|
 | Critérios de êxito | Receber o direcionamento para acessar o e-email informado para dar continuidade a recuperação de senha  |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
 |Caso de Teste    | CT-03 - Verificar a sistemática do processo de denúncia |
 |:---|:---|
-| Requisitos Associados | RF-03: A aplicação deve apresentar os canais de denúncia ao usuário mediante preenchimento prévio de formulário.
-RF-04: A aplicação deve permitir que o usuário realize um filtro utilizando a geolocalização ou informando a localidade para ser direcionado para o canal de denúncia da região
-| Objetivo do Teste | Verificar se o usuáriotem acesso ao principal canal de denúncia de acordo com as informações preenchidas |
-| Passos  | 1. Acesse o link "Denuncie" de qualquer página. 2. Preencha os campos solicitados. 3. Clique em "Localizar"
+| Requisitos Associados | RF-03: A aplicação deve apresentar os canais de denúncia ao usuário mediante preenchimento prévio de formulário. RF-04: A aplicação deve permitir que o usuário realize um filtro utilizando a geolocalização ou informando a localidade para ser direcionado para o canal de denúncia da região |
+| Objetivo do Teste | Verificar se o usuário tem acesso ao principal canal de denúncia de acordo com as informações preenchidas |
+| Passos  | 1. Acesse o link "Denuncie" em qualquer página. 2. Preencha os campos solicitados. 3. Clique em "Localizar"
 | Critérios de êxito | |1. Preenchimentoo das informações em todos os campos. 2. Êxito ao clicar no botão "Localizar". 3. Receber a informação do primcipal canal de denúncia  |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
+|Caso de Teste    | CT-04 - Verificar as interações dos profissionais de apoio na plataforma |
+|:---|:---|
+| Requisitos Associados | RF-05: A aplicação deve permitir que o profissional de apoio crie uma conta e cadastre o seu serviço juntamente com as formas de contato. RF-06: A aplicação deve permitir que o profissional de apoio encerre a prestação de serviços através da suspensão ou exclusão da conta |
+| Objetivo do Teste | Verificar se o profissional de apoio consegue criar, excluir, suspender e cadastrar a prestação de serviço |
+| Passos  | 1. Seleicionae a opção "Cadastre-se" no menu sanduiche. 2. Preencha os campos solicitados e selecione a opção Profissional no campo perfil. 3. Preecha os campos de registro de profissionais. 4. Acesse outra conta com perfil "Usuário" e clique no link "Profissinais de Apoio". 5. Preencha os campos com base no que foi simulado ao registrar o profissional de apoio. 6. Certifique que o que foi cadastrado apareça como opção para o usuário |
+| Critérios de êxito | 1. Êxito ao se cadastrar  em "Cadastre-se" no menu sanduiche. 2. Ter acesso aos campos para cadastrar os serviços ao selecionar "Profisional" na opção Perfil da página de cadastro. 3. Apresentar o serviço cadastrado na página "Profissionais de Apoio" |
+| Responsável pela elaborar do caso de Teste | Rafael |
 
-|Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
+|Caso de Teste    | CT-05 - Verificar o acesso ás informações contidas em links |
 |:---|:---|
 | Requisitos Associados | RF-008 A aplicação deve permitir que o acesso às informações sobre conscientização seja livre,ou seja, sem a necessidade de criar uma conta.
 | Objetivo do Teste | Verificar se os links nos cards de Orientações e Informações estão funcionando. |
