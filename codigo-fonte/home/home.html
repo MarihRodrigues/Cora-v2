@@ -11,7 +11,9 @@
   <body>
     <header class="meu-header"> 
       <div class="cabecalho">
-        <img src="imagens/logoCora.png" alt="Logo">
+        <a class="logo" href="../home/home.html">
+          <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+        </a>
           <nav class="indice"> 
                   <a href="../home/home.html">Início</a>
                   <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
@@ -26,9 +28,9 @@
           <div class="menu-opcoes">
             <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
             <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
-            <a href="#">Excluir conta</a>
+            <a href="#" onclick="excluirConta()">Excluir conta</a>
             <a href="../login/paginaLogin.html">Entrar</a>
-            <a href="#">Sair</a>
+            <a href="#" onclick="sairConta()">Sair</a>
           </div>
         </div>
     </header>
@@ -55,7 +57,9 @@
       </section>
 
       <section class="imagem-section">
-          <img src="imagens/flyerviolenciadom.jpeg" alt="Diga não à violência contra a mulher!" class="imagem-mensagem">
+          <a class="help" href="../denuncia/paginaDenuncia.html">
+            <img src="imagens/flyerviolenciadom.jpeg" alt="Diga não à violência contra a mulher!" class="imagem-mensagem">
+          </a>
       </section>
     </main>
 

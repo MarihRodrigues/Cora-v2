@@ -41,62 +41,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Salva um novo usuário no localStorage
-function salvarUsuario(usuario) {
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    usuarios.push(usuario);
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-}
-
-window.onclick = function (event) {
-    if (!event.target.matches('.login-btn img')) {
-        const dropdowns = document.getElementsByClassName("dropdown-menu");
-        for (let i = 0; i < dropdowns.length; i++) {
-            const openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+// Função para excluir conta
+      function excluirConta() {
+        const confirmar = confirm("Tem certeza de que deseja excluir sua conta?");
+        if (confirmar) {
+          localStorage.removeItem("user"); // Remove os dados do usuário armazenados
+          alert("Sua conta foi excluída com sucesso.");
+          window.location.href = "../home/home.html"; // Redireciona para o cadastro
         }
-    }
-}
+      }
 
-// Função para sair da conta
-function sairConta() {
-  // Remove os dados do usuário armazenados no localStorage
-  localStorage.removeItem("usuario");
+      // Função para sair da conta
+      function sairConta() {
+        localStorage.removeItem("user"); // Remove os dados do usuário armazenados
+        alert("Você saiu da sua conta.");
+        window.location.href = "../login/paginaLogin.html"; // Redireciona para a página de login
+      }
 
-  // Opcional: limpa todo o localStorage se quiser remover tudo
-  // localStorage.clear();
-
-  // Redireciona para a página de login
-  window.location.href = "../login/paginaLogin.html";
-}
-
-function excluirConta() {
-  const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
-
-  if (!emailUsuarioLogado) {
-    alert("Nenhum usuário logado.");
-    return;
-  }
-
-  // Confirmação
-  const confirmacao = confirm("Tem certeza que deseja excluir sua conta? Essa ação não poderá ser desfeita.");
-  if (!confirmacao) return;
-
-  let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-  // Remove o usuário da lista
-  usuarios = usuarios.filter(usuario => usuario.email !== emailUsuarioLogado);
-
-  // Atualiza o localStorage
-  localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-  // Remove a sessão do usuário
-  localStorage.removeItem("usuarioLogado");
-
-  alert("Conta excluída com sucesso!");
-
-  // Redireciona para a página inicial
-  window.location.href = "../index.html";
-}
+      // Exemplo de simulação de usuário logado (opcional)
+      if (!localStorage.getItem("user")) {
+        localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
+      }

@@ -40,3 +40,25 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error("Erro: Elementos .menu-sanduiche, .menu-opcoes ou span não encontrados.");
   }
 });
+
+// Função para excluir conta
+      function excluirConta() {
+        const confirmar = confirm("Tem certeza de que deseja excluir sua conta?");
+        if (confirmar) {
+          localStorage.removeItem("user"); // Remove os dados do usuário armazenados
+          alert("Sua conta foi excluída com sucesso.");
+          window.location.href = "../home/home.html"; // Redireciona para o cadastro
+        }
+      }
+
+      // Função para sair da conta
+      function sairConta() {
+        localStorage.removeItem("user"); // Remove os dados do usuário armazenados
+        alert("Você saiu da sua conta.");
+        window.location.href = "../login/paginaLogin.html"; // Redireciona para a página de login
+      }
+
+      // Exemplo de simulação de usuário logado (opcional)
+      if (!localStorage.getItem("user")) {
+        localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
+      }

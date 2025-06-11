@@ -14,42 +14,48 @@ body {
 
 /****************** Cabeçalho ******************/
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #8304A5;
-  padding: 20px 40px;
-  min-height: 100px;
-  color: #ffffff;
-}
-
 .navbar { 
   display: flex;
 }
 
+.cabecalho img {
+  width: 110px;
+  height: 100px;
+}
+
 .cabecalho {
   display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 80px;
+  background-color: #8304a5;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
 
-.cabecalho img {
-  width: 110px;
-  height: auto;
-}
-
 .indice {
-  display: flex; 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  padding-right: 50px;
+  flex: 1;
   gap: 70px;
   padding-left: 80px;
 }
 
 .indice a {
-  text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .indice a:hover {
@@ -231,12 +237,21 @@ header {
   transform: scale(1.02);
 }
 
-/* Responsividade */
+/****************** Responsividade ******************/
 
 @media (max-width: 1360px){
 
+  header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8304A5;
+  height: 80px;
+  } 
+
   .cabecalho img {
-    width: 110px; 
+    width: 100px;
+    height: 80px;
   }
 
   .indice {
@@ -249,30 +264,36 @@ header {
 
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1200px) and (min-width: 1025px) and (min-width: 1025px){
 
-  .cabecalho {
-    gap: 70px; 
-  }
+  header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8304A5;
+  height: 80px;
+  } 
+
   .cabecalho img {
-    width: 110px; 
+    width: 100px;
+    height: 80px;
   }
 
   .indice {
-    gap: 70px; 
-    padding-left: 90px; 
+    gap: 0; 
   }
 
-  header {
-      padding: 15px 30px;
+  .indice a{
+    margin-left: 80px;
   }
+
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px) {
 
-   header {
-      padding: 15px 20px;
-      min-height: 80px;
+  header {
+    padding: 15px 20px;
+    min-height: 80px;
   }
 
   .cabecalho img {
@@ -286,59 +307,32 @@ header {
   .cabecalho {
       gap: 0;
   }
-
 }
-
-
 
 @media (max-width: 768px) {
 
-
-
   header {
-
     padding: 15px 20px;
-
     min-height: 80px;
-
   }
-
-
 
   .cabecalho img {
-
     width: 80px;
-
   }
-
-
 
   .indice {
-
     display: none;
-
   }
-
-
 
   .cabecalho {
-
     gap: 0;
-
   }
-
-
 
   .cards-section {
-
     flex-direction: column;
-
   }
 
-
-
   .coluna {
-
     flex: 1 1 100%;
   }
    .rodape{
