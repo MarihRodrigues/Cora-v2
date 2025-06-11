@@ -215,7 +215,7 @@ function excluirConta() {
   alert("Conta excluída com sucesso!");
 
   // Redireciona para a página inicial
-  window.location.href = "../index.html";
+  window.location.href = "../home/home.html";
 }
 
 

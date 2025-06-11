@@ -211,7 +211,7 @@ function excluirConta() {
   alert("Conta excluída com sucesso!");
 
   // Redireciona para a página inicial
-  window.location.href = "../index.html";
+  window.location.href = "../home/home.html";
 }
 
 
@@ -224,7 +224,10 @@ const modoEdicao = localStorage.getItem("usuarioLogado") ? true : false;
 
 // Ao carregar a página, preenche os campos com os dados do usuário
 window.onload = function () {
-  const usuario = JSON.parse(localStorage.getItem("usuario"));
+  const emailLogado = localStorage.getItem("usuarioLogado");
+  const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+  const usuario = usuarios.find(user => user.email === emailLogado);
 
   if (usuario) {
     document.getElementById("nome").value = usuario.nome || "";
@@ -241,8 +244,11 @@ window.onload = function () {
     document.getElementById("perfil").value = usuario.perfil || "usuario";
     document.getElementById("senha").value = usuario.senha || "";
     document.getElementById("confirmar-senha").value = usuario.senha || "";
+  } else {
+    alert("Usuário não encontrado.");
   }
 };
+
 
 // Ao clicar em "Atualizar", salva os dados no localStorage
 document.getElementById("form-usuario").addEventListener("submit", function (e) {
