@@ -33,4 +33,13 @@ https://github.com/user-attachments/assets/2f59aaad-51d8-44ec-aff1-49b4f01fa236
 | Responsável pela execução do caso de Teste | Mariana |
 
 
+|Caso de Teste    | CT-05 - Verificar a criação de conta de usuário |
+
+https://github.com/user-attachments/assets/94579894-2a42-4608-a881-6af11e0d47cc
+
+| Resultados obtidos | Funcionando corretamente |
+
+| Responsável pela execução do caso de Teste | Guilherme |
+
+
 
