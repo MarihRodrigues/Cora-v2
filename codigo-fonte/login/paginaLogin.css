@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
- 
+
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 .indice {
     display: flex;
     flex-direction: row;
@@ -27,14 +27,14 @@
     padding-left: 20px;
     flex: 1;
 }
- 
+
 a {
     color: #ffffff;
     font-size: 17px;
     font-weight: bold;
     text-decoration: none;
 }
- 
+
 .entrar-1 {
     width: 70px;
     height: 40px;
@@ -42,7 +42,7 @@ a {
     background-color: #ffffff;
     border-style: none;
 }
- 
+
 .entrar {
     display: flex;
     align-items: center;
@@ -51,23 +51,23 @@ a {
     flex-direction: row-reverse;
     padding-right: 50px;
 }
- 
+
 .icone {
     height: 40px;
 }
- 
- 
+
+
 h1 {
     font-size: 30px;
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
- 
+
     width: 100%;
     text-align: center;
     display: block;
     padding-bottom: 30px;
 }
- 
+
 form {
     justify-items: center;
     align-content: center;
@@ -76,7 +76,7 @@ form {
     width: 400px;
     border-radius: 20px;
 }
- 
+
 .fomulario {
     padding-top: 30px;
     height: 500px;
@@ -84,22 +84,22 @@ form {
     align-items: center;
     display: flex;
 }
- 
+
 #email {
     width: 350px;
     height: 30px;
     border-radius: 10px;
     border: #BA91BA;
- 
+
 }
- 
+
 #senha {
     width: 350px;
     height: 30px;
     border-radius: 10px;
     border: #BA91BA;
 }
- 
+
 #logar {
     width: 350px;
     height: 100px;
@@ -107,38 +107,38 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
- 
+
+
 }
- 
+
 .botao {
     height: 40px;
     width: 200px;
     border-radius: 50px;
     border: #BA91BA;
- 
+
 }
- 
-p1 {
+
+.p1 {
     text-align: center;
     font-size: 16px;
     color: aliceblue;
     padding-left: 35px;
 }
- 
+
 .menu-sanduiche {
     position: relative;
     font-size: 30px;
     color: white;
     cursor: pointer;
- 
+
     align-items: center;
     user-select: none;
- 
+
     height: 80px;
     display: flex;
 }
- 
+
 .menu-opcoes {
     display: none;
     position: absolute;
@@ -151,7 +151,7 @@ p1 {
     min-width: 150px;
     z-index: 100;
 }
- 
+
 .menu-opcoes a {
     color: white;
     padding: 10px 15px;
@@ -159,7 +159,7 @@ p1 {
     display: block;
     font-size: 15px;
 }
- 
+
 .menu-opcoes a:hover {
     background-color: #8304A5;
 }

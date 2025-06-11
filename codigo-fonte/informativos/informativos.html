@@ -1,180 +1,112 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informativos</title>
+    <link rel="stylesheet" href="informativos.css" />
 
+  </head>
 
-
-<head>
-
-
-  <meta charset="UTF-8" />
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Informativos</title>
-  <link rel="stylesheet" href="informativos.css" />
-
-</head>
-
-
-
-<body>
-  <header class="meu-header"> 
-  <div class="cabecalho">
-    <img src="imagens/logoCora.png" alt="Logo">
-      <nav class="indice"> 
-        <a href="#">Início</a>
-        <a href="#">Profissionais de Apoio</a>
-        <a href="#">Informativos</a>
-        <a href="#">Denuncie</a>
-      </nav>
-  </div>
-
-  <div class="container-menu"> 
-    <div class="menu-sanduiche">
-      <span>&#9776;</span>
-      <div class="menu-opcoes">
-        <a href="#">Editar cadastro</a>
-        <a href="#">Excluir conta</a>
-        <a href="#">Entrar</a>
-        <a href="#">Sair</a>
-      </div>
+  <body>
+    <header class="meu-header"> 
+    <div class="cabecalho">
+      <a class="logo" href="../home/home.html">
+        <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+      </a>
+        <nav class="indice"> 
+          <a href="../home/home.html">Início</a>
+          <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+          <a href="../informativos/informativos.html">Informativos</a>
+          <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
+        </nav>
     </div>
-</header>
 
-  <main>
-
-    <section class="cards-section">
-
-      <div class="coluna">
-
-        <h2>Informações</h2>
-
-        <a
-          href="https://www12.senado.leg.br/noticias/materias/2023/11/21/datasenado-aponta-que-3-a-cada-10-brasileiras-ja-sofreram-violencia-domestica">
-
-          <div class="card">DataSenado aponta que 3 a cada 10 brasileiras já sofreram violência doméstica.
-            <br> -
-
-            Agência Senado
-          </div>
-
-        </a>
-
-        <a href="https://www.institutomariadapenha.org.br/violencia-domestica/o-que-e-violencia-domestica.html">
-
-          <div class="card">O que é violência doméstica? <br> - Instituto Maria da Penha</div>
-
-        </a>
-
-        <a
-          href="https://www.tjmg.jus.br/portal-tjmg/perguntas-frequentes/quais-sao-os-tipos-de-violencia-domestica.htm#">
-
-          <div class="card">Quais são os tipos de violência doméstica? <br> - Tribunal de Justiça do Estado de
-            Minas
-
-            Gerais</div>
-
-        </a>
-
-        <a href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">
-
-          <div class="card">Denunciar e buscar ajuda a vítimas de violência contra mulheres <br> - Ministério
-            das
-
-            Mulheres, Governo Federal</div>
-
-        </a>
-
-        <a href="https://www.jusbrasil.com.br/artigos/por-que-falar-sobre-a-violencia-domestica/1870062658">
-
-          <div class="card">Por que falar sobre a violência doméstica? <br> - Portal Jus Brasil</div>
-
-        </a>
-
+    <div class="container-menu"> 
+      <div class="menu-sanduiche">
+        <span>&#9776;</span>
+        <div class="menu-opcoes">
+            <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+            <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+            <a href="#" onclick="excluirConta()">Excluir conta</a>
+            <a href="../login/paginaLogin.html">Entrar</a>
+            <a href="#" onclick="sairConta()">Sair</a>
+        </div>
       </div>
+  </header>
 
+    <main>
+      <section class="cards-section">
+        <div class="coluna">
+          <h2>Informações</h2>
+          <a href="https://www12.senado.leg.br/noticias/materias/2023/11/21/datasenado-aponta-que-3-a-cada-10-brasileiras-ja-sofreram-violencia-domestica">
+            <div class="card">DataSenado aponta que 3 a cada 10 brasileiras já sofreram violência doméstica.
+            <br> - Agência Senado
+            </div>
 
+          </a>
 
-      <div class="coluna">
+          <a href="https://www.institutomariadapenha.org.br/violencia-domestica/o-que-e-violencia-domestica.html">
+            <div class="card">O que é violência doméstica? <br> - Instituto Maria da Penha</div>
+          </a>
+
+          <a href="https://www.tjmg.jus.br/portal-tjmg/perguntas-frequentes/quais-sao-os-tipos-de-violencia-domestica.htm#">
+            <div class="card">Quais são os tipos de violência doméstica? <br> - Tribunal de Justiça do Estado de Minas Gerais</div>
+          </a>
+
+          <a href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">
+            <div class="card">Denunciar e buscar ajuda a vítimas de violência contra mulheres <br> - Ministério das Mulheres, Governo Federal</div>
+          </a>
+
+          <a href="https://www.jusbrasil.com.br/artigos/por-que-falar-sobre-a-violencia-domestica/1870062658">
+            <div class="card">Por que falar sobre a violência doméstica? <br> - Portal Jus Brasil</div>
+          </a>
+        </div>
+
+        <div class="coluna">
 
         <h2>Orientações</h2>
 
-        <a>
+          <a>
+            <div class="card">
+              <h4>1- Procure um lugar seguro:</h4>Em caso de emergência, tente sair imediatamente do local da
+              agressão, se for possível sem risco.
+            </div>
+          </a>
 
-          <div class="card">
+          <a>
+            <div class="card">
+              <h4>2- Ligue para a polícia (190):</h4>Denuncie qualquer agressão. A ligação é gratuita e
+              funciona 24h por dia.
+            </div>
+          </a>
 
-            <h4>1- Procure um lugar seguro:</h4>Em caso de emergência, tente sair imediatamente do local da
-            agressão, se
+          <a>
+            <div class="card">
+              <h4>3- Guarde provas da agressão:</h4>Fotos de ferimentos, roupas rasgadas, mensagens
+              ameaçadoras, laudos médicos e boletins de ocorrência são importantes para a denúncia.
+            </div>
+          </a>
 
-            for possível sem risco.
+          <a>
+            <div class="card">
+              <h4>4- Procure atendimento médico e psicológico:</h4>Além de cuidar da saúde física, o apoio
+              psicológico é essencial para sua recuperação.
+            </div>
+          </a>
 
-          </div>
+        </div>
 
-        </a>
+      </section>
 
-        <a>
+    </main>
 
-          <div class="card">
+    <footer class="rodape">
+      <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
+    </footer>
 
-            <h4>2- Ligue para a polícia (190):</h4>Denuncie qualquer agressão. A ligação é gratuita e
-            funciona 24h por
+    <script src="script/script3.js"></script>
 
-            dia.
-
-          </div>
-
-        </a>
-
-        <a>
-
-          <div class="card">
-
-            <h4>3- Guarde provas da agressão:</h4>Fotos de ferimentos, roupas rasgadas, mensagens
-            ameaçadoras, laudos
-
-            médicos e boletins de ocorrência são importantes para a denúncia.
-
-          </div>
-
-        </a>
-
-        <a>
-
-          <div class="card">
-
-            <h4>4- Procure atendimento médico e psicológico:</h4>Além de cuidar da saúde física, o apoio
-            psicológico é
-
-            essencial para sua recuperação.
-
-          </div>
-
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-
-  <footer class="rodape">
-
-    <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
-
-  </footer>
-
-
-
-
-  <script src="script/script3.js"></script>
-
-
-
-</body>
-
-
+  </body>
 
 </html>

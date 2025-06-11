@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="paginaLogin.css">
 </head>
- 
+
 <body>
- 
+
     <div class="cabecalho">
         <img src="../imagens/logoCora.png" alt="Logo">
         <div class="indice">
@@ -17,50 +17,51 @@
             <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
             <a href="../informativos/informativos.html">Informativos</a>
             <a href="../denuncia/paginaDenuncia.html">Denuncie</a>
- 
+
             <div class="menu-sanduiche">
                 &#9776;
                 <div class="menu-opcoes">
-                    <a href="#">Editar cadastro</a>
-                    <a href="#">Excluir conta</a>
+                    <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+                    <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+                    <a href="#" onclick="excluirConta()">Excluir conta</a>
                     <a href="../login/paginaLogin.html">Entrar</a>
-                    <a href="#">Sair</a>
+                    <a href="#" onclick="sairConta()">Sair</a>
                 </div>
- 
+
             </div>
         </div>
- 
+
     </div>
- 
+
     <div class="fomulario">
         <form id="login">
             <div class="titulo">
                 <h1>Acesse sua conta</h1>
                 <br />
             </div>
- 
+
             <div id="logar">
                 <input placeholder="  Digite seu e-mail" type="email" id="email"><br />
                 <input placeholder="  Digite sua senha" type="password" id="senha">
             </div>
- 
-            <p1> Esqueci minha senha </p1><br /><br /><br />
+
+            <a class="p1" href="../recuperarSenha/recuperarSenha.html">Esqueci minha senha</a><br /><br /><br />
             <button type="submit" class="botao">Entrar</button>
- 
+
         </form>
- 
+
         <script src="paginaLogin.js"></script>
- 
+
         <script>
             const menu = document.querySelector('.menu-sanduiche');
             const opcoes = document.querySelector('.menu-opcoes');
- 
+
             // Abre e fecha ao clicar no ícone
             menu.addEventListener('click', function (event) {
                 event.stopPropagation(); // impede que o clique propague e feche imediatamente
                 opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
             });
- 
+
             // Fecha se clicar fora do menu
             document.addEventListener('click', function (event) {
                 const clicouFora = !menu.contains(event.target);
@@ -69,9 +70,9 @@
                 }
             });
         </script>
- 
+
         <script src="paginaLogin.js"></script>
- 
+
 </body>
- 
+
 </html>
