@@ -1,69 +1,65 @@
 /****************** Estilos gerais ******************/
 
 * {
-
   margin: 0;
-
   padding: 0;
-
   box-sizing: border-box;
 }
 
 body {
-
   font-family: Arial, sans-serif;
-
   background-color: #fff;
-
   color: #333;
-
 }
 
 /****************** Cabeçalho ******************/
-
-header {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-  background-color: #8304A5;
-  padding: 20px 40px;
-  min-height: 100px;
-  color: #ffffff;
-}
 
 .navbar { 
   display: flex;
 }
 
+.cabecalho img {
+  width: 110px;
+  height: 100px;
+}
+
 .cabecalho {
   display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 80px;
+  background-color: #8304a5;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
 
-.cabecalho img {
-  width: 110px;
-  height: auto;
-}
-
 .indice {
-  display: flex; 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  padding-right: 50px;
+  flex: 1;
   gap: 70px;
   padding-left: 80px;
 }
 
 .indice a {
-  text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .indice a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .menu-sanduiche { 
@@ -75,55 +71,8 @@ header {
   width: 40px; 
   height: 40px; 
   display: flex;
-
-}
-
-
-
-.cabecalho {
-
-  display: flex;
-
   align-items: center;
-
-  gap: 60px;
-
-}
-
-
-
-.cabecalho img {
-
-  width: 110px;
-
-  height: auto;
-
-}
-
-
-
-.indice {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 70px;
-
-  padding-left: 80px;
-
-}
-
-
-
-.indice a {
-
-  text-decoration: none;
-
-  color: #ffffff;
-
-  font-size: 16px;
-
+  justify-content: center;
 }
 
 .menu-sanduiche span { 
@@ -137,7 +86,6 @@ header {
 
 .menu-opcoes { 
   display: none;
-
   position: absolute;
   top: 110%;
   right: 0; 
@@ -171,19 +119,15 @@ header {
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 60px 40px;
+  padding: 50px 40px;
   gap: 60px;
   max-width: 1200px;
   margin: 40px auto;
   align-items: flex-start;
 }
 
-
-
 .text-section {
-
   flex: 1;
-
   min-width: 300px;
   padding-right: 20px;
   display: flex;
@@ -191,15 +135,11 @@ header {
   justify-content: center;
 }
 
-
-
 .titulo {
   font-size: 36px;
   color: #8304A5;
   margin-bottom: 25px;
 }
-
-
 
 .titulo-missao {
   font-size: 32px;
@@ -208,17 +148,12 @@ header {
   margin-bottom: 25px;
 }
 
-
-
 .descricao {
-
   font-size: 18px;
   color: #555;
   margin-bottom: 30px;
   line-height: 1.7;
 }
-
-
 
 .imagem-section {
   flex: 0.9;
@@ -227,10 +162,7 @@ header {
   display: flex; 
   align-items: flex-start;
   justify-content: center;
-
 }
-
-
 
 .imagem-mensagem {
   padding-top: 50px;
@@ -256,28 +188,65 @@ header {
 
 /****************** Responsividade ******************/
 
-@media (max-width: 1024px) {
+@media (max-width: 1360px){
 
-  .cabecalho {
-    gap: 70px; 
-  }
+  header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8304A5;
+  height: 80px;
+  } 
+
   .cabecalho img {
-    width: 110px; 
+    width: 100px;
+    height: 80px;
   }
 
   .indice {
-    gap: 70px; 
-    padding-left: 90px; 
+    gap: 1px; 
   }
 
-  header {
-      padding: 15px 30px;
+  .indice a{
+    margin-left: 130px;
+  }
+
+  /*********************************/
+  
+  .container {
+    padding: 10px 10px;
+    gap: 40px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px){
+
+  header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8304A5;
+  height: 80px;
+  } 
+
+  .cabecalho img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .indice {
+    gap: 0; 
+  }
+
+  .indice a{
+    margin-left: 80px;
   }
 
   /*********************************/
 
  .container {
-    padding: 40px 30px;
+    padding: 20px 10px;
     gap: 40px;
   }
   .titulo {
@@ -291,11 +260,11 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
 
   header {
-      padding: 15px 20px;
-      min-height: 80px;
+    padding: 15px 20px;
+    min-height: 80px;
   }
 
   .cabecalho img {
