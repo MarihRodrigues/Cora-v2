@@ -1,3 +1,5 @@
+
+
 # Registro de Testes de Software
 
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
@@ -23,9 +25,12 @@ https://github.com/user-attachments/assets/2f59aaad-51d8-44ec-aff1-49b4f01fa236
 | Responsável pela execução do caso de Teste | Rafael |
 
 
+
+
+
 |Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
 
-📹 [Clique aqui para assistir ao vídeo do teste funcional CT-04](testes/teste_informativos_04.mp4)
+https://github.com/user-attachments/assets/6e14d570-4fd7-4985-986e-591c2be51bb5
 
 |:---|:---|
 | Resultados obtidos | Funcionando corretamente |
