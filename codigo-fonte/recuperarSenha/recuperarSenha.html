@@ -13,22 +13,143 @@
     <div class="cabecalho">
         <img src="../imagens/logoCora.png" alt="Logo">
         <div class="indice">
-            <a href="#l">Início</a>
-            <a href="#">Profissionais de Apoio</a>
-            <a href="#">Informativos</a>
-            <a href="#">Denuncie</a>
-            <button class="entrar-1">Entrar</button>
+            <a href="../home/home.html">Início</a>
+            <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+            <a href="../informativos/informativos.html">Informativos</a>
+            <a href="../denuncia/paginaDenuncia.html">Denuncie</a>
+
+            <div class="menu-sanduiche">
+                &#9776;
+                <div class="menu-opcoes">
+                    <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+                    <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+                    <a href="#" onclick="excluirConta()">Excluir conta</a>
+                    <a href="../login/paginaLogin.html">Entrar</a>
+                    <a href="#" onclick="sairConta()">Sair</a>
+                </div>
+
+            </div>
         </div>
+
     </div>
 
-    <form class="campoFormulario">
-
-        <div class="formulario-2">
+    <form class="campoFormulario" id="form-recuperar">
+        <div class="formulario-2" id="etapa-email">
             <h1>Recuperação de Senha</h1><br />
-            <input class="campo" type="email" placeholder="  Digite o e-mail cadastrado"><br />
+            <input class="campo" type="email" id="email" placeholder="  Digite o e-mail cadastrado" required><br />
+            <button type="submit" class="botao">Enviar Código</button>
+            <p id="mensagem" style="color: black; margin-top: 15px;"></p>
         </div>
 
+        <div class="formulario-2" id="etapa-codigo" style="display: none;">
+            <h1>Verificação de Código</h1><br />
+            <input class="campo" type="text" id="codigo" placeholder="  Digite o código recebido" maxlength="6"
+                required><br />
+            <button type="button" class="botao" onclick="verificarCodigo()">Verificar Código</button>
+            <p id="mensagem-codigo" style="color: black; margin-top: 15px;"></p>
+        </div>
     </form>
+
+    <script>
+        
+        const menu = document.querySelector('.menu-sanduiche');
+        const opcoes = document.querySelector('.menu-opcoes');
+
+        // Abre e fecha ao clicar no ícone
+        menu.addEventListener('click', function (event) {
+            event.stopPropagation(); // impede que o clique propague e feche imediatamente
+            opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Fecha se clicar fora do menu
+        document.addEventListener('click', function (event) {
+            const clicouFora = !menu.contains(event.target);
+            if (clicouFora) {
+                opcoes.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById("form-recuperar").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+            const mensagem = document.getElementById("mensagem");
+
+            if (!email) {
+                alert("Por favor, preencha o e-mail.");
+                return;
+            }
+
+            // Buscar usuários no localStorage
+            const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+            const usuarioEncontrado = usuarios.find(usuario => usuario.email.toLowerCase() === email.toLowerCase());
+
+            if (usuarioEncontrado) {
+                mensagem.style.color = "black";
+                mensagem.textContent = "Acesse o seu e-mail e siga com as instruções de recuperação de senha.";
+
+                // Avança para a etapa do código
+                document.getElementById("etapa-email").style.display = "none";
+                document.getElementById("etapa-codigo").style.display = "flex";
+
+                // Armazena o código simulado (pode ser randomizado ou fixo para teste)
+                const codigoGerado = "123456"; // Exemplo fixo
+                localStorage.setItem("codigoRecuperacao", codigoGerado);
+                localStorage.setItem("emailRecuperacao", email);
+            } else {
+                mensagem.style.color = "black";
+                mensagem.textContent = "E-mail não cadastrado.";
+            }
+
+        });
+
+
+        // Função para sair da conta
+
+        function sairConta() {
+            // Remove os dados do usuário armazenados no localStorage
+            localStorage.removeItem("usuario");
+
+            // Opcional: limpa todo o localStorage se quiser remover tudo
+            // localStorage.clear();
+
+            // Redireciona para a página de login
+            window.location.href = "../login/paginaLogin.html";
+        }
+
+        function excluirConta() {
+            const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
+
+            if (!emailUsuarioLogado) {
+                alert("Nenhum usuário logado.");
+                return;
+            }
+
+            // Confirmação
+            const confirmacao = confirm("Tem certeza que deseja excluir sua conta? Essa ação não poderá ser desfeita.");
+            if (!confirmacao) return;
+
+            let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+            // Remove o usuário da lista
+            usuarios = usuarios.filter(usuario => usuario.email !== emailUsuarioLogado);
+
+            // Atualiza o localStorage
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+            // Remove a sessão do usuário
+            localStorage.removeItem("usuarioLogado");
+
+            alert("Conta excluída com sucesso!");
+
+            // Redireciona para a página inicial
+            window.location.href = "../index.html";
+        }
+    </script>
+
 
 </body>
 
