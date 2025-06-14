@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cora</title>
     <link rel="stylesheet" href="home.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body>
@@ -62,6 +63,34 @@
           </a>
       </section>
     </main>
+
+     <section class="conteudo">
+      <div class="texto-intro">
+        <h2>A violência doméstica no Brasil</h2>
+        <p>
+          A violência doméstica é um problema social grave e persistente que afeta milhões de pessoas em todo o mundo, especialmente mulheres. 
+          Este tipo de violência ocorre no âmbito do lar, onde a vítima, muitas vezes, se vê impossibilitada de buscar ajuda devido ao medo, 
+          à dependência emocional ou financeira, ou ainda pela vergonha e culpa que carregam.
+        </p>
+        <p>
+          No Brasil, os números são alarmantes: segundo dados do Fórum Brasileiro de Segurança Pública, uma mulher é agredida a cada 4 minutos, 
+          e a cada dois minutos uma denúncia de violência doméstica é registrada. Além disso, muitas vítimas têm dificuldades em denunciar os abusos 
+          devido a fatores culturais, sociais e até mesmo pela falta de conhecimento sobre seus direitos e os mecanismos de proteção.
+        </p>
+        <blockquote>
+          “Ao exporem os motivos que as levavam a permanecer por tanto tempo com os agressores, as participantes da pesquisa referiram pensar serem 
+          incapazes de enfrentar a situação por medo das constantes ameaças que sofriam.” (LIMA, 2013)
+        </blockquote>
+      </div>
+
+     <div class="grafico-section">
+        <h2>Casos de Violência Doméstica</h2>
+          <canvas id="graficoViolencia" width="400" height="200"></canvas>
+        <p class="fontes">
+          Fontes: <a href="https://forumseguranca.org.br/">Fórum Brasileiro de Segurança Pública (FBSP)</a>
+        </p>
+      </div>
+    </section>
 
     <footer class="rodape">
       <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
