@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nova Senha</title>
+  <link rel="stylesheet" href="recuperarSenha.css" />
+</head>
+
+<body>
+  <div class="cabecalho">
+    <img src="../imagens/logoCora.png" alt="Logo" />
+    <h2>Definir Nova Senha</h2>
+  </div>
+
+  <form class="campoFormulario" id="form-nova-senha">
+    <div class="formulario-2">
+      <input class="campo" type="password" id="novaSenha" placeholder="  Digite a nova senha" required><br />
+      <input class="campo" type="password" id="confirmarSenha" placeholder="  Confirme a nova senha" required><br />
+      <button type="submit" class="botao">Salvar Nova Senha</button>
+      <p id="mensagem" style="margin-top: 15px;"></p>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById("form-nova-senha").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const novaSenha = document.getElementById("novaSenha").value.trim();
+      const confirmarSenha = document.getElementById("confirmarSenha").value.trim();
+      const mensagem = document.getElementById("mensagem");
+      const email = localStorage.getItem("emailRecuperacao");
+
+      if (!novaSenha || !confirmarSenha) {
+        mensagem.style.color = "red";
+        mensagem.textContent = "Preencha todos os campos.";
+        return;
+      }
+
+      if (novaSenha !== confirmarSenha) {
+        mensagem.style.color = "red";
+        mensagem.textContent = "As senhas não coincidem.";
+        return;
+      }
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+      const indexUsuario = usuarios.findIndex(usuario => usuario.email === email);
+      if (indexUsuario !== -1) {
+        usuarios[indexUsuario].senha = novaSenha;
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+        mensagem.style.color = "green";
+        mensagem.textContent = "Senha atualizada com sucesso! Redirecionando...";
+
+        // Limpa dados temporários
+        localStorage.removeItem("emailRecuperacao");
+        localStorage.removeItem("codigoRecuperacao");
+
+        setTimeout(() => {
+          window.location.href = "../login/paginaLogin.html";
+        }, 2000);
+      } else {
+        mensagem.style.color = "red";
+        mensagem.textContent = "Erro: usuário não encontrado.";
+      }
+    });
+  </script>
+</body>
+</html>
