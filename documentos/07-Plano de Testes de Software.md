@@ -38,7 +38,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Será considerado como êxito se o usuário conseguir alterar a senha e acessar a página com a nova senha. |
 | Responsável pela elaborar do caso de Teste | Mariana |
 
-|Caso de Teste    | CT-05 - Verificar a sistemática do processo de denúncia |
+|Caso de Teste    | CT-05 - Verificar a eficácia do processo de denúncia |
 |:---|:---|
 | Requisitos Associados | RF-03: A aplicação deve apresentar os canais de denúncia ao usuário mediante preenchimento prévio de formulário. RF-04: A aplicação deve permitir que o usuário realize um filtro através do preenchimento dos campos para ser direcionado para o canal de denúncia da região. |
 | Objetivo do Teste | Garantir que o usuário tenha acesso ao principal canal de denúncia da região. |
