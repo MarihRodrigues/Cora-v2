@@ -111,8 +111,8 @@
 | RF-07 |A aplicação deve permitir que o|   Média    |
 |	|usuário identifique o 		|	     |
 |	|profissional de apoio através 	|	     |
-|	|do filtro pela região e formas |	     |
-|	|de atendimento.	 	|	     |
+|	|do preechimento dos campos que  |	     |
+|	|terá a função de filtro.	 	|	     |
 |-------|-------------------------------|------------|                           
 | RF-08 |A aplicação deve permitir que o|   Média    |
 |	|acesso às informações sobre 	|	     |
