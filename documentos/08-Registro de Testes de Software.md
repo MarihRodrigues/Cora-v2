@@ -24,9 +24,8 @@ https://github.com/user-attachments/assets/377ca58c-6731-4382-8f43-29345f2570f4
 |Caso de Teste    | CT-02 - Verificar o cadastro de usuário |
 
 
+Uploading Cadastro de Usuario — Mozilla Firefox 2025-06-17 16-31-11.mp4…
 
-
-https://github.com/user-attachments/assets/3481bce2-5043-41f2-8f1e-f4dc10c3cbe4
 
 
 | Resultados obtidos | Funcionando corretamente |
