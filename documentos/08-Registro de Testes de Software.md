@@ -42,6 +42,10 @@ https://github.com/user-attachments/assets/18520697-7afd-4965-b211-7e84c67b1857
 
 
 
+https://github.com/user-attachments/assets/89c6de59-0bd2-463c-b4c2-06b4372b16c0
+
+
+
 | Resultados obtidos | Funcionando corretamente |
 
 | Responsável pela execução do caso de Teste | Mariana |
