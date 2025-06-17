@@ -25,6 +25,10 @@ https://github.com/user-attachments/assets/377ca58c-6731-4382-8f43-29345f2570f4
 
 
 
+
+https://github.com/user-attachments/assets/3481bce2-5043-41f2-8f1e-f4dc10c3cbe4
+
+
 | Resultados obtidos | Funcionando corretamente |
 
 | Responsável pela execução do caso de Teste | Mariana |
