@@ -14,7 +14,7 @@ body {
 
 /****************** Cabeçalho ******************/
 
-.navbar { 
+.navbar {
   display: flex;
 }
 
@@ -62,36 +62,40 @@ body {
   opacity: 0.8;
 }
 
-.menu-sanduiche { 
+.icon-nav-mobile {
+    display: none;
+}
+
+.menu-sanduiche {
   position: relative;
-  font-size: 33px; 
+  font-size: 33px;
   color: #ffffff;
   cursor: pointer;
   user-select: none;
-  width: 40px; 
-  height: 40px; 
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.menu-sanduiche span { 
+.menu-sanduiche span {
     transition: transform 0.3s ease;
-    line-height: 0.9; 
+    line-height: 0.9;
 }
 
 .menu-sanduiche.ativo span {
     transform: rotate(90deg);
 }
 
-.menu-opcoes { 
+.menu-opcoes {
   display: none;
   position: absolute;
   top: 110%;
-  right: 0; 
+  right: 0;
   background-color: #BA91BA;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   flex-direction: column;
   min-width: 170px;
   z-index: 1000;
@@ -159,7 +163,7 @@ body {
   flex: 0.9;
   min-width: 350px;
   min-height: 350px;
-  display: flex; 
+  display: flex;
   align-items: flex-start;
   justify-content: center;
 }
@@ -167,11 +171,11 @@ body {
 .imagem-mensagem {
   padding-top: 50px;
   max-width: 100%;
-  width: 490px; 
-  height: 550px; 
+  width: 490px;
+  height: 550px;
   display: block;
   border-radius: 10px;
-  object-fit: unset; 
+  object-fit: unset;
 }
 
 /****************** Rodapé ******************/
@@ -196,7 +200,7 @@ body {
   align-items: center;
   background-color: #8304A5;
   height: 80px;
-  } 
+  }
 
   .cabecalho img {
     width: 100px;
@@ -204,7 +208,7 @@ body {
   }
 
   .indice {
-    gap: 1px; 
+    gap: 1px;
   }
 
   .indice a{
@@ -212,7 +216,7 @@ body {
   }
 
   /*********************************/
-  
+
   .container {
     padding: 10px 10px;
     gap: 40px;
@@ -220,7 +224,7 @@ body {
 
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1024px){
+@media screen and (max-width: 1200px) and (min-width: 1014px){
 
   header{
   display: flex;
@@ -228,7 +232,8 @@ body {
   align-items: center;
   background-color: #8304A5;
   height: 80px;
-  } 
+  padding-left: 5px;
+  }
 
   .cabecalho img {
     width: 100px;
@@ -236,16 +241,37 @@ body {
   }
 
   .indice {
-    gap: 0; 
+    display: none;
   }
 
-  .indice a{
-    margin-left: 80px;
+  .icon-nav-mobile {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 30px;
+  }
+
+  .icon-nav-mobile a {
+      color: #ffffff;
+      font-size: 24px;
+      text-decoration: none;
+      padding: 5px;
+      transition: opacity 0.3s;
+  }
+
+  .icon-nav-mobile a:hover {
+      opacity: 0.8;
+  }
+
+  .container-menu {
+      margin-left: 40px;
   }
 
   /*********************************/
 
- .container {
+  .container {
     padding: 20px 10px;
     gap: 40px;
   }
@@ -258,9 +284,10 @@ body {
   .descricao {
       font-size: 17px;
   }
+
 }
 
-@media (max-width: 1023px) {
+@media screen and (max-width: 1013px) and (min-width: 468px){ 
 
   header {
     padding: 15px 20px;
@@ -277,6 +304,31 @@ body {
 
   .cabecalho {
       gap: 0;
+  }
+
+  .icon-nav-mobile {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 30px;
+  }
+
+  .icon-nav-mobile a {
+      color: #ffffff;
+      font-size: 24px;
+      text-decoration: none;
+      padding: 5px;
+      transition: opacity 0.3s;
+  }
+
+  .icon-nav-mobile a:hover {
+      opacity: 0.8;
+  }
+
+  .container-menu {
+      margin-left: 40px;
   }
 
   /*********************************/
@@ -303,40 +355,5 @@ body {
 
   .descricao {
       font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  header {
-      padding: 10px 15px;
-      min-height: 70px;
-  }
-  .cabecalho img {
-      width: 70px; /* Logo ainda menor */
-  }
-  .menu-opcoes {
-      min-width: 150px;
-  }
-
-  /*********************************/
-
-  .container {
-      padding: 20px 15px;
-  }
-  .titulo {
-      font-size: 24px;
-  }
-  .titulo-missao {
-      font-size: 22px;
-  }
-  .descricao {
-      font-size: 15px;
-  }
-
-  /*********************************/
-
-  .rodape p {
-    font-size: 12px;
   }
 }
