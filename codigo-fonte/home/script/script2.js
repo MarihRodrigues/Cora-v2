@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (menuLista.classList.contains('ativo')) {
         iconeSpan.innerHTML = '&times;';
-        iconeSpan.style.fontSize = '40px'; // <<< MUDANÇA: Aumentei o 'X'
-        iconeSpan.style.lineHeight = '0.8'; // Ajusta alinhamento do X
+        iconeSpan.style.fontSize = '40px'; 
+        iconeSpan.style.lineHeight = '0.8'; 
       } else {
         iconeSpan.innerHTML = '&#9776;';
         iconeSpan.style.fontSize = '30px';
@@ -40,3 +40,25 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error("Erro: Elementos .menu-sanduiche, .menu-opcoes ou span não encontrados.");
   }
 });
+
+// Função para excluir conta
+function excluirConta() {
+  const confirmar = confirm("Tem certeza de que deseja excluir sua conta?");
+  if (confirmar) {
+  localStorage.removeItem("user");
+  alert("Sua conta foi excluída com sucesso.");
+  window.location.href = "../home/home.html"; 
+  }
+}
+
+// Função para sair da conta
+function sairConta() {
+  localStorage.removeItem("user"); 
+  alert("Você saiu da sua conta.");
+  window.location.href = "../login/paginaLogin.html";
+}
+
+// Exemplo de simulação de usuário logado (opcional)
+if (!localStorage.getItem("user")) {
+  localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
+}
