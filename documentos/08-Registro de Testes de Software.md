@@ -7,45 +7,72 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 Os resultados dos testes funcionais realizados na aplicação são descritos a seguir:
 
 
-|Caso de Teste    | CT-02 - Verificar a sistemática de recuperação de senha |
-
-https://github.com/user-attachments/assets/27251948-67c8-4a26-bdcc-d9104bc0492d
-
-| Resultados obtidos | Funcionando corretamente |
-
-| Responsável pela execução do caso de Teste | Rafael |
-
-
-|Caso de Teste    | CT-03 - Verificar a sistemática do processo de denúncia |
-
-https://github.com/user-attachments/assets/2f59aaad-51d8-44ec-aff1-49b4f01fa236
-
-| Resultados obtidos | Funcionando corretamente |
-
-| Responsável pela execução do caso de Teste | Rafael |
+|Caso de Teste    | CT-01 - Verificar o funcionamento dos links |
 
 
 
-
-
-|Caso de Teste    | CT-04 - Verificar o acesso ás informações contidas em links |
-
-https://github.com/user-attachments/assets/6e14d570-4fd7-4985-986e-591c2be51bb5
-
-|:---|:---|
 | Resultados obtidos | Funcionando corretamente |
 
 | Responsável pela execução do caso de Teste | Mariana |
 
 
 
-|Caso de Teste    | CT-05 - Verificar a criação de conta de usuário |
+|Caso de Teste    | CT-02 - Verificar o cadastro de usuário |
 
-https://github.com/user-attachments/assets/94579894-2a42-4608-a881-6af11e0d47cc
+
 
 | Resultados obtidos | Funcionando corretamente |
 
-| Responsável pela execução do caso de Teste | Guilherme |
+| Responsável pela execução do caso de Teste | Mariana |
 
 
+
+|Caso de Teste    | CT-03 - Verificar o cadastro de profissional |
+
+
+
+| Resultados obtidos | Funcionando corretamente |
+
+| Responsável pela execução do caso de Teste | Mariana |
+
+
+
+|Caso de Teste    | CT-04 - Verificar a eficácia de recuperação de acesso |
+
+
+
+|:---|:---|
+| Resultados obtidos | Funcionando corretamente |
+
+| Responsável pela execução do caso de Teste | Rafael |
+
+
+
+|Caso de Teste    | CT-05 - Verificar a eficácia do processo de denúncia |
+
+
+https://github.com/user-attachments/assets/737014b9-e95c-4be2-bcb2-4f68ff8fb9d0
+
+
+| Resultados obtidos | Funcionando corretamente |
+
+| Responsável pela execução do caso de Teste | Rafael |
+
+
+
+|Caso de Teste    | CT-06 - Verificar a sistemática da pesquisa dos profissionais de apoio |
+
+
+| Resultados obtidos | Funcionando corretamente |
+
+| Responsável pela execução do caso de Teste | Rafael |
+
+
+
+|Caso de Teste    | CT-07 - Verificar o acesso aos informativos |
+
+
+| Resultados obtidos | Funcionando corretamente |
+
+| Responsável pela execução do caso de Teste | Rafael |
 
