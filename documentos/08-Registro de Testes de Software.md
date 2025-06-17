@@ -11,6 +11,10 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 
 
+
+https://github.com/user-attachments/assets/377ca58c-6731-4382-8f43-29345f2570f4
+
+
 | Resultados obtidos | Funcionando corretamente |
 
 | Responsável pela execução do caso de Teste | Mariana |
