@@ -109,7 +109,7 @@
 |	|da exclusão da conta.   |	     |
 |-------|-------------------------------|------------|
 | RF-07 |A aplicação deve permitir que o|   Média    |
-|	|usuário identifique o 		|	     |
+|	|usuário localize o 		|	     |
 |	|profissional de apoio através 	|	     |
 |	|do preechimento dos campos que  |	     |
 |	|terá a função de filtro.	 	|	     |
