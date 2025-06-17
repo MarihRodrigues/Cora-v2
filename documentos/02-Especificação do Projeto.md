@@ -82,9 +82,9 @@
 |	|que necessário.		|	     |
 |-------|-------------------------------|------------|
 | RF-02 |A aplicação deve permitir que o|    Alta    |
-|	|usuário recupere sua senha 	|	     |
-|	|através das informações 	|	     |
-|	|fornecidas na criação da conta	|	     |
+|	|usuário recupere o acesso 	|	     |
+|	|através das criação de uma 	|	     |
+|	|nova senha.	|	     |
 |-------|-------------------------------|------------|	
 | RF-03	|A aplicação deve apresentar os |    Alta    |
 |	|canais de denúncia ao usuário 	|	     |
