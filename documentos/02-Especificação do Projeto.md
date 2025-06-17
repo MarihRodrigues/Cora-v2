@@ -82,7 +82,7 @@
 |	|que necessário.		|	     |
 |-------|-------------------------------|------------|
 | RF-02 |A aplicação deve permitir que o|    Alta    |
-|	|usuário recupere o acesso 	|	     |
+|	|usuário recupere o acesso à conta	|	     |
 |	|através das criação de uma 	|	     |
 |	|nova senha.	|	     |
 |-------|-------------------------------|------------|	
