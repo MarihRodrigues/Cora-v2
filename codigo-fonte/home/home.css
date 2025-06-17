@@ -178,57 +178,6 @@ body {
   object-fit: unset;
 }
 
-.conteudo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 185px;
-  padding: 20px;
-}
-
-.texto-intro, .grafico-section {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.texto-intro h2, .grafico-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #444;
-}
-
-.texto-intro p, .grafico-section p {
-  line-height: 1.6;
-  font-size: 1em;
-  margin-bottom: 15px;
-}
-
-.texto-intro blockquote {
-  margin: 20px 0;
-  padding: 10px 20px;
-  background: #f4f4f4;
-  border-left: 5px solid #ff6384;
-  font-style: italic;
-  color: #555;
-}
-
-canvas {
-  max-width: 100%;
-  height: auto;
-}
-
-.fontes {
-  margin-top: 15px;
-  font-size: 0.9em;
-  color: #555;
-  text-align: center;
-}
-
 /****************** Rodapé ******************/
 
 .rodape {
@@ -335,6 +284,7 @@ canvas {
   .descricao {
       font-size: 17px;
   }
+
 }
 
 @media screen and (max-width: 1013px) and (min-width: 468px){ 
