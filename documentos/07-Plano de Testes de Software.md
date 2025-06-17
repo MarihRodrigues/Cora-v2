@@ -30,7 +30,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Deve ocorrer uma validação das informaçõess fornecidas pelo usuário e ao clicar em cadastrar deve aparecer a mensagem "Formulário enviado com sucesso".  |
 | Responsável pela elaborar do caso de Teste | Rafael |
 
-|Caso de Teste    | CT-04 - Verificar a sistemática de recuperação de senha |
+|Caso de Teste    | CT-04 - Verificar a eficácia de recuperação de acesso |
 |:---|:---|
 | Requisitos Associados | RF-02: A aplicação deve permitir que o usuário recupere o acesso à conta através da criação de uma nova senha.
 | Objetivo do Teste | Assegurar que o usuário utilize os recursos da aplicação para recuperar o acesso através da criação de uma nova senha |
