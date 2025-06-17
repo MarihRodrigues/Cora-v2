@@ -22,7 +22,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaborar do caso de Teste | Rafael |
 
 
-|Caso de Teste    | CT-03 - Verificar o cadastro de usuário |
+|Caso de Teste    | CT-03 - Verificar o cadastro de profissional |
 |:---|:---|
 | Requisitos Associados | RF-05	A aplicação deve permitir que o	profissional de apoio crie uma conta e cadastre o seu serviço	juntamente com as formas de contato.
 | Objetivo do Teste | Verificar se o cadastro de profissional de apoio está sendo feito corretamente. |
