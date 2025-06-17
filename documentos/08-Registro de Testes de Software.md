@@ -73,5 +73,5 @@ https://github.com/user-attachments/assets/737014b9-e95c-4be2-bcb2-4f68ff8fb9d0
 
 | Resultados obtidos | Funcionando corretamente |
 
-| Responsável pela execução do caso de Teste | Rafael |
+| Responsável pela execução do caso de Teste | Guilherme |
 
