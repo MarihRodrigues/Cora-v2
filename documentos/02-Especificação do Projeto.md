@@ -93,9 +93,8 @@
 |-------|-------------------------------|------------|
 | RF-04	|A aplicação deve permitir que o|    Alta    |		
 |	|usuário realize um filtro 	|	     |
-|	|utilizando a geolocalização ou |	     |
-|	|informando a localidade para 	|	     |
-|	|ser direcionado para o canal de| 	     |
+|	|através do preenchimento dos campos|	     |
+|	|para ser direcionado para o canal de| 	     |
 |	|denúncia da região		|	     |
 |-------|-------------------------------|------------|				
 | RF-05	|A aplicação deve permitir que o|   Média    |	
@@ -107,8 +106,7 @@
 | RF-06	|A aplicação deve permitir que o|   Média    |
 |	|profissional de apoio encerre a| 	     |
 |	|prestação de serviços através  |	     |
-|	|da suspensão ou exclusão da    |	     |
-|	|conta. 			|	     |
+|	|da exclusão da conta.   |	     |
 |-------|-------------------------------|------------|
 | RF-07 |A aplicação deve permitir que o|   Média    |
 |	|usuário identifique o 		|	     |
