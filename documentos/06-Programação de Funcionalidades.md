@@ -14,7 +14,8 @@ Exemplo da tela de cadastro
 
 ### Tela de cadastro (RF - 01 )
 
-![image](https://github.com/user-attachments/assets/586477dc-7217-4f54-80cb-f0ac310f5aff)
+![tela_Cadastro](https://github.com/user-attachments/assets/ec26c921-3efe-4d87-a3ea-0ea3d80461da)
+
 
 
 Requisito atendido
@@ -49,7 +50,8 @@ O acesso a tela de Recuperacao de senha poderá ser feito através da opção da
 
 Exemplo da tela de Recuperacao de senha.
 
-![image](https://github.com/user-attachments/assets/84e5b639-ff66-4c07-8443-b6f31dd2c9c5)
+![tela_recuperacaoSenha](https://github.com/user-attachments/assets/953847df-9c60-4053-bf8b-d3963a93c2f7)
+
 
 
 Requisito atendido
@@ -84,7 +86,8 @@ O acesso a tela de Registro de Profissionais poderá ser feito através da opç�
 
 Exemplo da tela de Registro de Profissionais
 
-![image](https://github.com/user-attachments/assets/05e7aba9-4a0a-4d22-b295-c65a184d8e17)
+![tela_registroProfissionais](https://github.com/user-attachments/assets/e343161f-31ec-4b1c-ae57-00c0e5cc8588)
+
 
 Requisito atendido 
 RF-05	A aplicação deve permitir que o	profissional de apoio crie uma	conta e cadastre o seu serviço	juntamente com as formas de	contato.
@@ -114,7 +117,8 @@ O acesso a tela de cadastro poderá ser feito através da opção de menu “Cad
 
 Exemplo da tela de cadastro
 
-![image](https://github.com/user-attachments/assets/933cd782-c49b-4ee1-9958-4e4bebc5a8a7)
+![tela_editarCadastro](https://github.com/user-attachments/assets/0f254246-f770-4747-a272-141302cb53ca)
+
 
 Requisito atendido
 
@@ -145,7 +149,8 @@ O acesso a tela de cadastro poderá ser feito através da opção de menu “Inf
 
 Exemplo da tela de Informativos
 
-![image](https://github.com/user-attachments/assets/87473b97-b5d2-4f3b-b389-3d30904c933d)
+![tela_informativos](https://github.com/user-attachments/assets/78ef5dc5-7d6e-44ff-8545-149045e00a6f)
+
 
 
 Requisito atendido
