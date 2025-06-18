@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../cadastro/cadastroUsuario.css">
 </head>
 
-<body>             
+<body>
     <div class="main">
 
         <div class="cabecalho">
@@ -19,20 +19,21 @@
                 <a href="../home/home.html">Início</a>
                 <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
                 <a href="../informativos/informativos.html">Informativos</a>
-                <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
+                <a href="../denuncia/paginaDenuncia.html">Denunciar</a>
 
             </nav>
 
-            
-             <div class="menu-toggle">
+
+            <div class="menu-toggle">
                 <span>&#9776;</span>
             </div>
 
             <nav class="sidebar" id="sidebar">
-                <a href="#">Editar cadastro</a>
+                <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+                <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
                 <a href="#" onclick="excluirConta()">Excluir conta</a>
                 <a href="../login/paginaLogin.html">Entrar</a>
-                <a href="#">Sair</a>
+                <a href="#" onclick="sairConta()">Sair</a>
             </nav>
 
         </div>
@@ -115,10 +116,13 @@
                 </div>
 
             </form>
-            <footer class="rodape">
-                <p>&copy; 2025 Apoio a mulher | Todos os direitos reservados.</p>
-            </footer>
+
         </div>
+
+        <footer class="rodape">
+            <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+        </footer>
+        
         <script src="registroDeProfissionais.js"></script>
 </body>
 

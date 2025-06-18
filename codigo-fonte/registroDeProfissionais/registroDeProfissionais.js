@@ -118,11 +118,6 @@ window.onclick = function (event) {
     }
 }
 
-// Logout
-function logout() {
-    alert("Você saiu com sucesso!");
-    window.location.href = "../index.html";
-}
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -203,3 +198,12 @@ function excluirConta() {
   window.location.href = "../index.html";
 }
 
+    window.sairConta = function() {
+        localStorage.removeItem("user");
+        alert("Você saiu da sua conta.");
+        window.location.href = "../login/paginaLogin.html";
+    };
+
+    if (!localStorage.getItem("user")) {
+        localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
+    }
