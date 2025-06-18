@@ -221,14 +221,13 @@ function excluirConta() {
 
 // Função para sair da conta
 
-function sairConta() {
-  // Remove os dados do usuário armazenados no localStorage
-  localStorage.removeItem("usuario");
+    window.sairConta = function() {
+        localStorage.removeItem("user");
+        alert("Você saiu da sua conta.");
+        window.location.href = "../login/paginaLogin.html";
+    };
 
-  // Opcional: limpa todo o localStorage se quiser remover tudo
-  // localStorage.clear();
-
-  // Redireciona para a página de login
-  window.location.href = "../login/paginaLogin.html";
-}
+    if (!localStorage.getItem("user")) {
+        localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
+    }
 
