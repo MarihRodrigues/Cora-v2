@@ -192,7 +192,7 @@ body {
 
 /****************** Responsividade ******************/
 
-@media (max-width: 1360px){
+@media screen and (max-width: 2980px) and (min-width: 1200px){
 
   header{
   display: flex;
@@ -204,7 +204,7 @@ body {
 
   .cabecalho img {
     width: 100px;
-    height: 80px;
+    height: 70px;
   }
 
   .indice {
@@ -224,7 +224,7 @@ body {
 
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1014px){
+@media screen and (max-width: 1199px) and (min-width: 1014px){
 
   header{
   display: flex;
@@ -287,23 +287,24 @@ body {
 
 }
 
-@media screen and (max-width: 1013px) and (min-width: 468px){ 
+@media screen and (max-width: 1013px) and (min-width: 500px){ 
 
-  header {
-    padding: 15px 20px;
-    min-height: 80px;
+  header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8304A5;
+  height: 80px;
+  padding-left: 5px;
   }
 
   .cabecalho img {
-      width: 80px;
+    width: 100px;
+    height: 80px;
   }
 
   .indice {
-      display: none;
-  }
-
-  .cabecalho {
-      gap: 0;
+    display: none;
   }
 
   .icon-nav-mobile {
@@ -330,6 +331,7 @@ body {
   .container-menu {
       margin-left: 40px;
   }
+
 
   /*********************************/
 
