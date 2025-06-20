@@ -19,19 +19,22 @@ Font-size: 17px e 30px.
 >Tela HomePage
 >
 >Exibe informacoes sobre o site
->![image](https://github.com/user-attachments/assets/c78b0c8d-24ab-4047-b5e2-d511dfedeec0)
+>![home_Template](https://github.com/user-attachments/assets/9af3b191-063a-44b2-927b-fce84f841e1e)
+
 >Figura 1
 >
 >Tela de Informacoes
 >
 >Tela para informacoes a respeito de violencia domestica
 >
->![image](https://github.com/user-attachments/assets/c82e1150-6162-4559-98ca-179d3ff65c54)
+>![informativos_Template](https://github.com/user-attachments/assets/e2d73c6d-5546-4c2c-91ad-a920e7f532d3)
+
 >Figura 2
 >
 >Para a criação do logotipo do site foi utilizada a cor roxa. A utilização da imagem de um laco foi escolhida por ser algo simbolico.
->![image](https://github.com/user-attachments/assets/8677e8fb-29a1-4e70-a1ed-34db41c732d4)
->Figura 3 - Logotipo da aplicação web Apoio Mulher
+>![logo_Templete](https://github.com/user-attachments/assets/b350f1de-477b-4c85-b58b-c033c1796678)
+
+>Figura 3 - Logotipo da aplicação web Cora
 
 
 
