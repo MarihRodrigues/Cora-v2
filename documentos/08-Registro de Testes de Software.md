@@ -81,6 +81,10 @@ https://github.com/user-attachments/assets/42378390-27c4-42f5-9e84-8102c2f62eaa
 |Caso de Teste    | CT-07 - Verificar o acesso aos informativos |
 
 
+
+https://github.com/user-attachments/assets/a252f7be-a339-4bfc-9f82-57b3a9932821
+
+
 | Resultados obtidos | Funcionando corretamente |
 
 | Responsável pela execução do caso de Teste | Guilherme |
