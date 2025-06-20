@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+}
+
 .cabecalho {
     height: 80px;
     display: flex;
@@ -19,11 +31,13 @@
     padding-left: 500px;
     padding-right: 50px;
     font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .entrar-1 {
@@ -39,6 +53,7 @@ a {
     justify-content: center;
     align-items: center;
     display: flex;
+      flex: 1; /* faz o conteúdo "empurrar" o rodapé para baixo */
 }
 
 .formulario-2 {
@@ -61,7 +76,7 @@ a {
     height: 30px;
     border-radius: 10px;
     border-style: none;
-    margin-top: 20px;
+    margin-bottom: 20px; /* <-- espaçamento entre os campos */
 }
 
 h1 {
@@ -78,4 +93,52 @@ h1 {
     border-radius: 50px;
     border: #BA91BA;
     margin-top: 30px;
+}
+
+.menu-sanduiche {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+   
+   align-items: center;
+    user-select: none;
+    
+    height: 80px;
+    display: flex;
+}
+
+.menu-opcoes {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #BA91BA;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 100;
+}
+
+.menu-opcoes a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.menu-opcoes a:hover {
+    background-color: #8304A5;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  background-color: #f2f2f2;
+  margin-top: 60px;
 }

@@ -12,6 +12,15 @@ body {
   color: #333;
 }
 
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh; /* ocupa toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+}
 /****************** Cabeçalho ******************/
 
 .navbar {
@@ -128,6 +137,7 @@ body {
   max-width: 1200px;
   margin: 40px auto;
   align-items: flex-start;
+    flex: 1; /* faz o conteúdo "empurrar" o rodapé para baixo */
 }
 
 .text-section {

@@ -1,77 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="paginaLogin.css">
 </head>
- 
+<script src="paginaLogin.js"></script>
+
 <body>
- 
-    <div class="cabecalho">
-        <img src="../imagens/logoCora.png" alt="Logo">
-        <div class="indice">
-            <a href="../home/home.html">Início</a>
-            <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
-            <a href="../informativos/informativos.html">Informativos</a>
-            <a href="../denuncia/paginaDenuncia.html">Denuncie</a>
- 
-            <div class="menu-sanduiche">
-                &#9776;
-                <div class="menu-opcoes">
-                    <a href="#">Editar cadastro</a>
-                    <a href="#">Excluir conta</a>
-                    <a href="../login/paginaLogin.html">Entrar</a>
-                    <a href="#">Sair</a>
-                </div>
- 
+    <a href="javascript:history.back()" id="voltar">
+  ← Voltar
+</a>
+
+    <div id="imagem">
+        <div id="fundo">
+            <div id="logo">
+                <img src="../imagens/logoCora.png">
             </div>
         </div>
- 
+        <div id="formulario">
+            <form id="login">
+                <h1>Login</h1>
+                <div id="campos">
+                    <input placeholder=" Digite seu e-mail" type="email" id="campos2">
+                    <input placeholder="  Digite sua senha" type="password" id="campos2">
+                    <button id="botao" type="submit">Entrar</button>
+                    <div id="recuperar">
+                        <a href="../recuperarSenha/recuperarSenha.html">Esqueci minha senha</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
- 
-    <div class="fomulario">
-        <form id="login">
-            <div class="titulo">
-                <h1>Acesse sua conta</h1>
-                <br />
-            </div>
- 
-            <div id="logar">
-                <input placeholder="  Digite seu e-mail" type="email" id="email"><br />
-                <input placeholder="  Digite sua senha" type="password" id="senha">
-            </div>
- 
-            <p1> Esqueci minha senha </p1><br /><br /><br />
-            <button type="submit" class="botao">Entrar</button>
- 
-        </form>
- 
-        <script src="paginaLogin.js"></script>
- 
-        <script>
-            const menu = document.querySelector('.menu-sanduiche');
-            const opcoes = document.querySelector('.menu-opcoes');
- 
-            // Abre e fecha ao clicar no ícone
-            menu.addEventListener('click', function (event) {
-                event.stopPropagation(); // impede que o clique propague e feche imediatamente
-                opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
-            });
- 
-            // Fecha se clicar fora do menu
-            document.addEventListener('click', function (event) {
-                const clicouFora = !menu.contains(event.target);
-                if (clicouFora) {
-                    opcoes.style.display = 'none';
-                }
-            });
-        </script>
- 
-        <script src="paginaLogin.js"></script>
- 
+
+
 </body>
- 
+
 </html>
