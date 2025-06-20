@@ -9,6 +9,10 @@ Minayo, M. C. S. Violência e saúde. Rio de Janeiro: Editora Fiocruz, 2015.
 
 LIMA, Gabriela. A violência doméstica a partir do discurso de mulheres agredidas. Periódico de Psicologia, vol. 17, 2013. 
 
+Ana Julia Bertolaccini. Pesquisa aponta que a cada 24h, 13 mulheres sofreram violência em 2024. CNN, 2025​
+
+Disponível em: https://www.cnnbrasil.com.br/nacional/pesquisa-aponta-que-a-cada-24h-13-mulheres-sofreram-violencia-em-2024/
+
  
 
 > **Links Úteis**:
