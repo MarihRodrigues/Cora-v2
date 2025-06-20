@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+}
+
 .cabecalho {
     height: 80px;
     display: flex;
@@ -41,6 +53,7 @@ a {
     justify-content: center;
     align-items: center;
     display: flex;
+      flex: 1; /* faz o conteúdo "empurrar" o rodapé para baixo */
 }
 
 .formulario-2 {
@@ -63,6 +76,7 @@ a {
     height: 30px;
     border-radius: 10px;
     border-style: none;
+    margin-bottom: 20px; /* <-- espaçamento entre os campos */
 }
 
 h1 {
@@ -117,4 +131,14 @@ h1 {
 
 .menu-opcoes a:hover {
     background-color: #8304A5;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  background-color: #f2f2f2;
+  margin-top: 60px;
 }

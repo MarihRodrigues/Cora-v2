@@ -16,7 +16,7 @@
             <a href="../home/home.html">Início</a>
             <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
             <a href="../informativos/informativos.html">Informativos</a>
-            <a href="../denuncia/paginaDenuncia.html">Denuncie</a>
+            <a href="../denuncia/paginaDenuncia.html">Denunciar</a>
 
             <div class="menu-sanduiche">
                 &#9776;
@@ -33,68 +33,97 @@
 
     </div>
 
-    <form class="formulario" id="formulario">
-        <div class="formulario-2">
-            <h1>Canais de Denúncia</h1>
-            <input class="campo" type="text" id="estado" placeholder="  Estado"><br />
-            <input class="campo" type="text" id="cidade" placeholder="  Cidade"><br />
+    <div class="container">
 
-            <select class="campo" id="perfil">
-                <option value="">Selecione um perfil</option>
-                <option value="usuario">Usuário</option>
-                <option value="denunciante">Denunciante</option>
-            </select><br />
+        <form class="formulario" id="formulario">
+            <div class="formulario-2">
+                <h1>Canais de Denúncia</h1>
+                <input class="campo" type="text" id="estado" placeholder="  Estado"><br />
+                <input class="campo" type="text" id="cidade" placeholder="  Cidade"><br />
 
-            <input class="campo" type="number" id="idade" placeholder="  Idade"><br />
-            <button class="localizar" type="submit">Localizar</button>
-        </div>
-    </form>
+                <select class="campo" id="perfil">
+                    <option value="">Selecione um perfil</option>
+                    <option value="usuario">Usuário</option>
+                    <option value="denunciante">Denunciante</option>
+                </select><br />
+
+                <input class="campo" type="number" id="idade" placeholder="  Idade"><br />
+                <button class="localizar" type="submit">Localizar</button>
+            </div>
+        </form>
+
+        <footer class="rodape">
+            <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
 
     <div id="resultado" style="padding: 20px; text-align: center;"></div>
 
     <script>
-            const menu = document.querySelector('.menu-sanduiche');
-            const opcoes = document.querySelector('.menu-opcoes');
+        const menu = document.querySelector('.menu-sanduiche');
+        const opcoes = document.querySelector('.menu-opcoes');
 
-            // Abre e fecha ao clicar no ícone
-            menu.addEventListener('click', function (event) {
-                event.stopPropagation(); // impede que o clique propague e feche imediatamente
-                opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
-            });
+        // Abre e fecha ao clicar no ícone
+        menu.addEventListener('click', function (event) {
+            event.stopPropagation(); // impede que o clique propague e feche imediatamente
+            opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
+        });
 
-            // Fecha se clicar fora do menu
-            document.addEventListener('click', function (event) {
-                const clicouFora = !menu.contains(event.target);
-                if (clicouFora) {
-                    opcoes.style.display = 'none';
-                }
-            });
-        </script>
-
-    <script>
-        document.getElementById("formulario").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            const estado = document.getElementById("estado").value.trim();
-            const cidade = document.getElementById("cidade").value.trim();
-            const perfil = document.getElementById("perfil").value;
-            const idade = document.getElementById("idade").value.trim();
-
-            // (opcional) checar se campos estão preenchidos
-            if (!estado || !cidade || !perfil || !idade) {
-                alert("Preencha todos os campos.");
-                return;
+        // Fecha se clicar fora do menu
+        document.addEventListener('click', function (event) {
+            const clicouFora = !menu.contains(event.target);
+            if (clicouFora) {
+                opcoes.style.display = 'none';
             }
-
-            // Exibir resultado fixo
-            document.getElementById("resultado").innerHTML = `
-        <div style="background:#eee; margin:20px auto; padding:20px; border-radius:10px; width:60%;">
-          <h2>Polícia Militar</h2>
-          <p><strong>Contato:</strong> Ligue <span style="color:red; font-weight:bold;">190</span></p>
-        </div>
-      `;
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const formulario = document.getElementById("formulario");
+            const modal = document.getElementById("modal");
+            const modalResultado = document.getElementById("modal-resultado");
+            const closeBtn = document.querySelector(".close");
+
+            formulario.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const estado = document.getElementById("estado").value.trim();
+                const cidade = document.getElementById("cidade").value.trim();
+                const perfil = document.getElementById("perfil").value;
+                const idade = document.getElementById("idade").value.trim();
+
+                if (!estado || !cidade || !perfil || !idade) {
+                    alert("Preencha todos os campos.");
+                    return;
+                }
+
+                // Conteúdo do modal
+                const mensagem = `
+        <h2>Polícia Militar</h2>
+        <p><strong>Contato:</strong> Ligue <span style="color:red; font-weight:bold;">190</span></p>
+      `;
+
+                modalResultado.innerHTML = mensagem;
+                modal.style.display = "block";
+            });
+
+            // Evento para fechar o modal ao clicar no "X"
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            // Evento para fechar ao clicar fora do conteúdo do modal
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+
 
     <script>
         // Função para sair da conta
@@ -116,6 +145,7 @@
             if (!emailUsuarioLogado) {
                 alert("Nenhum usuário logado.");
                 return;
+
             }
 
             // Confirmação
@@ -136,9 +166,32 @@
             alert("Conta excluída com sucesso!");
 
             // Redireciona para a página inicial
-            window.location.href = "../index.html";
+            window.location.href = "../home/home.html";
         }
     </script>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content"
+            style="background: #fff; padding: 20px; border-radius: 8px; max-width: 500px; margin: 10% auto; position: relative;">
+            <span class="close" style="position: absolute; right: 10px; top: 10px; cursor: pointer;">&times;</span>
+            <div id="modal-resultado"></div>
+        </div>
+    </div>
+
+    <!-- Estilo básico do modal -->
+    <style>
+        .modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
 
 </body>
 

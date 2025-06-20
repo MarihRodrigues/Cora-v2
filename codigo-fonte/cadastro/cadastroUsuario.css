@@ -201,7 +201,6 @@ body {
   box-shadow: 0 8px 25px rgba(169, 51, 215, 0.45);
 }
 
-/* Rodapé */
 .rodape {
   display: flex;
   justify-content: center;
@@ -210,9 +209,7 @@ body {
   height: 50px;
   background-color: #f2f2f2;
   margin-top: 60px;
-  color: #555;
 }
-
 /* Responsividade */
 @media (max-width: 920px) {
   .menu {
