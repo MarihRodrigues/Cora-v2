@@ -6,43 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Cadastro</title>
     <link rel="stylesheet" href="cadastroUsuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <div class="main">
+    <header class="meu-header">
+      <div class="cabecalho">
+        <a class="logo" href="../home/home.html">
+          <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+        </a>
+        <nav class="indice">
+          <a href="../home/home.html">Início</a>
+          <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+          <a href="../informativos/informativos.html">Informativos</a>
+          <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
+        </nav>
+      </div>
 
-        <div class="cabecalho">
-            <a class="logo" href="../home/home.html">
-                <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
-            </a>
+      <nav class="icon-nav-mobile" id="iconNavMobile">
+          <a href="../home/home.html"><i class="fas fa-home"></i></a>
+          <a href="../profissionais/profissionais.html"><i class="fas fa-hands-helping"></i></a>
+          <a href="../informativos/informativos.html"><i class="fas fa-info-circle"></i></a>
+          <a href="../denuncia/paginaDenuncia.html"><i class="fas fa-exclamation-triangle"></i></a>
+      </nav>
 
-
-            <nav class="menu">
-                <a href="../home/home.html">Início</a>
-                <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
-                <a href="../informativos/informativos.html">Informativos</a>
-                <a href="../denuncia/paginaDenuncia.html">Denunciar</a>
-
-
-
-            </nav>
-
-            <div class="menu-toggle">
-                <span>&#9776;</span>
-            </div>
-
-        </div>
-
-        <nav class="sidebar" id="sidebar">
-            <a href="#">Editar cadastro</a>
+      <div class="container-menu">
+        <div class="menu-sanduiche" id="menuUsuarioSanduiche">
+          <span>&#9776;</span>
+          <div class="menu-opcoes">
+            <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+            <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
             <a href="#" onclick="excluirConta()">Excluir conta</a>
             <a href="../login/paginaLogin.html">Entrar</a>
             <a href="#" onclick="sairConta()">Sair</a>
-        </nav>
+          </div>
+        </div>
+      </div>
+</header>
 
-
-
-        <div class="cadastrar">
+    <div class="cadastrar">
 
             <h1 class="title">Editar Cadastro</h1>
             <form id="form-usuario" method="POST">

@@ -6,33 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de profissionais</title>
     <link rel="stylesheet" href="profissionais.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 
 <body>
+    <header class="meu-header">
+      <div class="cabecalho">
+        <a class="logo" href="../home/home.html">
+          <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+        </a>
+        <nav class="indice">
+          <a href="../home/home.html">Início</a>
+          <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+          <a href="../informativos/informativos.html">Informativos</a>
+          <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
+        </nav>
+      </div>
 
-    <div class="cabecalho">
-        <img src="../imagens/logoCora.png" alt="Logo">
-        <div class="indice">
-            <a href="../home/home.html">Início</a>
-            <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
-            <a href="../informativos/informativos.html">Informativos</a>
-            <a href="../denuncia/paginaDenuncia.html">Denunciar</a>
+      <nav class="icon-nav-mobile" id="iconNavMobile">
+          <a href="../home/home.html"><i class="fas fa-home"></i></a>
+          <a href="../profissionais/profissionais.html"><i class="fas fa-hands-helping"></i></a>
+          <a href="../informativos/informativos.html"><i class="fas fa-info-circle"></i></a>
+          <a href="../denuncia/paginaDenuncia.html"><i class="fas fa-exclamation-triangle"></i></a>
+      </nav>
 
-            <div class="menu-sanduiche">
-                &#9776;
-                <div class="menu-opcoes">
-                    <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
-                    <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
-                    <a href="#" onclick="excluirConta()">Excluir conta</a>
-                    <a href="../login/paginaLogin.html">Entrar</a>
-                    <a href="../home/home.html" onclick="sairConta()">Sair</a>
-                </div>
-
-            </div>
+      <div class="container-menu">
+        <div class="menu-sanduiche" id="menuUsuarioSanduiche">
+          <span>&#9776;</span>
+          <div class="menu-opcoes">
+            <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+            <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+            <a href="#" onclick="excluirConta()">Excluir conta</a>
+            <a href="../login/paginaLogin.html">Entrar</a>
+            <a href="#" onclick="sairConta()">Sair</a>
+          </div>
         </div>
+      </div>
+    </header>
 
-    </div>
     <div class="container">
         <form class="campoFormulario">
 
@@ -54,11 +66,11 @@
             </div>
         </form>
 
-        <footer class="rodape">
-            <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
-        </footer>
     </div>
-
+    
+    <footer class="rodape">
+        <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+    </footer>
 
     <!-- Modal -->
     <div id="modal" class="modal">
@@ -68,68 +80,7 @@
         </div>
     </div>
 
-    <script>
-        const menu = document.querySelector('.menu-sanduiche');
-        const opcoes = document.querySelector('.menu-opcoes');
-
-        // Abre e fecha ao clicar no ícone
-        menu.addEventListener('click', function (event) {
-            event.stopPropagation(); // impede que o clique propague e feche imediatamente
-            opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Fecha se clicar fora do menu
-        document.addEventListener('click', function (event) {
-            const clicouFora = !menu.contains(event.target);
-            if (clicouFora) {
-                opcoes.style.display = 'none';
-            }
-        });
-
-        // Função para sair da conta
-
-        function sairConta() {
-            // Remove os dados do usuário armazenados no localStorage
-            localStorage.removeItem("usuario");
-
-            // Opcional: limpa todo o localStorage se quiser remover tudo
-            // localStorage.clear();
-
-            // Redireciona para a página de login
-            window.location.href = "../home/home.html";
-        }
-
-        function excluirConta() {
-            const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
-
-            if (!emailUsuarioLogado) {
-                alert("Nenhum usuário logado.");
-                return;
-            }
-
-            // Confirmação
-            const confirmacao = confirm("Tem certeza que deseja excluir sua conta? Essa ação não poderá ser desfeita.");
-            if (!confirmacao) return;
-
-            let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-            // Remove o usuário da lista
-            usuarios = usuarios.filter(usuario => usuario.email !== emailUsuarioLogado);
-
-            // Atualiza o localStorage
-            localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-            // Remove a sessão do usuário
-            localStorage.removeItem("usuarioLogado");
-
-            alert("Conta excluída com sucesso!");
-
-            // Redireciona para a página inicial
-            window.location.href = "../home/home.html";
-        }
-    </script>
-
-    <script src="profissionais.js"></script>
+<script src="../profissionais/profissionais.js"></script>
 
 </body>
 

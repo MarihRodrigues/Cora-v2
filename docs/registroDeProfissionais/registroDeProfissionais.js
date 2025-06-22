@@ -95,79 +95,48 @@ function salvarProfissional(profissional) {
 }
 
 
-// Sidebar e dropdown
-function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("ativo");
-}
+document.addEventListener('DOMContentLoaded', function(){
 
-function toggleDropdown() {
-    const dropdown = document.getElementById("dropdownMenu");
-    dropdown.classList.toggle("show");
-}
+    const menuSanduicheDiv = document.querySelector('.menu-sanduiche');
+    const menuLista = document.querySelector('.menu-opcoes');
+    const iconeSpan = document.querySelector('.menu-sanduiche span');
 
-window.onclick = function (event) {
-    if (!event.target.matches('.login-btn img')) {
-        const dropdowns = document.getElementsByClassName("dropdown-menu");
-        for (let i = 0; i < dropdowns.length; i++) {
-            const openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+    if (menuSanduicheDiv && menuLista && iconeSpan) {
+        menuSanduicheDiv.addEventListener('click', function(event) {
+            event.stopPropagation();
+            menuLista.classList.toggle('ativo');
+            menuSanduicheDiv.classList.toggle('ativo');
+
+            if (menuLista.classList.contains('ativo')) {
+                iconeSpan.innerHTML = '&times;';
+                iconeSpan.style.fontSize = '40px';
+                iconeSpan.style.lineHeight = '0.8';
+            } else {
+                iconeSpan.innerHTML = '&#9776;';
+                iconeSpan.style.fontSize = '30px';
+                iconeSpan.style.lineHeight = '1';
             }
-        }
+        });
+
+        menuLista.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+
+        document.addEventListener('click', function() {
+            if (menuLista.classList.contains('ativo')) {
+                menuLista.classList.remove('ativo');
+                menuSanduicheDiv.classList.remove('ativo');
+                iconeSpan.innerHTML = '&#9776;';
+                iconeSpan.style.fontSize = '30px';
+                iconeSpan.style.lineHeight = '1';
+            }
+        });
+    } else {
+        console.error("Erro: Elementos do menu sanduíche (.menu-sanduiche, .menu-opcoes ou span) não encontrados. Verifique seu HTML.");
     }
-}
 
 
-
-document.addEventListener('DOMContentLoaded', function() {
-
-  const menuToggleDiv = document.querySelector('.menu-toggle');
-  const sidebar = document.querySelector('.sidebar');
-  const iconeSpan = document.querySelector('.menu-toggle span');
-
-  if (menuToggleDiv && sidebar && iconeSpan) {
-
-    menuToggleDiv.addEventListener('click', function(event) {
-      event.stopPropagation();
-      sidebar.classList.toggle('ativo');
-      menuToggleDiv.classList.toggle('ativo');
-
-      if (sidebar.classList.contains('ativo')) {
-        iconeSpan.innerHTML = '&times;';
-        iconeSpan.style.fontSize = '40px'; // <<< MUDANÇA: Aumentei o 'X'
-        iconeSpan.style.lineHeight = '0.8'; // Ajusta alinhamento do X
-      } else {
-        iconeSpan.innerHTML = '&#9776;';
-        iconeSpan.style.fontSize = '30px';
-        iconeSpan.style.lineHeight = '1';
-      }
-    });
-
-      sidebar.addEventListener('click', function(event) {
-    event.stopPropagation();
 });
-
-
-document.addEventListener('click', function(event) {
-    if (!sidebar.contains(event.target) && !menuToggleDiv.contains(event.target)) {
-        if (sidebar.classList.contains('ativo')) {
-            sidebar.classList.remove('ativo');
-            menuToggleDiv.classList.remove('ativo');
-            iconeSpan.innerHTML = '&#9776;';
-            iconeSpan.style.fontSize = '30px'; 
-            iconeSpan.style.lineHeight = '1';
-        }
-    }
-});
-
-
-  } else {
-      console.error("Erro: Elementos .menu-toggle, .sidebar ou span não encontrados.");
-  }
-});
-
-
 
 function excluirConta() {
   const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
