@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de profissionais</title>
+    <link rel="stylesheet" href="profissionais.css">
+</head>
+<script src="profissionais.js"></script>
+
+<body>
+
+    <div class="cabecalho">
+        <img src="../imagens/logoCora.png" alt="Logo">
+        <div class="indice">
+            <a href="../home/home.html">Início</a>
+            <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+            <a href="../informativos/informativos.html">Informativos</a>
+            <a href="../denuncia/paginaDenuncia.html">Denunciar</a>
+
+            <div class="menu-sanduiche">
+                &#9776;
+                <div class="menu-opcoes">
+                    <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+                    <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+                    <a href="#" onclick="excluirConta()">Excluir conta</a>
+                    <a href="../login/paginaLogin.html">Entrar</a>
+                    <a href="../home/home.html" onclick="sairConta()">Sair</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <form class="campoFormulario">
+
+            <div class="formulario-2">
+                <h1>Profissionais de Apoio</h1><br />
+
+                <select class="campo" id="profissionais">
+                    <option value="Especialidade">Especialidade</option>
+                    <option value="Jurídico">Jurídico</option>
+                    <option value="Psicologia">Psicologia</option>
+                </select><br>
+
+                <input class="campo" id="estado" type="text" placeholder="  Estado"><br />
+                <input class="campo" id="cidade" type="text" placeholder="  Cidade"><br />
+
+                <button class="localizar" type="submit">Pesquisar</button>
+                <div id="resultados" style="margin: 30px; font-family: Arial;"></div>
+
+            </div>
+        </form>
+
+        <footer class="rodape">
+            <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-resultados"></div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu-sanduiche');
+        const opcoes = document.querySelector('.menu-opcoes');
+
+        // Abre e fecha ao clicar no ícone
+        menu.addEventListener('click', function (event) {
+            event.stopPropagation(); // impede que o clique propague e feche imediatamente
+            opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Fecha se clicar fora do menu
+        document.addEventListener('click', function (event) {
+            const clicouFora = !menu.contains(event.target);
+            if (clicouFora) {
+                opcoes.style.display = 'none';
+            }
+        });
+
+        // Função para sair da conta
+
+        function sairConta() {
+            // Remove os dados do usuário armazenados no localStorage
+            localStorage.removeItem("usuario");
+
+            // Opcional: limpa todo o localStorage se quiser remover tudo
+            // localStorage.clear();
+
+            // Redireciona para a página de login
+            window.location.href = "../home/home.html";
+        }
+
+        function excluirConta() {
+            const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
+
+            if (!emailUsuarioLogado) {
+                alert("Nenhum usuário logado.");
+                return;
+            }
+
+            // Confirmação
+            const confirmacao = confirm("Tem certeza que deseja excluir sua conta? Essa ação não poderá ser desfeita.");
+            if (!confirmacao) return;
+
+            let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+            // Remove o usuário da lista
+            usuarios = usuarios.filter(usuario => usuario.email !== emailUsuarioLogado);
+
+            // Atualiza o localStorage
+            localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+            // Remove a sessão do usuário
+            localStorage.removeItem("usuarioLogado");
+
+            alert("Conta excluída com sucesso!");
+
+            // Redireciona para a página inicial
+            window.location.href = "../home/home.html";
+        }
+    </script>
+
+</body>
+
+</html>

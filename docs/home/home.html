@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cora</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="meu-header">
+      <div class="cabecalho">
+        <a class="logo" href="../home/home.html">
+          <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+        </a>
+        <nav class="indice">
+          <a href="../home/home.html">Início</a>
+          <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+          <a href="../informativos/informativos.html">Informativos</a>
+          <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
+        </nav>
+      </div>
+
+      <nav class="icon-nav-mobile" id="iconNavMobile">
+        <a href="../home/home.html"><i class="fas fa-home"></i></a>
+        <a href="../profissionais/profissionais.html"><i class="fas fa-hands-helping"></i></a>
+        <a href="../informativos/informativos.html"><i class="fas fa-info-circle"></i></a>
+        <a href="../denuncia/paginaDenuncia.html"><i class="fas fa-exclamation-triangle"></i></a>
+      </nav>
+
+      <div class="container-menu">
+        <div class="menu-sanduiche" id="menuUsuarioSanduiche">
+          <span>&#9776;</span>
+          <div class="menu-opcoes">
+            <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+            <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+            <a href="#" onclick="excluirConta()">Excluir conta</a>
+            <a href="../login/paginaLogin.html">Entrar</a>
+            <a href="#" onclick="sairConta()">Sair</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="text-section">
+
+        <h1 class="titulo">Cora</h1>
+
+        <p class="descricao">
+          A Cora tem como objetivo ajudar as mulheres vítimas de violência doméstica. Nesta plataforma você poderá
+          ter acesso de forma centralizada aos principais canais de denúncia da sua região, aos profissionais de apoio
+          para consulta terapêutica e jurídica, bem como aos informativos para ficar por dentro sobre os principais
+          assuntos relacionados à violência.
+        </p>
+
+        <h2 class="titulo-missao">Nossa missão</h2>
+        <p class="descricao">
+          Além de conscientizar e sensibilizar a população contra a violência doméstica, nossa missão é que mais
+          mulheres
+          possam identificar os sinais iniciais de violência, e incentivá-las a realizar a denúncia, contribuindo com a
+          redução de casos de violência no Brasil.
+        </p>
+
+      </section>
+
+      <section class="imagem-section">
+        <a class="help" href="../denuncia/paginaDenuncia.html">
+          <img src="imagens/flyerviolenciadom.jpeg" alt="Diga não à violência contra a mulher!" class="imagem-mensagem">
+        </a>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script/script2.js"></script>
+  </div>
+
+</body>
+
+</html>

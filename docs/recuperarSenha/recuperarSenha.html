@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recuperar Senha</title>
+  <link rel="stylesheet" href="recuperarSenha.css" />
+  <link rel="icon" href="data:,"> <!-- Evita erro do favicon -->
+</head>
+
+<body>
+  <div class="cabecalho">
+    <img src="../imagens/logoCora.png" alt="Logo" />
+    <div class="indice">
+      <a href="../home/home.html">Início</a>
+      <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+      <a href="../informativos/informativos.html">Informativos</a>
+      <a href="../denuncia/paginaDenuncia.html">Denuncie</a>
+
+      <div class="menu-sanduiche">&#9776;
+        <div class="menu-opcoes">
+          <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+          <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+          <a href="#" onclick="excluirConta()">Excluir conta</a>
+          <a href="../login/paginaLogin.html">Entrar</a>
+          <a href="#" onclick="sairConta()">Sair</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Etapa 1: E-mail -->
+  <form class="campoFormulario" id="form-recuperar">
+    <div class="formulario-2" id="etapa-email">
+      <h1>Recuperação de Senha</h1><br />
+      <input class="campo" type="email" id="email" placeholder="  Digite o e-mail cadastrado" required /><br />
+      <button type="submit" class="botao">Enviar Código</button>
+      <p id="mensagem" style="color: black; margin-top: 15px;"></p>
+    </div>
+  </form>
+
+  <!-- Etapa 2: Código -->
+  <form class="campoFormulario" id="form-codigo" style="display: none;">
+    <div class="formulario-2" id="etapa-codigo">
+      <h1>Verificação de Código</h1><br />
+      <input class="campo" type="text" id="codigo" placeholder="  Digite o código recebido" maxlength="6" required /><br />
+      <button type="submit" class="botao">Verificar Código</button>
+      <p id="mensagem-codigo" style="color: black; margin-top: 15px;"></p>
+    </div>
+  </form>
+
+  <script>
+    // Menu responsivo
+    const menu = document.querySelector('.menu-sanduiche');
+    const opcoes = document.querySelector('.menu-opcoes');
+
+    menu.addEventListener('click', function (event) {
+      event.stopPropagation();
+      opcoes.style.display = opcoes.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!menu.contains(event.target)) {
+        opcoes.style.display = 'none';
+      }
+    });
+
+    // Enviar código
+    document.getElementById("form-recuperar").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const mensagem = document.getElementById("mensagem");
+
+      if (!email) {
+        alert("Por favor, preencha o e-mail.");
+        return;
+      }
+
+      const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      const usuarioEncontrado = usuarios.find(usuario => usuario.email.toLowerCase() === email.toLowerCase());
+
+      if (usuarioEncontrado) {
+        mensagem.textContent = "Acesse o seu e-mail e siga com as instruções de recuperação de senha.";
+
+        // Transição de etapa
+        document.getElementById("form-recuperar").style.display = "none";
+        document.getElementById("form-codigo").style.display = "block";
+
+        // Armazena código de recuperação
+        const codigoGerado = "123456";
+        localStorage.setItem("codigoRecuperacao", codigoGerado);
+        localStorage.setItem("emailRecuperacao", email);
+      } else {
+        mensagem.textContent = "E-mail não cadastrado.";
+      }
+    });
+
+    // Verificar código
+    document.getElementById("form-codigo").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const codigoDigitado = document.getElementById("codigo").value.trim();
+      const codigoArmazenado = localStorage.getItem("codigoRecuperacao");
+      const mensagemCodigo = document.getElementById("mensagem-codigo");
+
+      if (codigoDigitado === codigoArmazenado) {
+        mensagemCodigo.style.color = "green";
+        mensagemCodigo.textContent = "Código verificado com sucesso. Redirecionando...";
+        setTimeout(() => {
+          window.location.href = "../recuperarSenha/novaSenha.html"; // Redireciona para a página de nova senha
+        }, 2000); // Tempo de espera antes do redirecionamento
+       
+
+        // Ex: window.location.href = "novaSenha.html";
+      } else {
+        mensagemCodigo.style.color = "red";
+        mensagemCodigo.textContent = "Código incorreto. Tente novamente.";
+      }
+    });
+
+    // Sair da conta
+    function sairConta() {
+      localStorage.removeItem("usuario");
+      window.location.href = "../login/paginaLogin.html";
+    }
+
+    // Excluir conta
+    function excluirConta() {
+      const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
+      if (!emailUsuarioLogado) {
+        alert("Nenhum usuário logado.");
+        return;
+      }
+
+      const confirmacao = confirm("Tem certeza que deseja excluir sua conta?");
+      if (!confirmacao) return;
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      usuarios = usuarios.filter(usuario => usuario.email !== emailUsuarioLogado);
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      localStorage.removeItem("usuarioLogado");
+
+      alert("Conta excluída com sucesso!");
+      window.location.href = "../index.html";
+    }
+  </script>
+</body>
+</html>

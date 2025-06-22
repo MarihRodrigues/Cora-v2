@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#imagem {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imagens/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#fundo {
+    background-color: #8304a5;
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-right: 70px;
+
+
+}
+
+#login {
+    background-color: #fff;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#campos {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 200px;
+}
+
+#campos2 {
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0.8px solid;
+
+}
+
+h1 {
+    display: block;
+    color: #8304A5;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+#botao {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0.8px solid;
+    margin-top: 5px;
+}
+
+a {
+    font-size: 15px;
+    color: #8304A5;
+    text-decoration: none;
+}
+
+#recuperar {
+    margin-top: 20px;
+}
+
+#voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
