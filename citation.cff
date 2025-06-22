@@ -1,12 +1,12 @@
 message: Please cite this software using these metadata.
-title:
+title: Cora
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Rodrigues
+    given-names: Mariana
+  - family-names: Miury
+    given-names: Rafael
+  - family-names: Souza
+    given-names: Guilherme
   - family-names: 
     given-names: 
   - family-names: 
@@ -15,8 +15,8 @@ authors:
     given-names: 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Nepomuceno Curto
+    given-names: Hayala   
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 

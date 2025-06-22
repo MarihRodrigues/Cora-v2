@@ -82,9 +82,9 @@
 |	|que necessário.		|	     |
 |-------|-------------------------------|------------|
 | RF-02 |A aplicação deve permitir que o|    Alta    |
-|	|usuário recupere sua senha 	|	     |
-|	|através das informações 	|	     |
-|	|fornecidas na criação da conta	|	     |
+|	|usuário recupere o acesso à conta	|	     |
+|	|através das criação de uma 	|	     |
+|	|nova senha.	|	     |
 |-------|-------------------------------|------------|	
 | RF-03	|A aplicação deve apresentar os |    Alta    |
 |	|canais de denúncia ao usuário 	|	     |
@@ -93,9 +93,8 @@
 |-------|-------------------------------|------------|
 | RF-04	|A aplicação deve permitir que o|    Alta    |		
 |	|usuário realize um filtro 	|	     |
-|	|utilizando a geolocalização ou |	     |
-|	|informando a localidade para 	|	     |
-|	|ser direcionado para o canal de| 	     |
+|	|através do preenchimento dos campos|	     |
+|	|para ser direcionado para o canal de| 	     |
 |	|denúncia da região		|	     |
 |-------|-------------------------------|------------|				
 | RF-05	|A aplicação deve permitir que o|   Média    |	
@@ -107,14 +106,13 @@
 | RF-06	|A aplicação deve permitir que o|   Média    |
 |	|profissional de apoio encerre a| 	     |
 |	|prestação de serviços através  |	     |
-|	|da suspensão ou exclusão da    |	     |
-|	|conta. 			|	     |
+|	|da exclusão da conta.   |	     |
 |-------|-------------------------------|------------|
 | RF-07 |A aplicação deve permitir que o|   Média    |
-|	|usuário identifique o 		|	     |
+|	|usuário localize o 		|	     |
 |	|profissional de apoio através 	|	     |
-|	|do filtro pela região e formas |	     |
-|	|de atendimento.	 	|	     |
+|	|do preechimento dos campos que  |	     |
+|	|terá a função de filtro.	 	|	     |
 |-------|-------------------------------|------------|                           
 | RF-08 |A aplicação deve permitir que o|   Média    |
 |	|acesso às informações sobre 	|	     |

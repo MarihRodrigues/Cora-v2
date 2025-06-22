@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+    height: 80px;
+    display: flex;
+    background-color: #8304A5;
+    align-self: flex-end;
+}
+
+.indice {
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    width: 20500px;
+    justify-content: space-around;
+    padding-left: 500px;
+    padding-right: 50px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.entrar-1 {
+    width: 70px;
+    height: 40px;
+    color: #8304A5;
+    background-color: #ffffff;
+    border-style: none;
+}
+
+.formulario {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+      flex: 1; /* faz o conteúdo "empurrar" o rodapé para baixo */
+}
+
+.formulario-2 {
+    background-color: #BA91BA;
+    height: 450px;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.campo {
+    justify-content: center;
+    align-items: center;
+    border-color: #BA91BA;
+    display: flex;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 20px; /* <-- espaçamento entre os campos */
+}
+
+h1 {
+    color: #ffffff;
+    width: 500px;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+
+.localizar {
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    border: #BA91BA;
+    margin-top: 30px;
+}
+
+.menu-sanduiche {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+   
+   align-items: center;
+    user-select: none;
+    
+    height: 80px;
+    display: flex;
+}
+
+.menu-opcoes {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #BA91BA;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 100;
+}
+
+.menu-opcoes a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.menu-opcoes a:hover {
+    background-color: #8304A5;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  background-color: #f2f2f2;
+  margin-top: 60px;
+}

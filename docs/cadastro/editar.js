@@ -105,16 +105,12 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
 
         alert("Cadastro realizado com sucesso!");
 
-        // Redirecionamento baseado no perfil
-        if (usuario.perfil === "profissional") {
-            window.location.href = "../registroDeProfissionais/registroDeProfissionais.html";
-        } else {
-            setTimeout(() => {
-                window.location.href = "../login/paginaLogin.html";
-            }, 1500);
-        }
+        setTimeout(() => {
+            window.location.href = "../login/paginaLogin.html";
+        }, 1500);
     }
 });
+
 
 
 // Salva um novo usuário no localStorage
@@ -219,6 +215,80 @@ function excluirConta() {
 }
 
 
+
+// editar cadastro
+
+const modoEdicao = localStorage.getItem("usuarioLogado") ? true : false;
+
+// Função para editar o cadastro do usuário
+
+// Ao carregar a página, preenche os campos com os dados do usuário
+window.onload = function () {
+  const emailLogado = localStorage.getItem("usuarioLogado");
+  const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+  const usuario = usuarios.find(user => user.email === emailLogado);
+
+  if (usuario) {
+    document.getElementById("nome").value = usuario.nome || "";
+    document.getElementById("cpf").value = usuario.cpf || "";
+    document.getElementById("data-nascimento").value = usuario.dataNascimento || "";
+    document.getElementById("telefone").value = usuario.telefone || "";
+    document.getElementById("endereco").value = usuario.endereco || "";
+    document.getElementById("bairro").value = usuario.bairro || "";
+    document.getElementById("numero").value = usuario.numero || "";
+    document.getElementById("cep").value = usuario.cep || "";
+    document.getElementById("estado").value = usuario.estado || "";
+    document.getElementById("cidade").value = usuario.cidade || "";
+    document.getElementById("email").value = usuario.email || "";
+    document.getElementById("perfil").value = usuario.perfil || "usuario";
+    document.getElementById("senha").value = usuario.senha || "";
+    document.getElementById("confirmar-senha").value = usuario.senha || "";
+  } else {
+    alert("Usuário não encontrado.");
+  }
+};
+
+
+// Ao clicar em "Atualizar", salva os dados no localStorage
+document.getElementById("form-usuario").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const senha = document.getElementById("senha").value;
+  const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+  if (senha !== confirmarSenha) {
+    alert("As senhas não coincidem!");
+    return;
+  }
+
+  const usuarioAtualizado = {
+    nome: document.getElementById("nome").value,
+    cpf: document.getElementById("cpf").value,
+    dataNascimento: document.getElementById("data-nascimento").value,
+    telefone: document.getElementById("telefone").value,
+    endereco: document.getElementById("endereco").value,
+    bairro: document.getElementById("bairro").value,
+    numero: document.getElementById("numero").value,
+    cep: document.getElementById("cep").value,
+    estado: document.getElementById("estado").value,
+    cidade: document.getElementById("cidade").value,
+    email: document.getElementById("email").value,
+    perfil: document.getElementById("perfil").value,
+    senha: senha
+  };
+
+  localStorage.setItem("usuario", JSON.stringify(usuarioAtualizado));
+
+  alert("Cadastro atualizado com sucesso!");
+  // Se quiser, pode redirecionar o usuário:
+
+  window.location.href = "../home/home.html";
+});
+
+
+
+
 // Função para sair da conta
 
     window.sairConta = function() {
@@ -227,8 +297,6 @@ function excluirConta() {
         window.location.href = "../login/paginaLogin.html";
     };
 
-
     if (!localStorage.getItem("user")) {
         localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
     }
-

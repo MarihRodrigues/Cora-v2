@@ -1,13 +1,9 @@
-document.getElementById("form-usuario").addEventListener("submit", function (event) {
+document.getElementById("form-profissionais").addEventListener("submit", function (event) {
     event.preventDefault();
-    let formValido = true;
 
     const nomeCompleto = document.getElementById("nome");
-    const cpf = document.getElementById("cpf");
-    const dataNascimento = document.getElementById("data-nascimento");
+    const especialidade = document.getElementById("especialidade");
     const email = document.getElementById("email");
-    const senha = document.getElementById("senha");
-    const confirmarSenha = document.getElementById("confirmar-senha");
     const endereco = document.getElementById("endereco");
     const telefone = document.getElementById("telefone");
     const bairro = document.getElementById("bairro");
@@ -15,36 +11,16 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
     const cep = document.getElementById("cep");
     const estado = document.getElementById("estado");
     const cidade = document.getElementById("cidade");
-    const perfil = document.getElementById("perfil");
+
+    let formValido = true;
 
     if (nomeCompleto.value.length < 5) {
         alert("Nome completo deve ter mais de 5 caracteres");
         formValido = false;
     }
 
-    if (cpf.value.length !== 11) {
-        alert("CPF deve ter 11 caracteres");
-        formValido = false;
-    }
-
-    if (dataNascimento.value === "") {
-        alert("Data de nascimento deve ser preenchida");
-        formValido = false;
-    }
-
     if (!/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(email.value)) {
         alert("Email inválido");
-        formValido = false;
-    }
-
-    const regexSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$&@#]).{6,}$/;
-    if (!regexSenha.test(senha.value)) {
-        alert("A senha deve ter pelo menos 6 caracteres, uma letra maiúscula, uma minúscula, um número e um símbolo.");
-        formValido = false;
-    }
-
-    if (senha.value !== confirmarSenha.value) {
-        alert("As senhas não coincidem");
         formValido = false;
     }
 
@@ -83,14 +59,16 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
         formValido = false;
     }
 
+    if (especialidade.value === "") {
+        alert("Especialidade deve ser preenchida");
+        formValido = false;
+    }
+
     if (formValido) {
-        // Criar objeto com os dados do usuário
-        const usuario = {
+        const novoProfissional = {
             nome: nomeCompleto.value,
-            cpf: cpf.value,
-            dataNascimento: dataNascimento.value,
+            especialidade: especialidade.value,
             email: email.value,
-            senha: senha.value, // ⚠️ Não seguro em app real, apenas para fins de estudo
             endereco: endereco.value,
             telefone: telefone.value,
             bairro: bairro.value,
@@ -98,30 +76,34 @@ document.getElementById("form-usuario").addEventListener("submit", function (eve
             cep: cep.value,
             estado: estado.value,
             cidade: cidade.value,
-            perfil: perfil.value
         };
 
-        salvarUsuario(usuario);
+        salvarProfissional(novoProfissional);
 
         alert("Cadastro realizado com sucesso!");
 
-        // Redirecionamento baseado no perfil
-        if (usuario.perfil === "profissional") {
-            window.location.href = "../registroDeProfissionais/registroDeProfissionais.html";
-        } else {
-            setTimeout(() => {
-                window.location.href = "../login/paginaLogin.html";
-            }, 1500);
-        }
+        setTimeout(() => {
+            window.location.href = "../login/paginaLogin.html";
+        }, 1500);
     }
 });
 
+function salvarProfissional(profissional) {
+    let lista = JSON.parse(localStorage.getItem("profissionais")) || [];
+    lista.push(profissional);
+    localStorage.setItem("profissionais", JSON.stringify(lista));
+}
 
-// Salva um novo usuário no localStorage
-function salvarUsuario(usuario) {
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    usuarios.push(usuario);
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+// Sidebar e dropdown
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("ativo");
+}
+
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdownMenu");
+    dropdown.classList.toggle("show");
 }
 
 window.onclick = function (event) {
@@ -136,11 +118,6 @@ window.onclick = function (event) {
     }
 }
 
-// Logout
-function logout() {
-    alert("Você saiu com sucesso!");
-    window.location.href = "../index.html";
-}
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -172,7 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-    document.addEventListener('click', function() {
+document.addEventListener('click', function(event) {
+    if (!sidebar.contains(event.target) && !menuToggleDiv.contains(event.target)) {
         if (sidebar.classList.contains('ativo')) {
             sidebar.classList.remove('ativo');
             menuToggleDiv.classList.remove('ativo');
@@ -180,7 +158,9 @@ document.addEventListener('DOMContentLoaded', function() {
             iconeSpan.style.fontSize = '30px'; 
             iconeSpan.style.lineHeight = '1';
         }
-    });
+    }
+});
+
 
   } else {
       console.error("Erro: Elementos .menu-toggle, .sidebar ou span não encontrados.");
@@ -215,11 +195,8 @@ function excluirConta() {
   alert("Conta excluída com sucesso!");
 
   // Redireciona para a página inicial
-  window.location.href = "../home/home.html";
+  window.location.href = "../index.html";
 }
-
-
-// Função para sair da conta
 
     window.sairConta = function() {
         localStorage.removeItem("user");
@@ -227,8 +204,6 @@ function excluirConta() {
         window.location.href = "../login/paginaLogin.html";
     };
 
-
     if (!localStorage.getItem("user")) {
         localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
     }
-

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informativos - Cora</title>
+    <link rel="stylesheet" href="informativos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+  <body>
+    <header class="meu-header">
+      <div class="cabecalho">
+        <a class="logo" href="../home/home.html">
+          <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+        </a>
+        <nav class="indice">
+          <a href="../home/home.html">Início</a>
+          <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+          <a href="../informativos/informativos.html">Informativos</a>
+          <a class="botao-secundario" href="../denuncia/paginaDenuncia.html">Denunciar</a>
+        </nav>
+      </div>
+
+      <nav class="icon-nav-mobile" id="iconNavMobile">
+          <a href="../home/home.html"><i class="fas fa-home"></i></a>
+          <a href="../profissionais/profissionais.html"><i class="fas fa-hands-helping"></i></a>
+          <a href="../informativos/informativos.html"><i class="fas fa-info-circle"></i></a>
+          <a href="../denuncia/paginaDenuncia.html"><i class="fas fa-exclamation-triangle"></i></a>
+      </nav>
+
+      <div class="container-menu">
+        <div class="menu-sanduiche" id="menuUsuarioSanduiche">
+          <span>&#9776;</span>
+          <div class="menu-opcoes">
+            <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+            <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+            <a href="#" onclick="excluirConta()">Excluir conta</a>
+            <a href="../login/paginaLogin.html">Entrar</a>
+            <a href="#" onclick="sairConta()">Sair</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao-noticias">
+        <h2>Informativos</h2>
+
+        <div class="barra-busca">
+            <input type="text" id="campoBusca" placeholder="Buscar informações e artigos...">
+            <button id="botaoBusca">Buscar</button>
+        </div>
+
+        <div id="containerArtigos" class="grid-artigos">
+            <div class="card-artigo" data-keywords="datasenado 3 em cada 10 brasileiras violencia domestica agencia senado">
+                <h3>DataSenado: 3 a cada 10 brasileiras já sofreram violência doméstica</h3>
+                <p>Três a cada dez brasileiras já foram vítimas de violência doméstica, de acordo com a 10ª Pesquisa Nacional de Violência contra a Mulher, feita pelo Instituto DataSenado, em parceria com o Observatório da Mulher contra a Violência (OMV).<br><br> - Agência Senado -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www12.senado.leg.br/noticias/materias/2023/11/21/datasenado-aponta-que-3-a-cada-10-brasileiras-ja-sofreram-violencia-domestica">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www12.senado.leg.br/noticias/materielas/2023/11/21/datasenado-aponta-que-3-a-cada-10-brasileiras-ja-sofreram-violencia-domestica">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo" data-keywords="o que e violencia domestica instituto maria da penha">
+                <h3>O que é violência doméstica?</h3>
+                <p>De acordo com o art. 5º da Lei Maria da Penha, violência doméstica e familiar contra a mulher é “qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial”... <br><br>- Instituto Maria da Penha -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www.institutomariadapenha.org.br/violencia-domestica/o-que-e-violencia-domestica.html">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www.institutomariadapenha.org.br/violencia-domestica/o-que-e-violencia-domestica.html">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo" data-keywords="quais os tipos de violencia domestica tribunal de justica minas gerais tjmg">
+                <h3>Quais são os tipos de violência doméstica?</h3>
+                <p>Violência patrimonial: qualquer conduta que configure retenção, subtração, destruição parcial ou total de objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econômicos da mulher...<br><br>- Tribunal de Justiça de Minas Gerais -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www.tjmg.jus.br/portal-tjmg/perguntas-frequentes/quais-sao-os-types-de-violencia-domestica.htm#">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www.tjmg.jus.br/portal-tjmg/perguntas-frequentes/quais-sao-os-types-de-violencia-domestica.htm#">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="denunciar buscar ajuda vitimas governo federal ministerio das mulheres">
+                <h3>Denunciar e buscar ajuda a vítimas de violência contra mulheres</h3>
+                <p>A Central de Atendimento à Mulher – Ligue 180 é um serviço de utilidade pública oferecido pelo governo federal, por meio do Ministério das Mulheres, para fornecer informações sobre os direitos e garantias das mulheres em situação de violência e informar locais e contatos dos serviços mais próximos e apropriados para cada caso...<br><br> - Ministério das Mulheres -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="por que falar sobre violencia domestica portal jus brasil">
+                <h3>Por que falar sobre a violência doméstica?</h3>
+                <p>Falar sobre violência doméstica é crucial por várias razões importantes, sendo algumas delas:<br><br>Conscientização: Ao falar sobre a violência doméstica, aumentamos a conscientização sobre o problema. Muitas vezes, as vítimas sofrem em silêncio e têm medo de buscar ajuda...<br><br>- Portal Jus Brasil -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www.jusbrasil.com.br/artigos/por-que-falar-sobre-a-violencia-domestica/1870062658">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www.jusbrasil.com.br/artigos/por-que-falar-sobre-a-violencia-domestica/1870062658">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="Violência atingiu 27 milhões de mulheres em 2024, diz pesquisa.">
+                <h3>Violência atingiu 27 milhões de mulheres em 2024, diz pesquisa.</h3>
+                <p>Levantamento aponta que 37,5% das brasileiras já sofreram ao menos algum tipo de agressão física, sexual ou psicológica nos últimos doze meses...<br><br>- Veja -</p>
+                <div class="card-botoes-container">
+                    <a href="https://veja.abril.com.br/coluna/maquiavel/violencia-atingiu-27-milhoes-de-mulheres-em-2024-diz-pesquisa/">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://veja.abril.com.br/coluna/maquiavel/violencia-atingiu-27-milhoes-de-mulheres-em-2024-diz-pesquisa/">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="Seminário traça evolução do combate à violência doméstica no Brasil e discute desafios que ainda precisam ser superados">
+                <h3>Seminário traça evolução do combate à violência doméstica no Brasil e discute desafios que ainda precisam ser superados</h3>
+                <p>Durante o encontro, o secretário estadual de Justiça e Segurança Pública, Rogério Greco, e o procurador-geral de Justiça Adjunto Institucional, Hugo Moura de Barros, assinaram termo de cooperação lançando o Grupo de Intervenção Estratégica de Enfrentamento à Violência Doméstica (GIE-VD)...<br><br>- Ministério Público de Minas Gerais -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www.mpmg.mp.br/portal/menu/comunicacao/noticias/seminario-apresenta-evolucao-do-combate-a-violencia-domestica-no-brasil-e-discute-desafios-que-ainda-precisam-ser-superados.shtml">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www.mpmg.mp.br/portal/menu/comunicacao/noticias/seminario-apposenta-evolucao-do-combate-a-violencia-domestica-no-brasil-e-discute-desafios-que-ainda-precisam-be-superados.shtml">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="Vítimas de violência doméstica terão reconstrução dentária gratuita no SUS">
+                <h3>Vítimas de violência doméstica terão reconstrução dentária gratuita no SUS</h3>
+                <p>Brasil avança no combate à violência contra as mulheres. Com a sanção do PL 4.440/2024 pelo presidente Lula nesta quinta-feira (03), o Programa de Reconstrução Dentária para Mulheres Vítimas de Violência Doméstica passa a integrar a rede do Sistema Único de Saúde (SUS). Coordenada pelo Ministério da Saúde, a iniciativa garante tratamento odontológico gratuito para mulheres que sofreram agressões. Em 2024, foram realizadas mais de 4 milhões de restaurações dentárias gerais no SUS...<br><br>- Governo Federal -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2025/abril/vitimas-de-violencia-domestica-terao-reconstrucao-dentaria-gratuita-no-sus">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www.gov.br/saude/pt-br/assuntos/noticias/2025/abril/vitimas-de-violencia-domestica-terao-reconstrucao-dentaria-gratuita-no-sus">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="Combatendo a violência doméstica com políticas públicas">
+                <h3>Combatendo a violência doméstica com políticas públicas</h3>
+                <p>Quando o crime de violência doméstica já ocorreu, é importante amparar as vítimas, reportar corretamente os casos e combater a impunidade. Violência doméstica é um crime bastante frequente no Brasil e no mundo. Segundo a Organização Mundial de Saúde, em 2018, 25% das mulheres nas Américas já haviam sofrido algum tipo de violência doméstica ou sexual...<br><br>- Nexo Jornal -</p>
+                <div class="card-botoes-container">
+                    <a href="https://pp.nexojornal.com.br/opiniao/2025/05/09/combatendo-a-violencia-domestica-com-politicas-publicas">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://pp.nexojornal.com.br/opiniao/2025/05/09/combatendo-a-violencia-domestica-com-politicas-publicas">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="Propostas no Senado reforçam combate à violência doméstica no Brasil">
+                <h3>Propostas no Senado reforçam combate à violência doméstica no Brasil</h3>
+                <p>Apesar de a Lei Maria da Penha (Lei 11.340/2006) estar perto de comemorar duas décadas de existência — completa 18 anos neste agosto — e ser considerada uma das mais modernas do mundo para a defesa dos direitos das mulheres, as estatísticas evidenciam o aumento do feminicídio e dos casos de violência no país, atingindo também as meninas, especialmente nos registros de abusos sexuais...<br><br>- Agência Senado -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www12.senado.leg.br/noticias/materias/2024/08/27/propostas-no-senado-reforcam-combate-a-violencia-domestica-no-brasil">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www12.senado.leg.br/noticias/materias/2024/08/27/propostas-no-senado-reforcam-combate-a-violencia-domestica-no-brasil">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="A cada 6 horas uma mulher morre vítima de feminicídio no Brasil">
+                <h3>A cada 6 horas uma mulher morre vítima de feminicídio no Brasil</h3>
+                <p>No Dia Internacional pela Eliminação da Violência contra a Mulher, celebrado na segunda-feira (25/11/24), dados da Organização das Nações Unidas (ONU) mostram que o mundo ainda está longe de combater uma das principais causas de mortes femininas. No Brasil, a cada 6 horas é registrado um assassinato de mulher...<br><br>- Assembleia Legislativa de Minas Gerais -</p>
+                <div class="card-botoes-container">
+                    <a href="https://www.almg.gov.br/comunicacao/noticias/arquivos/A-cada-6-horas-uma-mulher-morre-vitima-de-feminicidio-no-Brasil/">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://www.almg.gov.br/comunicacao/noticias/arquivos/A-cada-6-horas-uma-mulher-morre-vitima-de-feminicidio-no-Brasil/">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="card-artigo hidden-news" data-keywords="Violência doméstica contra a mulher cresce 9,8% no Brasil, aponta Anuário de Segurança Pública">
+                <h3>Violência doméstica contra a mulher cresce 9,8% no Brasil, aponta Anuário de Segurança Pública</h3>
+                <p>O número 190, da Polícia Militar, foi acionado 848.036 vezes para reportar episódios de violência doméstica. No que se refere a ameaças, houve um crescimento de 16,5% no número de casos – 778.921 em números absolutos...<br><br>- Exame -</p>
+                <div class="card-botoes-container">
+                    <a href="https://exame.com/brasil/%E2%81%A0violencia-domestica-contra-a-mulher-cresce-98-no-brasil-aponta-anuario-de-seguranca-publica/">Ler Mais</a>
+                    <button class="btn-compartilhar" data-link="https://exame.com/brasil/%E2%81%A0violencia-domestica-contra-a-mulher-cresce-98-no-brasil-aponta-anuario-de-seguranca-publica/">Compartilhar</button>
+                </div>
+            </div>
+
+          </div>
+          <button id="verMaisNoticias" class="btn-ver-mais">Ver Mais Notícias</button>
+      </section>
+
+      <section class="secao-orientacoes">
+        <h2>Orientações Importantes</h2>
+        <div class="container-orientacoes">
+            <div class="card-orientacao">
+                <h3>1- Procure um lugar seguro:</h3>
+                <p>Em caso de emergência, tente sair imediatamente do local da agressão, se for possível sem risco.</p>
+            </div>
+            <div class="card-orientacao">
+                <h3>2- Ligue para a polícia (190):</h3>
+                <p>Denuncie qualquer agressão. A ligação é gratuita e funciona 24h por dia.</p>
+            </div>
+            <div class="card-orientacao">
+                <h3>3- Guarde provas da agressão:</h3>
+                <p>Fotos de ferimentos, roupas rasgadas, mensagens ameaçadoras, laudos médicos e boletins de ocorrência são importantes para a denúncia.</p>
+            </div>
+            <div class="card-orientacao">
+                <h3>4- Procure atendimento médico e psicológico:</h3>
+                <p>Além de cuidar da saúde física, o apoio psicológico é essencial para sua recuperação.</p>
+            </div>
+
+            <div class="card-orientacao">
+                <h3>5- Peça Medida Protetiva de Urgência:</h3>
+                <p>A Justiça pode determinar que o agressor mantenha distância de você, da sua casa e do seu local de trabalho.</p>
+            </div>
+
+            <div class="card-orientacao">
+                <h3>6- Disque 180 (Central de Atendimento à Mulher):</h3>
+                <p>Serviço sigiloso que oferece orientação, acolhimento e encaminhamento para serviços especializados.</p>
+            </div>
+
+            </div>
+      </section>
+
+    </main>
+
+    <footer class="rodape">
+      <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script/script3.js"></script>
+  </body>
+</html>

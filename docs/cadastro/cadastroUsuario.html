@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario</title>
+    <link rel="stylesheet" href="cadastroUsuario.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="cabecalho">
+            <a class="logo" href="../home/home.html">
+                <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+            </a>
+
+
+            <nav class="menu">
+                <a href="../home/home.html">Início</a>
+                <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+                <a href="../informativos/informativos.html">Informativos</a>
+                <a href="../denuncia/paginaDenuncia.html">Denunciar</a>
+
+
+
+
+            </nav>
+
+            <div class="menu-toggle">
+                <span>&#9776;</span>
+            </div>
+
+        </div>
+
+        <nav class="sidebar" id="sidebar">
+            <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+            <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+            <a href="#" onclick="excluirConta()">Excluir conta</a>
+            <a href="../login/paginaLogin.html">Entrar</a>
+            <a href="#" onclick="sairConta()">Sair</a>
+           
+
+        </nav>
+
+
+
+        <div class="cadastrar">
+
+            <h1 class="title">Cadastro de Usuários</h1>
+            <form id="form-usuario" method="POST">
+                <div class="campos">
+
+                    <div class="grupo">
+                        <div class="caixa">
+                            <label>Nome Completo *</label><br />
+                            <input type="text" name="nome" id="nome" minlength="4" required
+                                placeholder="Digite seu nome completo"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>CPF *</label><br />
+                            <input type="text" minlength="11" maxlength="11" name="cpf" id="cpf" required
+                                placeholder="Digite seu CPF"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Data de Nascimento *</label><br />
+                            <input type="date" name="data-nascimento" id="data-nascimento" required
+                                placeholder="Digite sua data de nascimento"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Telefone *</label><br />
+                            <input type="number" minlength="11" name="telefone" id="telefone" required
+                                placeholder="(99)99999-9999"><br />
+                        </div>
+                    </div>
+
+                    <div class="grupo">
+                        <div class="caixa">
+                            <label>Endereco *</label><br />
+                            <input type="text" name="endereco" id="endereco" required
+                                placeholder="Digite seu endereço"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Bairro *</label><br />
+                            <input type="text" name="bairro" id="bairro" required placeholder="Bairro"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Numero *</label><br />
+                            <input type="numero" name="numero" id="numero" required placeholder="Número da casa"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>cep *</label><br />
+                            <input type="text" minlength="8" maxlength="8" name="cep" id="cep" required
+                                placeholder="Digite seu CEP"><br />
+                        </div>
+                    </div>
+
+                    <div class="grupo">
+                        <div class="caixa">
+                            <label>Estado *</label><br />
+                            <input type="text" name="estado" id="estado" required placeholder="Estado"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Cidade *</label><br />
+                            <input type="text" name="cidade" id="cidade" required placeholder="Cidade"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Email *</label><br />
+                            <input type="email" name="email" id="email" required placeholder="Digite seu email"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Perfil *</label><br />
+                            <select name="perfil" id="perfil" required>
+                                <option value="usuario">Usuário</option>
+                                <option value="profissional">Profissional</option>
+                            </select><br />
+                        </div>
+                    </div>
+
+                    <div class="grupo">
+                        <div class="caixa">
+                            <label>Senha *</label><br />
+                            <input type="password" name="senha" id="senha" minlength="6"
+                                placeholder="Digite sua senha"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Confirmar Senha *</label><br />
+                            <input type="password" name="confirmar-senha" id="confirmar-senha" minlength="6" required
+                                placeholder="Confirme sua senha"><br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button class="botao" id="botao">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="rodape">
+            <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="cadastro.js"></script>
+
+
+</body>
+
+</html>
