@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Profissionais</title>
+    <link rel="stylesheet" href="../cadastro/cadastroUsuario.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="cabecalho">
+            <div class="logo" href="../home/home.html">
+                <img src="../imagens/logo_cora.jpeg" alt="Logo" class="logo-img">
+            </div>
+            <nav class="menu">
+                <a href="../home/home.html">Início</a>
+                <a href="../profissionais/profissionais.html">Profissionais de Apoio</a>
+                <a href="../informativos/informativos.html">Informativos</a>
+                <a href="../denuncia/paginaDenuncia.html">Denunciar</a>
+
+            </nav>
+
+
+            <div class="menu-toggle">
+                <span>&#9776;</span>
+            </div>
+
+            <nav class="sidebar" id="sidebar">
+                <a href="../cadastro/cadastroUsuario.html">Cadastre-se</a>
+                <a href="../cadastro/editarCadastro.html">Editar cadastro</a>
+                <a href="#" onclick="excluirConta()">Excluir conta</a>
+                <a href="../login/paginaLogin.html">Entrar</a>
+                <a href="#" onclick="sairConta()">Sair</a>
+            </nav>
+
+        </div>
+
+
+        <div class="cadastrar">
+
+            <h1 class="title">Registro de Profissionais</h1>
+            <form id="form-profissionais" method="POST">
+                <div class="campos">
+
+                    <div class="grupo">
+                        <div class="caixa">
+                            <label>Nome do escritorio/Clinica *</label><br />
+                            <input type="text" name="nome" id="nome" minlength="4" required
+                                placeholder="Digite o nome da clinica"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Especialidade *</label><br />
+                            <input type="text" name="especialidade" id="especialidade" required
+                                placeholder="Digite sua especialidade"><br />
+                        </div>
+
+                        <div class="caixa">
+                            <label>Telefone *</label><br />
+                            <input type="tel" minlength="11" name="telefone" id="telefone" required
+                                placeholder="(99)99999-9999"><br />
+                            <div class="caixa">
+                                <label>Email *</label><br />
+                                <input type="email" name="email" id="email" required
+                                    placeholder="Digite seu email"><br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grupo">
+                        <div class="caixa">
+                            <label>Endereco *</label><br />
+                            <input type="text" name="endereco" id="endereco" required
+                                placeholder="Digite seu endereço"><br />
+                        </div>
+
+                        <div class="caixa">
+                            <label>Bairro</label><br />
+                            <input type="Bairro" name="bairro" id="bairro" required placeholder="bairro"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Numero *</label><br />
+                            <input type="numero" name="numero" id="numero" required placeholder="Número da casa"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>CEP *</label><br />
+                            <input type="cep" minlength="8" maxlength="8" name="cep" id="cep" required
+                                placeholder="Digite seu CEP"><br />
+                        </div>
+                    </div>
+
+                    <div class="grupo">
+                        <div class="caixa">
+                            <label>Estado</label><br />
+                            <input type="Estado" name="estado" id="estado" required placeholder="estado"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Cidade</label><br />
+                            <input type="Cidade" name="cidade" id="cidade" required placeholder="cidade"><br />
+                        </div>
+
+                        <div class="caixa">
+                            <label>Realiza atendimento online?</label><br />
+                            <select name="Realiza atendimento online?" id="Realiza atendimento online?" required>
+                                <option value="Sim">Sim</option>
+                                <option value="Nao">Nao</option>
+                            </select><br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button class="botao" id="botao">Cadastrar</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <footer class="rodape">
+            <p>&copy; 2025 Cora | Todos os direitos reservados.</p>
+        </footer>
+        
+        <script src="registroDeProfissionais.js"></script>
+</body>
+
+</html>
