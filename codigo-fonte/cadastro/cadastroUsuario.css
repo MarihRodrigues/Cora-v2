@@ -213,6 +213,7 @@ body {
   color: #555;
 }
 
+
 /* Responsividade */
 @media (max-width: 920px) {
   .menu {
@@ -222,4 +223,6 @@ body {
   .menu-toggle {
     display: block; /* Mostra o ícone do menu sanduíche */
   }
+
 }
+

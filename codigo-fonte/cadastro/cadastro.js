@@ -227,6 +227,8 @@ function excluirConta() {
         window.location.href = "../login/paginaLogin.html";
     };
 
+
     if (!localStorage.getItem("user")) {
         localStorage.setItem("user", JSON.stringify({ id: 1, nome: "Usuário Exemplo" }));
     }
+
