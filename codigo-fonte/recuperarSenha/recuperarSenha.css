@@ -94,6 +94,10 @@ h1 {
     text-align: center;
 }
 
+h2  {
+    color: #ffffff;
+}
+
 .campo {
     width: 100%;
     max-width: 400px;
