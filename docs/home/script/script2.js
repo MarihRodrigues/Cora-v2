@@ -41,14 +41,33 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Função para excluir conta
 function excluirConta() {
-  const confirmar = confirm("Tem certeza de que deseja excluir sua conta?");
-  if (confirmar) {
-  localStorage.removeItem("user");
-  alert("Sua conta foi excluída com sucesso.");
-  window.location.href = "../home/home.html"; 
+  const emailUsuarioLogado = localStorage.getItem("usuarioLogado");
+
+  if (!emailUsuarioLogado) {
+    alert("Nenhum usuário logado.");
+    return;
   }
+
+  // Confirmação
+  const confirmacao = confirm("Tem certeza que deseja excluir sua conta? Essa ação não poderá ser desfeita.");
+  if (!confirmacao) return;
+
+  let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+  // Remove o usuário da lista
+  usuarios = usuarios.filter(usuario => usuario.email !== emailUsuarioLogado);
+
+  // Atualiza o localStorage
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+  // Remove a sessão do usuário
+  localStorage.removeItem("usuarioLogado");
+
+  alert("Conta excluída com sucesso!");
+
+  // Redireciona para a página inicial
+  window.location.href = "../home/home.html";
 }
 
 // Função para sair da conta
